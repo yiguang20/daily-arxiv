@@ -9,13 +9,16 @@ categories = ["q-fin"]       # All q-fin subcategories (auto-expanded)
 search_field = "ti"          # Search in title only
 
 
-# Available q-fin categories:
-# q-fin.CP - Computational Finance
-# q-fin.EC - Economics
-# q-fin.GN - General Finance
-# q-fin.MF - Mathematical Finance
-# q-fin.PM - Portfolio Management
-# q-fin.PR - Pricing of Securities
-# q-fin.RM - Risk Management
-# q-fin.ST - Statistical Finance
-# q-fin.TR - Trading and Market Microstructure
+# Config options:
+# - filters: keywords to search
+# - categories: use parent category for auto-expand, or specify subcategories directly
+# - search_field: "all" (default), "ti" (title), "abs" (abstract), "au" (author)
+#
+# Supported parent categories (auto-expand to all subcategories):
+# - "q-fin" -> q-fin.CP, q-fin.EC, q-fin.GN, q-fin.MF, q-fin.PM, q-fin.PR, q-fin.RM, q-fin.ST, q-fin.TR
+# - "stat"  -> stat.AP, stat.CO, stat.ME, stat.ML, stat.OT, stat.TH
+# - "econ"  -> econ.EM, econ.GN, econ.TH
+#
+# For cs/physics, specify subcategories directly (too many to auto-expand):
+# - cs.AI, cs.LG, cs.CV, cs.CL, cs.NE, etc.
+# - physics.comp-ph, hep-th, cond-mat.stat-mech, etc.

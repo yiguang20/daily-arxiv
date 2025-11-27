@@ -23,13 +23,15 @@ class Paper:
                  title: str,
                  authors: list[Result.Author],
                  id: str,
-                 url: str) -> None:
+                 url: str,
+                 abstract: str = "") -> None:
         self.date: datetime = date
         self.title: str = title
         self.authors: str = f"{authors[0].name} et al." if len(
             authors) > 1 else authors[0].name
         self.id: str = id
         self.url: str = url
+        self.abstract: str = abstract
         self.code: str | None = None
 
     def get_code_link(self):
@@ -86,10 +88,11 @@ def concat_filters(
     """
     # Expand parent categories to all subcategories
     category_map = {
-        "q-fin": ["q-fin.CP", "q-fin.EC", "q-fin.GN", "q-fin.MF", 
+        "q-fin": ["q-fin.CP", "q-fin.EC", "q-fin.GN", "q-fin.MF",
                   "q-fin.PM", "q-fin.PR", "q-fin.RM", "q-fin.ST", "q-fin.TR"],
-        "cs": None,  # Too many, don't expand
         "stat": ["stat.AP", "stat.CO", "stat.ME", "stat.ML", "stat.OT", "stat.TH"],
+        "econ": ["econ.EM", "econ.GN", "econ.TH"],
+        # cs and physics have too many subcategories - specify them directly
     }
     
     expanded_categories = []
@@ -123,8 +126,14 @@ def parse_papers(results: Generator[Result, None, None]) -> list[Paper]:
         title=result.title,
         authors=result.authors,
         id=result.get_short_id(),
-        url=result.entry_id
+        url=result.entry_id,
+        abstract=result.summary.replace("\n", " ")  # Clean up newlines
     ) for result in results]
+
+
+def format_abstract(abstract: str) -> str:
+    """Format abstract as collapsible HTML details element."""
+    return f"<details><summary>Abstract</summary>{abstract}</details>"
 
 
 def content_to_md(content: dict, file: str):
@@ -135,14 +144,15 @@ def content_to_md(content: dict, file: str):
     for topic, papers in content.items():
         topic_block.append(Heading(2, topic))
         topic_block.append(Table(
-            header=["Publish Date", "Title", "Authors", "PDF", "Code"],
+            header=["Publish Date", "Title", "Authors", "PDF", "Code", "Abstract"],
             content=[
                 [Bold(paper.date.strftime("%Y/%m/%d")),
                  paper.title,
                  paper.authors,
                  Link(url=paper.url, text_or_image=paper.id),
                  Link(url=paper.code, text_or_image=Bold(
-                     "link")) if paper.code else Bold("NULL")
+                     "link")) if paper.code else Bold("NULL"),
+                 format_abstract(paper.abstract)
                  ] for paper in papers
             ]
         ))
