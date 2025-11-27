@@ -1,4 +1,4 @@
-max_results = 300
+max_results = 80
 
 file_path = "./docs/index.md"
 
