@@ -1,11 +1,11 @@
-max_results = 80
+max_results = 100
 
 file_path = "./docs/index.md"
 
 [[topics]]
 name = "交易"
 filters = ["Trading"]
-categories = ["q-fin.TR", "q-fin.CP"]  # Quantitative Finance - Trading
+categories = ["q-fin"]  # Quantitative Finance - Trading
 
 
 # Available q-fin categories:
