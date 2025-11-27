@@ -7,8 +7,8 @@ on:
 
 env:
 
-  GITHUB_USER_NAME: mill413
-  GITHUB_USER_EMAIL: mill413@outlook.com
+  GITHUB_USER_NAME: yiguang20
+  GITHUB_USER_EMAIL: yankuocharlie@gmail.com
   
   TZ: Asia/Shanghai 
 
