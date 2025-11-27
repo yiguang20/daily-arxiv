@@ -131,9 +131,13 @@ def parse_papers(results: Generator[Result, None, None]) -> list[Paper]:
     ) for result in results]
 
 
-def format_abstract(abstract: str) -> str:
-    """Format abstract as collapsible HTML details element."""
-    return f"<details><summary>Abstract</summary>{abstract}</details>"
+def format_paper_entry(paper) -> str:
+    """Format a single paper as a clean list entry with collapsible abstract."""
+    code_link = f' | [Code]({paper.code})' if paper.code else ''
+    return f"""- **{paper.title}**
+  - {paper.authors} | [{paper.id}]({paper.url}){code_link}
+  - <details><summary>Abstract</summary>{paper.abstract}</details>
+"""
 
 
 def content_to_md(content: dict, file: str):
@@ -143,19 +147,19 @@ def content_to_md(content: dict, file: str):
     topic_block = []
     for topic, papers in content.items():
         topic_block.append(Heading(2, topic))
-        topic_block.append(Table(
-            header=["Publish Date", "Title", "Authors", "PDF", "Code", "Abstract"],
-            content=[
-                [Bold(paper.date.strftime("%Y/%m/%d")),
-                 paper.title,
-                 paper.authors,
-                 Link(url=paper.url, text_or_image=paper.id),
-                 Link(url=paper.code, text_or_image=Bold(
-                     "link")) if paper.code else Bold("NULL"),
-                 format_abstract(paper.abstract)
-                 ] for paper in papers
-            ]
-        ))
+        # Group papers by date
+        papers_by_date: dict[str, list] = {}
+        for paper in papers:
+            date_str = paper.date.strftime("%Y/%m/%d")
+            if date_str not in papers_by_date:
+                papers_by_date[date_str] = []
+            papers_by_date[date_str].append(paper)
+        
+        # Build content with date headers
+        for date_str, date_papers in papers_by_date.items():
+            topic_block.append(Heading(3, f"📅 {date_str}"))
+            for paper in date_papers:
+                topic_block.append(format_paper_entry(paper))
 
     MdBuilder(
         FrontMatter({
