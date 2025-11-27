@@ -67,12 +67,32 @@ def log(message: str):
     logging.info(message)
 
 
-def concat_filters(filters: list[str]) -> str:
-    return "OR".join([
-        f"\"{filter}\"" if " " in filter
-        else filter
+def concat_filters(filters: list[str], categories: list[str] | None = None) -> str:
+    """
+    Build arXiv query string with keyword filters and optional category constraints.
+    
+    Args:
+        filters: List of keyword search terms
+        categories: List of arXiv categories (e.g., ["q-fin.TR", "q-fin.PM"])
+    
+    Returns:
+        Query string for arXiv API
+    """
+    # Build keyword filter part
+    keyword_query = " OR ".join([
+        f'all:"{filter}"' if " " in filter else f"all:{filter}"
         for filter in filters
     ])
+    
+    # If no categories specified, return just keyword query
+    if not categories:
+        return keyword_query
+    
+    # Build category filter part
+    category_query = " OR ".join([f"cat:{cat}" for cat in categories])
+    
+    # Combine: (keywords) AND (categories)
+    return f"({keyword_query}) AND ({category_query})"
 
 
 def parse_papers(results: Generator[Result, None, None]) -> list[Paper]:
@@ -86,7 +106,7 @@ def parse_papers(results: Generator[Result, None, None]) -> list[Paper]:
 
 
 def content_to_md(content: dict, file: str):
-    now = datetime.utcnow().replace(tzinfo=timezone.utc).astimezone(
+    now = datetime.now(timezone.utc).astimezone(
         timezone(timedelta(hours=8))).strftime("%Y/%m/%d %H:%M:%S")
 
     topic_block = []
