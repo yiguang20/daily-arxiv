@@ -12,9 +12,13 @@ for k in config["topics"]:
     topic: str = k["name"]
     categories = k.get("categories", [])
 
-    log(f"Query topic {topic}" + (f" in categories {categories}" if categories else ""))
+    search_field = k.get("search_field", "all")
+    
+    query = concat_filters(k["filters"], categories if categories else None, search_field)
+    log(f"Query topic '{topic}': {query}")
+    
     content[topic] = parse_papers(client.results(arxiv.Search(
-        query=concat_filters(k["filters"], categories if categories else None),
+        query=query,
         max_results=max_results,
         sort_by=arxiv.SortCriterion.SubmittedDate
     )))

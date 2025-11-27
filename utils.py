@@ -67,29 +67,51 @@ def log(message: str):
     logging.info(message)
 
 
-def concat_filters(filters: list[str], categories: list[str] | None = None) -> str:
+def concat_filters(
+    filters: list[str],
+    categories: list[str] | None = None,
+    search_field: str = "all"
+) -> str:
     """
     Build arXiv query string with keyword filters and optional category constraints.
     
     Args:
         filters: List of keyword search terms
-        categories: List of arXiv categories (e.g., ["q-fin.TR", "q-fin.PM"])
+        categories: List of arXiv categories (e.g., ["q-fin.TR", "q-fin"])
+                   Use parent category like "q-fin" to search all subcategories
+        search_field: Field to search in - "all", "ti" (title), "abs" (abstract), "au" (author)
     
     Returns:
         Query string for arXiv API
     """
+    # Expand parent categories to all subcategories
+    category_map = {
+        "q-fin": ["q-fin.CP", "q-fin.EC", "q-fin.GN", "q-fin.MF", 
+                  "q-fin.PM", "q-fin.PR", "q-fin.RM", "q-fin.ST", "q-fin.TR"],
+        "cs": None,  # Too many, don't expand
+        "stat": ["stat.AP", "stat.CO", "stat.ME", "stat.ML", "stat.OT", "stat.TH"],
+    }
+    
+    expanded_categories = []
+    if categories:
+        for cat in categories:
+            if cat in category_map and category_map[cat]:
+                expanded_categories.extend(category_map[cat])
+            else:
+                expanded_categories.append(cat)
+    
     # Build keyword filter part
     keyword_query = " OR ".join([
-        f'all:"{filter}"' if " " in filter else f"all:{filter}"
-        for filter in filters
+        f'{search_field}:"{f}"' if " " in f else f"{search_field}:{f}"
+        for f in filters
     ])
     
     # If no categories specified, return just keyword query
-    if not categories:
+    if not expanded_categories:
         return keyword_query
     
     # Build category filter part
-    category_query = " OR ".join([f"cat:{cat}" for cat in categories])
+    category_query = " OR ".join([f"cat:{cat}" for cat in expanded_categories])
     
     # Combine: (keywords) AND (categories)
     return f"({keyword_query}) AND ({category_query})"
