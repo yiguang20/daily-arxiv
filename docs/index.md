@@ -2,7 +2,7 @@
 layout: default
 ---
 
-> Updated on 2025/12/02 09:41:14
+> Updated on 2025/12/03 09:41:00
 
 <summary>Table of Contents</summary>
 
@@ -13,6 +13,13 @@ layout: default
 </ol>
 
 ## Trading
+
+### 📅 2025/11/30
+
+- **A Hybrid Architecture for Options Wheel Strategy Decisions: LLM-Generated Bayesian Networks for Transparent Trading**
+  - Xiaoting Kuang et al. | [2512.01123v1](http://arxiv.org/abs/2512.01123v1)
+  - <details><summary>Abstract</summary>Large Language Models (LLMs) excel at understanding context and qualitative nuances but struggle with the rigorous and transparent reasoning required in high-stakes quantitative domains such as financial trading. We propose a model-first hybrid architecture for the options "wheel" strategy that combines the strengths of LLMs with the robustness of a Bayesian Network. Rather than using the LLM as a black-box decision-maker, we employ it as an intelligent model builder. For each trade decision, the LLM constructs a context-specific Bayesian network by interpreting current market conditions, including prices, volatility, trends, and news, and hypothesizing relationships among key variables. The LLM also selects relevant historical data from an 18.75-year, 8,919-trade dataset to populate the network's conditional probability tables. This selection focuses on scenarios analogous to the present context. The instantiated Bayesian network then performs transparent probabilistic inference, producing explicit probability distributions and risk metrics to support decision-making. A feedback loop enables the LLM to analyze trade outcomes and iteratively refine subsequent network structures and data selection, learning from both successes and failures. Empirically, our hybrid system demonstrates effective performance on the wheel strategy. Over nearly 19 years of out-of-sample testing, it achieves a 15.3% annualized return with significantly superior risk-adjusted performance (Sharpe ratio 1.08 versus 0.62 for market benchmarks) and dramatically lower drawdown (-8.2% versus -60%) while maintaining a 0% assignment rate through strategic option rolling. Crucially, each trade decision is fully explainable, involving on average 27 recorded decision factors (e.g., volatility level, option premium, risk indicators, market context).</details>
+
 
 ### 📅 2025/11/15
 
@@ -679,11 +686,4 @@ layout: default
 - **Approaching multifractal complexity in decentralized cryptocurrency trading**
   - Marcin Wątorek et al. | [2411.05951v1](http://arxiv.org/abs/2411.05951v1)
   - <details><summary>Abstract</summary>Multifractality is a concept that helps compactly grasping the most essential features of the financial dynamics. In its fully developed form, this concept applies to essentially all mature financial markets and even to more liquid cryptocurrencies traded on the centralized exchanges. A new element that adds complexity to cryptocurrency markets is the possibility of decentralized trading. Based on the extracted tick-by-tick transaction data from the Universal Router contract of the Uniswap decentralized exchange, from June 6, 2023, to June 30, 2024, the present study using Multifractal Detrended Fluctuation Analysis (MFDFA) shows that even though liquidity on these new exchanges is still much lower compared to centralized exchanges convincing traces of multifractality are already emerging on this new trading as well. The resulting multifractal spectra are however strongly left-side asymmetric which indicates that this multifractality comes primarily from large fluctuations and small ones are more of the uncorrelated noise type. What is particularly interesting here is the fact that multifractality is more developed for time series representing transaction volumes than rates of return. On the level of these larger events a trace of multifractal cross-correlations between the two characteristics is also observed.</details>
-
-
-### 📅 2024/11/06
-
-- **Composing Ensembles of Instrument-Model Pairs for Optimizing Profitability in Algorithmic Trading**
-  - Sahand Hassanizorgabad | [2411.13559v1](http://arxiv.org/abs/2411.13559v1)
-  - <details><summary>Abstract</summary>Financial markets are nonlinear with complexity, where different types of assets are traded between buyers and sellers, each having a view to maximize their Return on Investment (ROI). Forecasting market trends is a challenging task since various factors like stock-specific news, company profiles, public sentiments, and global economic conditions influence them. This paper describes a daily price directional predictive system of financial instruments, addressing the difficulty of predicting short-term price movements. This paper will introduce the development of a novel trading system methodology by proposing a two-layer Composing Ensembles architecture, optimized through grid search, to predict whether the price will rise or fall the next day. This strategy was back-tested on a wide range of financial instruments and time frames, demonstrating an improvement of 20% over the benchmark, representing a standard investment strategy.</details>
 
