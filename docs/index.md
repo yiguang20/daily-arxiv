@@ -2,7 +2,7 @@
 layout: default
 ---
 
-> Updated on 2025/12/09 09:41:49
+> Updated on 2025/12/10 09:43:45
 
 <summary>Table of Contents</summary>
 
@@ -13,6 +13,13 @@ layout: default
 </ol>
 
 ## Trading
+
+### 📅 2025/12/06
+
+- **Wealth or Stealth? The Camouflage Effect in Insider Trading**
+  - Jin Ma et al. | [2512.06309v1](http://arxiv.org/abs/2512.06309v1)
+  - <details><summary>Abstract</summary>We consider a Kyle-type model where insider trading takes place among a potentially large population of liquidity traders and is subject to legal penalties. Insiders exploit the liquidity provided by the trading masses to "camouflage" their actions and balance expected wealth with the necessary stealth to avoid detection. Under a diverse spectrum of prosecution schemes, we establish the existence of equilibria for arbitrary population sizes and a unique limiting equilibrium. A convergence analysis determines the scale of insider trading by a stealth index $γ$, revealing that the equilibrium can be closely approximated by a simple limit due to diminished price informativeness. Empirical aspects are derived from two calibration experiments using non-overlapping data sets spanning from 1980 to 2018, which underline the indispensable role of a large population in insider trading models with legal risk, along with important implications for the incidence of stealth trading and the deterrent effect of legal enforcement.</details>
+
 
 ### 📅 2025/11/30
 
@@ -679,11 +686,4 @@ layout: default
 - **Reinforcement Learning Framework for Quantitative Trading**
   - Alhassan S. Yasin et al. | [2411.07585v1](http://arxiv.org/abs/2411.07585v1)
   - <details><summary>Abstract</summary>The inherent volatility and dynamic fluctuations within the financial stock market underscore the necessity for investors to employ a comprehensive and reliable approach that integrates risk management strategies, market trends, and the movement trends of individual securities. By evaluating specific data, investors can make more informed decisions. However, the current body of literature lacks substantial evidence supporting the practical efficacy of reinforcement learning (RL) agents, as many models have only demonstrated success in back testing using historical data. This highlights the urgent need for a more advanced methodology capable of addressing these challenges. There is a significant disconnect in the effective utilization of financial indicators to better understand the potential market trends of individual securities. The disclosure of successful trading strategies is often restricted within financial markets, resulting in a scarcity of widely documented and published strategies leveraging RL. Furthermore, current research frequently overlooks the identification of financial indicators correlated with various market trends and their potential advantages.   This research endeavors to address these complexities by enhancing the ability of RL agents to effectively differentiate between positive and negative buy/sell actions using financial indicators. While we do not address all concerns, this paper provides deeper insights and commentary on the utilization of technical indicators and their benefits within reinforcement learning. This work establishes a foundational framework for further exploration and investigation of more complex scenarios.</details>
-
-
-### 📅 2024/11/09
-
-- **A Random Forest approach to detect and identify Unlawful Insider Trading**
-  - Krishna Neupane et al. | [2411.13564v1](http://arxiv.org/abs/2411.13564v1)
-  - <details><summary>Abstract</summary>According to The Exchange Act, 1934 unlawful insider trading is the abuse of access to privileged corporate information. While a blurred line between "routine" the "opportunistic" insider trading exists, detection of strategies that insiders mold to maneuver fair market prices to their advantage is an uphill battle for hand-engineered approaches. In the context of detailed high-dimensional financial and trade data that are structurally built by multiple covariates, in this study, we explore, implement and provide detailed comparison to the existing study (Deng et al. (2019)) and independently implement automated end-to-end state-of-art methods by integrating principal component analysis to the random forest (PCA-RF) followed by a standalone random forest (RF) with 320 and 3984 randomly selected, semi-manually labeled and normalized transactions from multiple industry. The settings successfully uncover latent structures and detect unlawful insider trading. Among the multiple scenarios, our best-performing model accurately classified 96.43 percent of transactions. Among all transactions the models find 95.47 lawful as lawful and $98.00$ unlawful as unlawful percent. Besides, the model makes very few mistakes in classifying lawful as unlawful by missing only 2.00 percent. In addition to the classification task, model generated Gini Impurity based features ranking, our analysis show ownership and governance related features based on permutation values play important roles. In summary, a simple yet powerful automated end-to-end method relieves labor-intensive activities to redirect resources to enhance rule-making and tracking the uncaptured unlawful insider trading transactions. We emphasize that developed financial and trading features are capable of uncovering fraudulent behaviors.</details>
 
