@@ -2,7 +2,7 @@
 layout: default
 ---
 
-> Updated on 2025/12/15 09:48:08
+> Updated on 2025/12/16 09:45:01
 
 <summary>Table of Contents</summary>
 
@@ -13,6 +13,13 @@ layout: default
 </ol>
 
 ## Trading
+
+### 📅 2025/12/12
+
+- **High-Frequency Analysis of a Trading Game with Transient Price Impact**
+  - Marcel Nutz et al. | [2512.11765v1](http://arxiv.org/abs/2512.11765v1)
+  - <details><summary>Abstract</summary>We study the high-frequency limit of an $n$-trader optimal execution game in discrete time. Traders face transient price impact of Obizhaeva--Wang type in addition to quadratic instantaneous trading costs $θ(ΔX_t)^2$ on each transaction $ΔX_t$. There is a unique Nash equilibrium in which traders choose liquidation strategies minimizing expected execution costs. In the high-frequency limit where the grid of trading dates converges to the continuous interval $[0,T]$, the discrete equilibrium inventories converge at rate $1/N$ to the continuous-time equilibrium of an Obizhaeva--Wang model with additional quadratic costs $\vartheta_0(ΔX_0)^2$ and $\vartheta_T(ΔX_T)^2$ on initial and terminal block trades, where $\vartheta_0=(n-1)/2$ and $\vartheta_T=1/2$. The latter model was introduced by Campbell and Nutz as the limit of continuous-time equilibria with vanishing instantaneous costs. Our results extend and refine previous results of Schied, Strehle, and Zhang for the particular case $n=2$ where $\vartheta_0=\vartheta_T=1/2$. In particular, we show how the coefficients $\vartheta_0=(n-1)/2$ and $\vartheta_T=1/2$ arise endogenously in the high-frequency limit: the initial and terminal block costs of the continuous-time model are identified as the limits of the cumulative discrete instantaneous costs incurred over small neighborhoods of $0$ and $T$, respectively, and these limits are independent of $θ>0$. By contrast, when $θ=0$ the discrete-time equilibrium strategies and costs exhibit persistent oscillations and admit no high-frequency limit, mirroring the non-existence of continuous-time equilibria without boundary block costs. Our results show that two different types of trading frictions -- a fine time discretization and small instantaneous costs in continuous time -- have similar regularizing effects and select a canonical model in the limit.</details>
+
 
 ### 📅 2025/12/06
 
@@ -679,11 +686,4 @@ layout: default
 - **Hybrid Vector Auto Regression and Neural Network Model for Order Flow Imbalance Prediction in High Frequency Trading**
   - Abdul Rahman et al. | [2411.08382v1](http://arxiv.org/abs/2411.08382v1)
   - <details><summary>Abstract</summary>In high frequency trading, accurate prediction of Order Flow Imbalance (OFI) is crucial for understanding market dynamics and maintaining liquidity. This paper introduces a hybrid predictive model that combines Vector Auto Regression (VAR) with a simple feedforward neural network (FNN) to forecast OFI and assess trading intensity. The VAR component captures linear dependencies, while residuals are fed into the FNN to model non-linear patterns, enabling a comprehensive approach to OFI prediction. Additionally, the model calculates the intensity on the Buy or Sell side, providing insights into which side holds greater trading pressure. These insights facilitate the development of trading strategies by identifying periods of high buy or sell intensity. Using both synthetic and real trading data from Binance, we demonstrate that the hybrid model offers significant improvements in predictive accuracy and enhances strategic decision-making based on OFI dynamics. Furthermore, we compare the hybrid models performance with standalone FNN and VAR models, showing that the hybrid approach achieves superior forecasting accuracy across both synthetic and real datasets, making it the most effective model for OFI prediction in high frequency trading.</details>
-
-
-### 📅 2024/11/12
-
-- **Reinforcement Learning Framework for Quantitative Trading**
-  - Alhassan S. Yasin et al. | [2411.07585v1](http://arxiv.org/abs/2411.07585v1)
-  - <details><summary>Abstract</summary>The inherent volatility and dynamic fluctuations within the financial stock market underscore the necessity for investors to employ a comprehensive and reliable approach that integrates risk management strategies, market trends, and the movement trends of individual securities. By evaluating specific data, investors can make more informed decisions. However, the current body of literature lacks substantial evidence supporting the practical efficacy of reinforcement learning (RL) agents, as many models have only demonstrated success in back testing using historical data. This highlights the urgent need for a more advanced methodology capable of addressing these challenges. There is a significant disconnect in the effective utilization of financial indicators to better understand the potential market trends of individual securities. The disclosure of successful trading strategies is often restricted within financial markets, resulting in a scarcity of widely documented and published strategies leveraging RL. Furthermore, current research frequently overlooks the identification of financial indicators correlated with various market trends and their potential advantages.   This research endeavors to address these complexities by enhancing the ability of RL agents to effectively differentiate between positive and negative buy/sell actions using financial indicators. While we do not address all concerns, this paper provides deeper insights and commentary on the utilization of technical indicators and their benefits within reinforcement learning. This work establishes a foundational framework for further exploration and investigation of more complex scenarios.</details>
 
