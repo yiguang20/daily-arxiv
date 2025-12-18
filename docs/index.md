@@ -2,7 +2,7 @@
 layout: default
 ---
 
-> Updated on 2025/12/17 09:40:52
+> Updated on 2025/12/18 09:40:55
 
 <summary>Table of Contents</summary>
 
@@ -13,6 +13,13 @@ layout: default
 </ol>
 
 ## Trading
+
+### 📅 2025/12/16
+
+- **Sources and Nonlinearity of High Volume Return Premium: An Empirical Study on the Differential Effects of Investor Identity versus Trading Intensity (2020-2024)**
+  - Sungwoo Kang | [2512.14134v1](http://arxiv.org/abs/2512.14134v1)
+  - <details><summary>Abstract</summary>This study demonstrates that both investor identity and trading intensity determine the High Volume Return Premium, but intensity effects only emerge when measured correctly. Using Korean market data (2020-2024), we show that institutional buying intensity normalized by market capitalization reveals a perfect monotonic relationship with future returns (Q4: +10.07\%; Q1: -0.05\%), while trading value normalization fails. Retail investors exhibit an inverted pattern, confirming noise trader behavior. This reconciles decades of conflicting evidence: intensity matters profoundly, but requires (1) investor-type conditioning, (2) nonlinear quartile analysis, and (3) conviction-based (market cap) rather than participation-based (trading value) measurement.</details>
+
 
 ### 📅 2025/12/12
 
@@ -679,11 +686,4 @@ layout: default
 - **Calculating Profits and Losses for Algorithmic Trading Strategies: A Short Guide**
   - James B. Glattfelder et al. | [2411.14068v1](http://arxiv.org/abs/2411.14068v1)
   - <details><summary>Abstract</summary>We present a series of equations that track the total realized and unrealized profits and losses at any time, incorporating the spread. The resulting formalism is ideally suited to evaluate the performance of trading model algorithms.</details>
-
-
-### 📅 2024/11/15
-
-- **Optimal portfolio under ratio-type periodic evaluation in stochastic factor models under convex trading constraints**
-  - Wenyuan Wang et al. | [2411.13579v1](http://arxiv.org/abs/2411.13579v1)
-  - <details><summary>Abstract</summary>This paper studies a type of periodic utility maximization problems for portfolio management in incomplete stochastic factor models with convex trading constraints. The portfolio performance is periodically evaluated on the relative ratio of two adjacent wealth levels over an infinite horizon, featuring the dynamic adjustments in portfolio decision according to past achievements. Under power utility, we transform the original infinite horizon optimal control problem into an auxiliary terminal wealth optimization problem under a modified utility function. To cope with the convex trading constraints, we further introduce an auxiliary unconstrained optimization problem in a modified market model and develop the martingale duality approach to establish the existence of the dual minimizer such that the optimal unconstrained wealth process can be obtained using the dual representation. With the help of the duality results in the auxiliary problems, the relationship between the constrained and unconstrained models as well as some fixed point arguments, we finally derive and verify the optimal constrained portfolio process in a periodic manner for the original problem over an infinite horizon.</details>
 
