@@ -2,7 +2,7 @@
 layout: default
 ---
 
-> Updated on 2025/12/19 09:44:17
+> Updated on 2025/12/20 09:39:01
 
 <summary>Table of Contents</summary>
 
@@ -40,6 +40,20 @@ layout: default
 - **Wealth or Stealth? The Camouflage Effect in Insider Trading**
   - Jin Ma et al. | [2512.06309v1](http://arxiv.org/abs/2512.06309v1)
   - <details><summary>Abstract</summary>We consider a Kyle-type model where insider trading takes place among a potentially large population of liquidity traders and is subject to legal penalties. Insiders exploit the liquidity provided by the trading masses to "camouflage" their actions and balance expected wealth with the necessary stealth to avoid detection. Under a diverse spectrum of prosecution schemes, we establish the existence of equilibria for arbitrary population sizes and a unique limiting equilibrium. A convergence analysis determines the scale of insider trading by a stealth index $γ$, revealing that the equilibrium can be closely approximated by a simple limit due to diminished price informativeness. Empirical aspects are derived from two calibration experiments using non-overlapping data sets spanning from 1980 to 2018, which underline the indispensable role of a large population in insider trading models with legal risk, along with important implications for the incidence of stealth trading and the deterrent effect of legal enforcement.</details>
+
+
+### 📅 2025/12/05
+
+- **The Red Queen's Trap: Limits of Deep Evolution in High-Frequency Trading**
+  - Yijia Chen | [2512.15732v1](http://arxiv.org/abs/2512.15732v1)
+  - <details><summary>Abstract</summary>The integration of Deep Reinforcement Learning (DRL) and Evolutionary Computation (EC) is frequently hypothesized to be the "Holy Grail" of algorithmic trading, promising systems that adapt autonomously to non-stationary market regimes. This paper presents a rigorous post-mortem analysis of "Galaxy Empire," a hybrid framework coupling LSTM/Transformer-based perception with a genetic "Time-is-Life" survival mechanism. Deploying a population of 500 autonomous agents in a high-frequency cryptocurrency environment, we observed a catastrophic divergence between training metrics (Validation APY $>300\%$) and live performance (Capital Decay $>70\%$). We deconstruct this failure through a multi-disciplinary lens, identifying three critical failure modes: the overfitting of \textit{Aleatoric Uncertainty} in low-entropy time-series, the \textit{Survivor Bias} inherent in evolutionary selection under high variance, and the mathematical impossibility of overcoming microstructure friction without order-flow data. Our findings provide empirical evidence that increasing model complexity in the absence of information asymmetry exacerbates systemic fragility.</details>
+
+
+### 📅 2025/12/02
+
+- **Hidden Order in Trades Predicts the Size of Price Moves**
+  - Mainak Singha | [2512.15720v1](http://arxiv.org/abs/2512.15720v1)
+  - <details><summary>Abstract</summary>Financial markets exhibit an apparent paradox: while directional price movements remain largely unpredictable--consistent with weak-form efficiency--the magnitude of price changes displays systematic structure. Here we demonstrate that real-time order-flow entropy, computed from a 15-state Markov transition matrix at second resolution, predicts the magnitude of intraday returns without providing directional information. Analysis of 38.5 million SPY trades over 36 trading days reveals that conditioning on entropy below the 5th percentile increases subsequent 5-minute absolute returns by a factor of 2.89 (t = 12.41, p < 0.0001), while directional accuracy remains at 45.0%--statistically indistinguishable from chance (p = 0.12). This decoupling arises from a fundamental symmetry: entropy is invariant under sign permutation, detecting the presence of informed trading without revealing its direction. Walk-forward validation across five non-overlapping test periods confirms out-of-sample predictability, and label-permutation placebo tests yield z = 14.4 against the null. These findings suggest that information-theoretic measures may serve as volatility state variables in market microstructure, though the limited sample (36 days, single instrument) requires extended validation.</details>
 
 
 ### 📅 2025/11/30
@@ -672,18 +686,4 @@ layout: default
 - **Pretrained LLM Adapted with LoRA as a Decision Transformer for Offline RL in Quantitative Trading**
   - Suyeol Yun | [2411.17900v1](http://arxiv.org/abs/2411.17900v1)
   - <details><summary>Abstract</summary>Developing effective quantitative trading strategies using reinforcement learning (RL) is challenging due to the high risks associated with online interaction with live financial markets. Consequently, offline RL, which leverages historical market data without additional exploration, becomes essential. However, existing offline RL methods often struggle to capture the complex temporal dependencies inherent in financial time series and may overfit to historical patterns. To address these challenges, we introduce a Decision Transformer (DT) initialized with pre-trained GPT-2 weights and fine-tuned using Low-Rank Adaptation (LoRA). This architecture leverages the generalization capabilities of pre-trained language models and the efficiency of LoRA to learn effective trading policies from expert trajectories solely from historical data. Our model performs competitively with established offline RL algorithms, including Conservative Q-Learning (CQL), Implicit Q-Learning (IQL), and Behavior Cloning (BC), as well as a baseline Decision Transformer with randomly initialized GPT-2 weights and LoRA. Empirical results demonstrate that our approach effectively learns from expert trajectories and secures superior rewards in certain trading scenarios, highlighting the effectiveness of integrating pre-trained language models and parameter-efficient fine-tuning in offline RL for quantitative trading. Replication code for our experiments is publicly available at https://github.com/syyunn/finrl-dt</details>
-
-
-### 📅 2024/11/23
-
-- **Online High-Frequency Trading Stock Forecasting with Automated Feature Clustering and Radial Basis Function Neural Networks**
-  - Adamantios Ntakaris et al. | [2412.16160v2](http://arxiv.org/abs/2412.16160v2)
-  - <details><summary>Abstract</summary>This study presents an autonomous experimental machine learning protocol for high-frequency trading (HFT) stock price forecasting that involves a dual competitive feature importance mechanism and clustering via shallow neural network topology for fast training. By incorporating the k-means algorithm into the radial basis function neural network (RBFNN), the proposed method addresses the challenges of manual clustering and the reliance on potentially uninformative features. More specifically, our approach involves a dual competitive mechanism for feature importance, combining the mean-decrease impurity (MDI) method and a gradient descent (GD) based feature importance mechanism. This approach, tested on HFT Level 1 order book data for 20 S&P 500 stocks, enhances the forecasting ability of the RBFNN regressor. Our findings suggest that an autonomous approach to feature selection and clustering is crucial, as each stock requires a different input feature space. Overall, by automating the feature selection and clustering processes, we remove the need for manual topological grid search and provide a more efficient way to predict LOB's mid-price.</details>
-
-
-### 📅 2024/11/21
-
-- **Calculating Profits and Losses for Algorithmic Trading Strategies: A Short Guide**
-  - James B. Glattfelder et al. | [2411.14068v1](http://arxiv.org/abs/2411.14068v1)
-  - <details><summary>Abstract</summary>We present a series of equations that track the total realized and unrealized profits and losses at any time, incorporating the spread. The resulting formalism is ideally suited to evaluate the performance of trading model algorithms.</details>
 
