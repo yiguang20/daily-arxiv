@@ -2,7 +2,7 @@
 layout: default
 ---
 
-> Updated on 2025/12/25 09:45:10
+> Updated on 2025/12/26 09:44:34
 
 <summary>Table of Contents</summary>
 
@@ -24,8 +24,8 @@ layout: default
 ### 📅 2025/12/16
 
 - **Sources and Nonlinearity of High Volume Return Premium: An Empirical Study on the Differential Effects of Investor Identity versus Trading Intensity (2020-2024)**
-  - Sungwoo Kang | [2512.14134v1](http://arxiv.org/abs/2512.14134v1)
-  - <details><summary>Abstract</summary>This study demonstrates that both investor identity and trading intensity determine the High Volume Return Premium, but intensity effects only emerge when measured correctly. Using Korean market data (2020-2024), we show that institutional buying intensity normalized by market capitalization reveals a perfect monotonic relationship with future returns (Q4: +10.07\%; Q1: -0.05\%), while trading value normalization fails. Retail investors exhibit an inverted pattern, confirming noise trader behavior. This reconciles decades of conflicting evidence: intensity matters profoundly, but requires (1) investor-type conditioning, (2) nonlinear quartile analysis, and (3) conviction-based (market cap) rather than participation-based (trading value) measurement.</details>
+  - Sungwoo Kang | [2512.14134v2](http://arxiv.org/abs/2512.14134v2)
+  - <details><summary>Abstract</summary>Chae and Kang (2019, \textit{Pacific-Basin Finance Journal}) documented a puzzling Low Volume Return Premium (LVRP) in Korea -- contradicting global High Volume Return Premium (HVRP) evidence. We resolve this puzzle. Using Korean market data (2020-2024), we demonstrate that HVRP exists in Korea but is masked by (1) pooling heterogeneous investor types and (2) using inappropriate intensity normalization. When institutional buying intensity is normalized by market capitalization rather than trading value, a perfect monotonic relationship emerges: highest-conviction institutional buying (Q4) generates +\institutionLedQFourDayPlusFiftyCAR\ cumulative abnormal returns over 50 days, while lowest-intensity trades (Q1) yield modest returns (+\institutionLedQOneDayPlusFiftyCAR). Retail investors exhibit a flat pattern -- their trading generates near-zero returns regardless of conviction level -- confirming the pure noise trader hypothesis. During the Donghak Ant Movement (2020-2021), however, coordinated retail investors temporarily transformed from noise traders to liquidity providers, generating returns comparable to institutional trading. Our findings reconcile conflicting international evidence and demonstrate that detecting informed trading signals requires investor-type decomposition, nonlinear quartile analysis, and conviction-based (market cap) rather than participation-based (trading value) measurement.</details>
 
 
 ### 📅 2025/12/12
