@@ -2,7 +2,7 @@
 layout: default
 ---
 
-> Updated on 2025/12/30 09:45:34
+> Updated on 2025/12/31 09:46:15
 
 <summary>Table of Contents</summary>
 
@@ -38,7 +38,7 @@ layout: default
 ### 📅 2025/12/11
 
 - **Not All Factors Crowd Equally: Modeling, Measuring, and Trading on Alpha Decay**
-  - Chorok Lee | [2512.11913v1](http://arxiv.org/abs/2512.11913v1)
+  - Chorok Lee | [2512.11913v2](http://arxiv.org/abs/2512.11913v2)
   - <details><summary>Abstract</summary>We derive a specific functional form for factor alpha decay -- hyperbolic decay alpha(t) = K/(1+lambda*t) -- from a game-theoretic equilibrium model, and test it against linear and exponential alternatives. Using eight Fama-French factors (1963--2024), we find: (1) Hyperbolic decay fits mechanical factors. Momentum exhibits clear hyperbolic decay (R^2 = 0.65), outperforming linear (0.51) and exponential (0.61) baselines -- validating the equilibrium foundation. (2) Not all factors crowd equally. Mechanical factors (momentum, reversal) fit the model; judgment-based factors (value, quality) do not -- consistent with a signal-ambiguity taxonomy paralleling Hua and Sun's "barriers to entry." (3) Crowding accelerated post-2015. Out-of-sample, the model over-predicts remaining alpha (0.30 vs. 0.15), correlating with factor ETF growth (rho = -0.63). (4) Average returns are efficiently priced. Crowding-based factor selection fails to generate alpha (Sharpe: 0.22 vs. 0.39 factor momentum benchmark). (5) Crowding predicts tail risk. Out-of-sample (2001--2024), crowded reversal factors show 1.7--1.8x higher crash probability (bottom decile returns), while crowded momentum shows lower crash risk (0.38x, p = 0.006). Our findings extend equilibrium crowding models (DeMiguel et al.) to temporal dynamics and show that crowding predicts crashes, not means -- useful for risk management, not alpha generation.</details>
 
 
