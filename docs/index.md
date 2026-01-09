@@ -2,7 +2,7 @@
 layout: default
 ---
 
-> Updated on 2026/01/08 09:47:52
+> Updated on 2026/01/09 09:48:02
 
 <summary>Table of Contents</summary>
 
@@ -13,6 +13,13 @@ layout: default
 </ol>
 
 ## Trading
+
+### 📅 2026/01/07
+
+- **Trade-R1: Bridging Verifiable Rewards to Stochastic Environments via Process-Level Reasoning Verification**
+  - Rui Sun et al. | [2601.03948v1](http://arxiv.org/abs/2601.03948v1)
+  - <details><summary>Abstract</summary>Reinforcement Learning (RL) has enabled Large Language Models (LLMs) to achieve remarkable reasoning in domains like mathematics and coding, where verifiable rewards provide clear signals. However, extending this paradigm to financial decision is challenged by the market's stochastic nature: rewards are verifiable but inherently noisy, causing standard RL to degenerate into reward hacking. To address this, we propose Trade-R1, a model training framework that bridges verifiable rewards to stochastic environments via process-level reasoning verification. Our key innovation is a verification method that transforms the problem of evaluating reasoning over lengthy financial documents into a structured Retrieval-Augmented Generation (RAG) task. We construct a triangular consistency metric, assessing pairwise alignment between retrieved evidence, reasoning chains, and decisions to serve as a validity filter for noisy market returns. We explore two reward integration strategies: Fixed-effect Semantic Reward (FSR) for stable alignment signals, and Dynamic-effect Semantic Reward (DSR) for coupled magnitude optimization. Experiments on different country asset selection demonstrate that our paradigm reduces reward hacking, with DSR achieving superior cross-market generalization while maintaining the highest reasoning consistency.</details>
+
 
 ### 📅 2026/01/06
 
@@ -679,11 +686,4 @@ layout: default
 - **NEAT Algorithm-based Stock Trading Strategy with Multiple Technical Indicators Resonance**
   - Li-Chun Huang | [2501.14736v1](http://arxiv.org/abs/2501.14736v1)
   - <details><summary>Abstract</summary>In this study, we applied the NEAT (NeuroEvolution of Augmenting Topologies) algorithm to stock trading using multiple technical indicators. Our approach focused on maximizing earning, avoiding risk, and outperforming the Buy & Hold strategy. We used progressive training data and a multi-objective fitness function to guide the evolution of the population towards these objectives. The results of our study showed that the NEAT model achieved similar returns to the Buy & Hold strategy, but with lower risk exposure and greater stability. We also identified some challenges in the training process, including the presence of a large number of unused nodes and connections in the model architecture. In future work, it may be worthwhile to explore ways to improve the NEAT algorithm and apply it to shorter interval data in order to assess the potential impact on performance.</details>
-
-
-### 📅 2024/12/06
-
-- **Smart leverage? Rethinking the role of Leveraged Exchange Traded Funds in constructing portfolios to beat a benchmark**
-  - Pieter van Staden et al. | [2412.05431v2](http://arxiv.org/abs/2412.05431v2)
-  - <details><summary>Abstract</summary>Leveraged Exchange Traded Funds (LETFs), while extremely controversial in the literature, remain stubbornly popular with both institutional and retail investors in practice. While the criticisms of LETFs are certainly valid, we argue that their potential has been underestimated in the literature due to the use of very simple investment strategies involving LETFs. In this paper, we systematically investigate the potential of including a broad stock market index LETF in long-term, dynamically-optimal investment strategies designed to maximize the outperformance over standard investment benchmarks in the sense of the information ratio (IR). Our results exploit the observation that positions in a LETF deliver call-like payoffs, so that the addition of a LETF to a portfolio can be a convenient way to add inexpensive leverage while providing downside protection. Under stylized assumptions, we present and analyze closed-form IR-optimal investment strategies using either a LETF or standard/vanilla ETF (VETF) on the same equity index, which provides the necessary intuition for the potential and benefits of LETFs. In more realistic settings, we use a neural network-based approach to determine the IR-optimal strategies, trained on bootstrapped historical data. We find that IR-optimal strategies with a broad stock market LETF are not only more likely to outperform the benchmark than IR-optimal strategies derived using the corresponding VETF, but are able to achieve partial stochastic dominance over the benchmark and VETF-based strategies in terms of terminal wealth.</details>
 
