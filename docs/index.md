@@ -2,7 +2,7 @@
 layout: default
 ---
 
-> Updated on 2026/01/09 09:48:02
+> Updated on 2026/01/11 09:56:34
 
 <summary>Table of Contents</summary>
 
@@ -14,10 +14,17 @@ layout: default
 
 ## Trading
 
+### 📅 2026/01/08
+
+- **Trading Electrons: Predicting DART Spread Spikes in ISO Electricity Markets**
+  - Emma Hubert et al. | [2601.05085v1](http://arxiv.org/abs/2601.05085v1)
+  - <details><summary>Abstract</summary>We study the problem of forecasting and optimally trading day-ahead versus real-time (DART) price spreads in U.S. wholesale electricity markets. Building on the framework of Galarneau-Vincent et al., we extend spike prediction from a single zone to a multi-zone setting and treat both positive and negative DART spikes within a unified statistical model. To translate directional signals into economically meaningful positions, we develop a structural and market-consistent price impact model based on day-ahead bid stacks. This yields closed-form expressions for the optimal vector of zonal INC/DEC quantities, capturing asymmetric buy/sell impacts and cross-zone congestion effects. When applied to NYISO, the resulting impact-aware strategy significantly improves the risk-return profile relative to unit-size trading and highlights substantial heterogeneity across markets and seasons.</details>
+
+
 ### 📅 2026/01/07
 
 - **Trade-R1: Bridging Verifiable Rewards to Stochastic Environments via Process-Level Reasoning Verification**
-  - Rui Sun et al. | [2601.03948v1](http://arxiv.org/abs/2601.03948v1)
+  - Rui Sun et al. | [2601.03948v2](http://arxiv.org/abs/2601.03948v2)
   - <details><summary>Abstract</summary>Reinforcement Learning (RL) has enabled Large Language Models (LLMs) to achieve remarkable reasoning in domains like mathematics and coding, where verifiable rewards provide clear signals. However, extending this paradigm to financial decision is challenged by the market's stochastic nature: rewards are verifiable but inherently noisy, causing standard RL to degenerate into reward hacking. To address this, we propose Trade-R1, a model training framework that bridges verifiable rewards to stochastic environments via process-level reasoning verification. Our key innovation is a verification method that transforms the problem of evaluating reasoning over lengthy financial documents into a structured Retrieval-Augmented Generation (RAG) task. We construct a triangular consistency metric, assessing pairwise alignment between retrieved evidence, reasoning chains, and decisions to serve as a validity filter for noisy market returns. We explore two reward integration strategies: Fixed-effect Semantic Reward (FSR) for stable alignment signals, and Dynamic-effect Semantic Reward (DSR) for coupled magnitude optimization. Experiments on different country asset selection demonstrate that our paradigm reduces reward hacking, with DSR achieving superior cross-market generalization while maintaining the highest reasoning consistency.</details>
 
 
@@ -174,7 +181,7 @@ layout: default
 ### 📅 2025/10/10
 
 - **ATLAS: Adaptive Trading with LLM AgentS Through Dynamic Prompt Optimization and Multi-Agent Coordination**
-  - Charidimos Papadakis et al. | [2510.15949v1](http://arxiv.org/abs/2510.15949v1)
+  - Charidimos Papadakis et al. | [2510.15949v2](http://arxiv.org/abs/2510.15949v2)
   - <details><summary>Abstract</summary>Large language models show promise for financial decision-making, yet deploying them as autonomous trading agents raises fundamental challenges: how to adapt instructions when rewards arrive late and obscured by market noise, how to synthesize heterogeneous information streams into coherent decisions, and how to bridge the gap between model outputs and executable market actions. We present ATLAS (Adaptive Trading with LLM AgentS), a unified multi-agent framework that integrates structured information from markets, news, and corporate fundamentals to support robust trading decisions. Within ATLAS, the central trading agent operates in an order-aware action space, ensuring that outputs correspond to executable market orders rather than abstract signals. The agent can incorporate feedback while trading using Adaptive-OPRO, a novel prompt-optimization technique that dynamically adapts the prompt by incorporating real-time, stochastic feedback, leading to increasing performance over time. Across regime-specific equity studies and multiple LLM families, Adaptive-OPRO consistently outperforms fixed prompts, while reflection-based feedback fails to provide systematic gains.</details>
 
 
@@ -679,11 +686,4 @@ layout: default
 - **A Deep Learning Approach for Trading Factor Residuals**
   - Wo Long et al. | [2412.11432v2](http://arxiv.org/abs/2412.11432v2)
   - <details><summary>Abstract</summary>The residuals in factor models prevalent in asset pricing presents opportunities to exploit the mis-pricing from unexplained cross-sectional variation for arbitrage. We performed a replication of the methodology of Guijarro-Ordonez et al. (2019) (G-P-Z) on Deep Learning Statistical Arbitrage (DLSA), originally applied to U.S. equity data from 1998 to 2016, using a more recent out-of-sample period from 2016 to 2024. Adhering strictly to point-in-time (PIT) principles and ensuring no information leakage, we follow the same data pre-processing, factor modeling, and deep learning architectures (CNNs and Transformers) as outlined by G-P-Z. Our replication yields unusually strong performance metrics in certain tests, with out-of-sample Sharpe ratios occasionally exceeding 10. While such results are intriguing, they may indicate model overfitting, highly specific market conditions, or insufficient accounting for transaction costs and market impact. Further examination and robustness checks are needed to align these findings with the more modest improvements reported in the original study. (This work was conducted as the final project for IEOR 4576: Data-Driven Methods in Finance at Columbia University.)</details>
-
-
-### 📅 2024/12/11
-
-- **NEAT Algorithm-based Stock Trading Strategy with Multiple Technical Indicators Resonance**
-  - Li-Chun Huang | [2501.14736v1](http://arxiv.org/abs/2501.14736v1)
-  - <details><summary>Abstract</summary>In this study, we applied the NEAT (NeuroEvolution of Augmenting Topologies) algorithm to stock trading using multiple technical indicators. Our approach focused on maximizing earning, avoiding risk, and outperforming the Buy & Hold strategy. We used progressive training data and a multi-objective fitness function to guide the evolution of the population towards these objectives. The results of our study showed that the NEAT model achieved similar returns to the Buy & Hold strategy, but with lower risk exposure and greater stability. We also identified some challenges in the training process, including the presence of a large number of unused nodes and connections in the model architecture. In future work, it may be worthwhile to explore ways to improve the NEAT algorithm and apply it to shorter interval data in order to assess the potential impact on performance.</details>
 
