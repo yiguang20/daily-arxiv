@@ -2,7 +2,7 @@
 layout: default
 ---
 
-> Updated on 2026/01/13 09:44:45
+> Updated on 2026/01/14 09:51:37
 
 <summary>Table of Contents</summary>
 
@@ -13,6 +13,13 @@ layout: default
 </ol>
 
 ## Trading
+
+### 📅 2026/01/10
+
+- **Cross-Market Alpha: Testing Short-Term Trading Factors in the U.S. Market via Double-Selection LASSO**
+  - Jin Du et al. | [2601.06499v1](http://arxiv.org/abs/2601.06499v1)
+  - <details><summary>Abstract</summary>Current asset pricing research exhibits a significant gap: a lack of sufficient cross-market validation regarding short-term trading-based factors. Against this backdrop, the development of the Chinese A-share market which is characterized by its retail-investor dominance, policy sensitivity, and high-frequency active trading -- has given rise to specific short-term trading-based factors. This study systematically examines the universality of factors from the Alpha191 library in the U.S. market, addressing the challenge of high-dimensional factor screening through the double-selection LASSO algorithm an established method for cross-market, high-dimensional research. After controlling for 151 fundamental factors from the U.S. equity factor zoo, 17 Alpha191 factors selected by this procedure exhibit significant incremental explanatory power for the cross-section of U.S. stock returns at the 5% level. Together these findings demonstrate that short-term trading-based factors, originating from the unique structure of the Chinese A-share market, provide incremental information not captured by existing mainstream pricing models, thereby enhancing the explanation of cross-sectional return differences.</details>
+
 
 ### 📅 2026/01/08
 
@@ -679,11 +686,4 @@ layout: default
 - **An Application of the Ornstein-Uhlenbeck Process to Pairs Trading**
   - Jirat Suchato et al. | [2412.12458v1](http://arxiv.org/abs/2412.12458v1)
   - <details><summary>Abstract</summary>We conduct a preliminary analysis of a pairs trading strategy using the Ornstein-Uhlenbeck (OU) process to model stock price spreads. We compare this approach to a naive pairs trading strategy that uses a rolling window to calculate mean and standard deviation parameters. Our findings suggest that the OU model captures signals and trends effectively but underperforms the naive model on a risk-return basis, likely due to non-stationary pairs and parameter tuning limitations.</details>
-
-
-### 📅 2024/12/16
-
-- **A Deep Learning Approach for Trading Factor Residuals**
-  - Wo Long et al. | [2412.11432v2](http://arxiv.org/abs/2412.11432v2)
-  - <details><summary>Abstract</summary>The residuals in factor models prevalent in asset pricing presents opportunities to exploit the mis-pricing from unexplained cross-sectional variation for arbitrage. We performed a replication of the methodology of Guijarro-Ordonez et al. (2019) (G-P-Z) on Deep Learning Statistical Arbitrage (DLSA), originally applied to U.S. equity data from 1998 to 2016, using a more recent out-of-sample period from 2016 to 2024. Adhering strictly to point-in-time (PIT) principles and ensuring no information leakage, we follow the same data pre-processing, factor modeling, and deep learning architectures (CNNs and Transformers) as outlined by G-P-Z. Our replication yields unusually strong performance metrics in certain tests, with out-of-sample Sharpe ratios occasionally exceeding 10. While such results are intriguing, they may indicate model overfitting, highly specific market conditions, or insufficient accounting for transaction costs and market impact. Further examination and robustness checks are needed to align these findings with the more modest improvements reported in the original study. (This work was conducted as the final project for IEOR 4576: Data-Driven Methods in Finance at Columbia University.)</details>
 
