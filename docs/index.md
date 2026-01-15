@@ -2,7 +2,7 @@
 layout: default
 ---
 
-> Updated on 2026/01/14 09:51:37
+> Updated on 2026/01/15 09:46:57
 
 <summary>Table of Contents</summary>
 
@@ -14,11 +14,25 @@ layout: default
 
 ## Trading
 
+### 📅 2026/01/13
+
+- **Resisting Manipulative Bots in Memecoin Copy Trading: A Multi-Agent Approach with Chain-of-Thought Reasoning**
+  - Yichen Luo et al. | [2601.08641v1](http://arxiv.org/abs/2601.08641v1)
+  - <details><summary>Abstract</summary>The launch of \$Trump coin ignited a wave in meme coin investment. Copy trading, as a strategy-agnostic approach that eliminates the need for deep trading knowledge, quickly gains widespread popularity in the meme coin market. However, copy trading is not a guarantee of profitability due to the prevalence of manipulative bots, the uncertainty of the followed wallets' future performance, and the lag in trade execution. Recently, large language models (LLMs) have shown promise in financial applications by effectively understanding multi-modal data and producing explainable decisions. However, a single LLM struggles with complex, multi-faceted tasks such as asset allocation. These challenges are even more pronounced in cryptocurrency markets, where LLMs often lack sufficient domain-specific knowledge in their training data.   To address these challenges, we propose an explainable multi-agent system for meme coin copy trading. Inspired by the structure of an asset management team, our system decomposes the complex task into subtasks and coordinates specialized agents to solve them collaboratively. Employing few-shot chain-of-though (CoT) prompting, each agent acquires professional meme coin trading knowledge, interprets multi-modal data, and generates explainable decisions. Using a dataset of 1,000 meme coin projects' transaction data, our empirical evaluation shows that the proposed multi-agent system outperforms both traditional machine learning models and single LLMs, achieving 73% and 70% precision in identifying high-quality meme coin projects and key opinion leader (KOL) wallets, respectively. The selected KOLs collectively generated a total profit of \$500,000 across these projects.</details>
+
+
 ### 📅 2026/01/10
 
 - **Cross-Market Alpha: Testing Short-Term Trading Factors in the U.S. Market via Double-Selection LASSO**
   - Jin Du et al. | [2601.06499v1](http://arxiv.org/abs/2601.06499v1)
   - <details><summary>Abstract</summary>Current asset pricing research exhibits a significant gap: a lack of sufficient cross-market validation regarding short-term trading-based factors. Against this backdrop, the development of the Chinese A-share market which is characterized by its retail-investor dominance, policy sensitivity, and high-frequency active trading -- has given rise to specific short-term trading-based factors. This study systematically examines the universality of factors from the Alpha191 library in the U.S. market, addressing the challenge of high-dimensional factor screening through the double-selection LASSO algorithm an established method for cross-market, high-dimensional research. After controlling for 151 fundamental factors from the U.S. equity factor zoo, 17 Alpha191 factors selected by this procedure exhibit significant incremental explanatory power for the cross-section of U.S. stock returns at the 5% level. Together these findings demonstrate that short-term trading-based factors, originating from the unique structure of the Chinese A-share market, provide incremental information not captured by existing mainstream pricing models, thereby enhancing the explanation of cross-sectional return differences.</details>
+
+
+### 📅 2026/01/09
+
+- **Utility-Weighted Forecasting and Calibration for Risk-Adjusted Decisions under Trading Frictions**
+  - Craig S Wright | [2601.07852v1](http://arxiv.org/abs/2601.07852v1)
+  - <details><summary>Abstract</summary>Forecasting accuracy is routinely optimised in financial prediction tasks even though investment and risk-management decisions are executed under transaction costs, market impact, capacity limits, and binding risk constraints. This paper treats forecasting as an econometric input to a constrained decision problem. A predictive distribution induces a decision rule through a utility objective combined with an explicit friction operator consisting of both a cost functional and a feasible-set constraint system. The econometric target becomes minimisation of expected decision loss net of costs rather than minimisation of prediction error. The paper develops a utility-weighted calibration criterion aligned to the decision loss and establishes sufficient conditions under which calibrated predictive distributions weakly dominate uncalibrated alternatives. An empirical study using a pre-committed nested walk-forward protocol on liquid equity index futures confirms the theory: the proposed utility-weighted calibration reduces realised decision loss by over 30\% relative to an uncalibrated baseline ($t$-stat -30.31) for loss differential and improves the Sharpe ratio from -3.62 to -2.29 during a drawdown regime. The mechanism is identified as a structural reduction in the frequency of binding constraints (from 16.0\% to 5.1\%), preventing the "corner solution" failures that characterize overconfident forecasts in high-friction environments.</details>
 
 
 ### 📅 2026/01/08
@@ -672,18 +686,4 @@ layout: default
 - **Risk-Adjusted Performance of Random Forest Models in High-Frequency Trading**
   - Akash Deep et al. | [2412.15448v2](http://arxiv.org/abs/2412.15448v2)
   - <details><summary>Abstract</summary>Because of the theoretical challenges posed by the Efficient Market Hypothesis to technical analysis, the effectiveness of technical indicators in high-frequency trading remains inadequately explored, particularly at the minute-level frequency, where effects of the microstructure of the market dominate. This study evaluates the integration of traditional technical indicators with random forest regression models using minute-level SPY data, analyzing 13 distinct model configurations. Our empirical results reveal a stark contrast between in-sample and out-of-sample performance, with $R^2$ values deteriorating from 0.749--0.812 during training to negative values in testing. A feature importance analysis demonstrates that primary price-based features dominate the predictions made by the model, accounting for over 60% of the importance, while established technical indicators, such as RSI and Bollinger Bands, account for only 14%--15%. Although the indicator-enhanced models achieved superior risk-adjusted metrics, with Rachev ratios between 0.919 and 0.961, they consistently underperformed a simple buy-and-hold strategy, generating returns ranging from -2.4% to -3.9%. These findings challenge conventional assumptions about the usefulness of technical indicators in algorithmic trading, suggesting that in high-frequency contexts, they may be more relevant to risk management rather than to predicting returns. For practitioners and researchers, our findings indicate that successful high-frequency trading strategies should focus on adaptive feature selection and regime-specific modeling rather than relying on traditional technical indicators, as well as indicating the critical importance of robust out-of-sample testing in the development of a model.</details>
-
-
-### 📅 2024/12/18
-
-- **Comparative Statics of Trading Boundary in Finite Horizon Portfolio Selection with Proportional Transaction Costs**
-  - Jintao Li et al. | [2412.13669v1](http://arxiv.org/abs/2412.13669v1)
-  - <details><summary>Abstract</summary>We consider the Merton's problem with proportional transaction costs. It is well-known that the optimal investment strategy is characterized by two trading boundaries, i.e., the buy boundary and the sell boundary, between which is the no-trading region. We study how the two trading boundaries vary with transaction costs. We reveal that the cost-adjusted trading boundaries are monotone in transaction costs. Our result indicates that (i) the Merton line must lie between two cost-adjusted trading boundaries; (ii) when the Merton line is positive, the buy boundary and the sell boundary are monotone in transaction costs and the Merton line lies in the no-trading region as a result.</details>
-
-
-### 📅 2024/12/17
-
-- **An Application of the Ornstein-Uhlenbeck Process to Pairs Trading**
-  - Jirat Suchato et al. | [2412.12458v1](http://arxiv.org/abs/2412.12458v1)
-  - <details><summary>Abstract</summary>We conduct a preliminary analysis of a pairs trading strategy using the Ornstein-Uhlenbeck (OU) process to model stock price spreads. We compare this approach to a naive pairs trading strategy that uses a rolling window to calculate mean and standard deviation parameters. Our findings suggest that the OU model captures signals and trends effectively but underperforms the naive model on a risk-return basis, likely due to non-stationary pairs and parameter tuning limitations.</details>
 
