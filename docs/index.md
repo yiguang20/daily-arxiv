@@ -2,7 +2,7 @@
 layout: default
 ---
 
-> Updated on 2026/01/21 09:51:28
+> Updated on 2026/01/22 09:51:23
 
 <summary>Table of Contents</summary>
 
@@ -644,8 +644,8 @@ layout: default
 ### 📅 2024/12/30
 
 - **Strategic Learning and Trading in Broker-Mediated Markets**
-  - Alif Aqsha et al. | [2412.20847v1](http://arxiv.org/abs/2412.20847v1)
-  - <details><summary>Abstract</summary>We study strategic interactions in a broker-mediated market. A broker provides liquidity to an informed trader and to noise traders while managing inventory in the lit market. The broker and the informed trader maximise their trading performance while filtering each other's private information; the trader estimates the broker's trading activity in the lit market while the broker estimates the informed trader's private signal. Brokers hold a strategic advantage over traders who rely solely on prices to filter information. We find that information leakage in the client's trading flow yields an economic value to the broker that is comparable to transaction costs; she speculates profitably and mitigates risk effectively, which, in turn, adversely impacts the informed trader's performance. In contrast, low signal-to-noise sources, such as prices, result in the broker's trading performance being indistinguishable from that of a naive strategy that internalises noise flow, externalises informed flow, and offloads inventory at a constant rate.</details>
+  - Alif Aqsha et al. | [2412.20847v2](http://arxiv.org/abs/2412.20847v2)
+  - <details><summary>Abstract</summary>We study strategic interactions in a broker-mediated market in which agents learn and exploit each other's private information. A broker provides liquidity to an informed trader and to noise traders while managing inventory in a lit market. The informed trader infers the broker's trading activity in the lit market, while the broker estimates the trader's private signal. Information leakage in the client's trading flow generates economic value for the broker that is comparable in magnitude to transaction costs: the broker can speculate profitably and manage risk more effectively, which in turn adversely affects the informed trader's performance. Brokers therefore hold a strategic advantage over traders who rely solely on prices to filter information. When the broker only relies on prices rather than client trading flow to infer information, their trading performance becomes indistinguishable from the performance of a naive strategy that internalises noise flow, externalises informed flow, and offloads inventory at a constant rate.</details>
 
 
 ### 📅 2024/12/28
