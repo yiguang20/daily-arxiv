@@ -2,7 +2,7 @@
 layout: default
 ---
 
-> Updated on 2026/01/26 09:57:51
+> Updated on 2026/01/27 09:54:30
 
 <summary>Table of Contents</summary>
 
@@ -13,6 +13,13 @@ layout: default
 </ol>
 
 ## Trading
+
+### 📅 2026/01/19
+
+- **A Learnable Wavelet Transformer for Long-Short Equity Trading and Risk-Adjusted Return Optimization**
+  - Shuozhe Li et al. | [2601.13435v1](http://arxiv.org/abs/2601.13435v1)
+  - <details><summary>Abstract</summary>Learning profitable intraday trading policies from financial time series is challenging due to heavy noise, non-stationarity, and strong cross-sectional dependence among related assets. We propose \emph{WaveLSFormer}, a learnable wavelet-based long-short Transformer that jointly performs multi-scale decomposition and return-oriented decision learning. Specifically, a learnable wavelet front-end generates low-/high-frequency components via an end-to-end trained filter bank, guided by spectral regularizers that encourage stable and well-separated frequency bands. To fuse multi-scale information, we introduce a low-guided high-frequency injection (LGHI) module that refines low-frequency representations with high-frequency cues while controlling training stability. The model outputs a portfolio of long/short positions that is rescaled to satisfy a fixed risk budget, and is optimized directly with a trading objective and risk-aware regularization. Extensive experiments on five years of hourly data across six industry groups, evaluated over ten random seeds, demonstrate that WaveLSFormer consistently outperforms MLP, LSTM and Transformer backbones, with and without fixed discrete wavelet front-ends. On average in all industries, WaveLSFormer achieves a cumulative overall strategy return of $0.607 \pm 0.045$ and a Sharpe ratio of $2.157 \pm 0.166$, substantially improving both profitability and risk-adjusted returns over the strongest baselines.</details>
+
 
 ### 📅 2026/01/13
 
@@ -679,11 +686,4 @@ layout: default
 - **A Limit Order Book Model for High Frequency Trading with Rough Volatility**
   - Yun Chen-Shue et al. | [2412.16850v1](http://arxiv.org/abs/2412.16850v1)
   - <details><summary>Abstract</summary>We introduce a model for limit order book of a certain security with two main features: First, both the limit orders and market orders for the given asset are allowed to appear and interact with each other. Second, the high frequency trading activities are allowed and described by the scaling limit of nearly-unstable multi-dimensional Hawkes processes with power law decay. The model has been derived as a stochastic partial differential equation (SPDE, for short), under certain intuitive identifications. Its diffusion coefficient is determined by a Volterra integral equation driven by a Hawkes process, whose Hurst exponent is less than 1/2 (so that the relevant process is negatively correlated). As a result, the volatility path of the SPDE is rougher than that driven by a (standard) Brownian motion. The well-posedness follows from a result in literature. Hence, a foundation is laid down for further studies in this direction.</details>
-
-
-### 📅 2024/12/19
-
-- **Risk-Adjusted Performance of Random Forest Models in High-Frequency Trading**
-  - Akash Deep et al. | [2412.15448v2](http://arxiv.org/abs/2412.15448v2)
-  - <details><summary>Abstract</summary>Because of the theoretical challenges posed by the Efficient Market Hypothesis to technical analysis, the effectiveness of technical indicators in high-frequency trading remains inadequately explored, particularly at the minute-level frequency, where effects of the microstructure of the market dominate. This study evaluates the integration of traditional technical indicators with random forest regression models using minute-level SPY data, analyzing 13 distinct model configurations. Our empirical results reveal a stark contrast between in-sample and out-of-sample performance, with $R^2$ values deteriorating from 0.749--0.812 during training to negative values in testing. A feature importance analysis demonstrates that primary price-based features dominate the predictions made by the model, accounting for over 60% of the importance, while established technical indicators, such as RSI and Bollinger Bands, account for only 14%--15%. Although the indicator-enhanced models achieved superior risk-adjusted metrics, with Rachev ratios between 0.919 and 0.961, they consistently underperformed a simple buy-and-hold strategy, generating returns ranging from -2.4% to -3.9%. These findings challenge conventional assumptions about the usefulness of technical indicators in algorithmic trading, suggesting that in high-frequency contexts, they may be more relevant to risk management rather than to predicting returns. For practitioners and researchers, our findings indicate that successful high-frequency trading strategies should focus on adaptive feature selection and regime-specific modeling rather than relying on traditional technical indicators, as well as indicating the critical importance of robust out-of-sample testing in the development of a model.</details>
 
