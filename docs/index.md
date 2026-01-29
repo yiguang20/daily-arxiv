@@ -2,7 +2,7 @@
 layout: default
 ---
 
-> Updated on 2026/01/28 09:50:34
+> Updated on 2026/01/29 10:04:18
 
 <summary>Table of Contents</summary>
 
@@ -13,6 +13,13 @@ layout: default
 </ol>
 
 ## Trading
+
+### 📅 2026/01/27
+
+- **Generating Alpha: A Hybrid AI-Driven Trading System Integrating Technical Analysis, Machine Learning and Financial Sentiment for Regime-Adaptive Equity Strategies**
+  - Varun Narayan Kannan Pillai et al. | [2601.19504v1](http://arxiv.org/abs/2601.19504v1)
+  - <details><summary>Abstract</summary>The intricate behavior patterns of financial markets are influenced by fundamental, technical, and psychological factors. During times of high volatility and regime shifts causes many traditional strategies like trend-following or mean-reversion to fail. This paper proposes a hybrid AI-based trading strategy that combines (1) trend-following and directional momentum capture via EMA and MACD, (2) detection of price normalization through mean-reversion using RSI and Bollinger Bands, (3) market psychological interpretation through sentiment analysis using FinBERT, (4) signal generation through machine learning using XGBoost and (5)dynamically adjusting exposure with market regime filtering based on volatility and return environments. The system achieved a final portfolio value of $235,492.83, yielding a return of 135.49% on initial investment over a period of 24 months. The hybrid model outperformed major benchmark indexes like S&P 500 and NASDAQ-100 over the same period showing strong flexibility and lower downside risk with superior profits validating the use of multi-modal AI in algorithmic trading.</details>
+
 
 ### 📅 2026/01/19
 
@@ -408,9 +415,9 @@ layout: default
 
 ### 📅 2025/07/08
 
-- **Reinforcement Learning for Trade Execution with Market Impact**
-  - Patrick Cheridito et al. | [2507.06345v1](http://arxiv.org/abs/2507.06345v1)
-  - <details><summary>Abstract</summary>In this paper, we introduce a novel reinforcement learning framework for optimal trade execution in a limit order book. We formulate the trade execution problem as a dynamic allocation task whose objective is the optimal placement of market and limit orders to maximize expected revenue. By employing multivariate logistic-normal distributions to model random allocations, the framework enables efficient training of the reinforcement learning algorithm. Numerical experiments show that the proposed method outperforms traditional benchmark strategies in simulated limit order book environments featuring noise traders submitting random orders, tactical traders responding to order book imbalances, and a strategic trader seeking to acquire or liquidate an asset position.</details>
+- **Reinforcement Learning for Trade Execution with Market and Limit Orders**
+  - Patrick Cheridito et al. | [2507.06345v2](http://arxiv.org/abs/2507.06345v2)
+  - <details><summary>Abstract</summary>In this paper, we introduce a novel reinforcement learning framework for optimal trade execution in a limit order book. We formulate the trade execution problem as a dynamic allocation task whose objective is the optimal placement of market and limit orders to maximize expected revenue. By modeling market and limit order allocations with multivariate logistic-normal distributions, the framework enables efficient training of the reinforcement learning algorithm. Numerical experiments show that the proposed method outperforms traditional benchmark strategies in simulated limit order book environments featuring noise traders submitting random orders, tactical traders responding to order book imbalances, and a strategic trader seeking to acquire or liquidate an asset position.</details>
 
 
 ### 📅 2025/06/26
@@ -679,11 +686,4 @@ layout: default
 - **Sentiment trading with large language models**
   - Kemal Kirtac et al. | [2412.19245v1](http://arxiv.org/abs/2412.19245v1)
   - <details><summary>Abstract</summary>We investigate the efficacy of large language models (LLMs) in sentiment analysis of U.S. financial news and their potential in predicting stock market returns. We analyze a dataset comprising 965,375 news articles that span from January 1, 2010, to June 30, 2023; we focus on the performance of various LLMs, including BERT, OPT, FINBERT, and the traditional Loughran-McDonald dictionary model, which has been a dominant methodology in the finance literature. The study documents a significant association between LLM scores and subsequent daily stock returns. Specifically, OPT, which is a GPT-3 based LLM, shows the highest accuracy in sentiment prediction with an accuracy of 74.4%, slightly ahead of BERT (72.5%) and FINBERT (72.2%). In contrast, the Loughran-McDonald dictionary model demonstrates considerably lower effectiveness with only 50.1% accuracy. Regression analyses highlight a robust positive impact of OPT model scores on next-day stock returns, with coefficients of 0.274 and 0.254 in different model specifications. BERT and FINBERT also exhibit predictive relevance, though to a lesser extent. Notably, we do not observe a significant relationship between the Loughran-McDonald dictionary model scores and stock returns, challenging the efficacy of this traditional method in the current financial context. In portfolio performance, the long-short OPT strategy excels with a Sharpe ratio of 3.05, compared to 2.11 for BERT and 2.07 for FINBERT long-short strategies. Strategies based on the Loughran-McDonald dictionary yield the lowest Sharpe ratio of 1.23. Our findings emphasize the superior performance of advanced LLMs, especially OPT, in financial market prediction and portfolio management, marking a significant shift in the landscape of financial analysis tools with implications to financial regulation and policy analysis.</details>
-
-
-### 📅 2024/12/24
-
-- **Developing Cryptocurrency Trading Strategy Based on Autoencoder-CNN-GANs Algorithms**
-  - Zhuohuan Hu et al. | [2412.18202v6](http://arxiv.org/abs/2412.18202v6)
-  - <details><summary>Abstract</summary>This paper leverages machine learning algorithms to forecast and analyze financial time series. The process begins with a denoising autoencoder to filter out random noise fluctuations from the main contract price data. Then, one-dimensional convolution reduces the dimensionality of the filtered data and extracts key information. The filtered and dimensionality-reduced price data is fed into a GANs network, and its output serve as input of a fully connected network. Through cross-validation, a model is trained to capture features that precede large price fluctuations. The model predicts the likelihood and direction of significant price changes in real-time price sequences, placing trades at moments of high prediction accuracy. Empirical results demonstrate that using autoencoders and convolution to filter and denoise financial data, combined with GANs, achieves a certain level of predictive performance, validating the capabilities of machine learning algorithms to discover underlying patterns in financial sequences. Keywords - CNN;GANs; Cryptocurrency; Prediction.</details>
 
