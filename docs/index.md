@@ -2,7 +2,7 @@
 layout: default
 ---
 
-> Updated on 2026/01/29 10:04:18
+> Updated on 2026/01/30 10:04:16
 
 <summary>Table of Contents</summary>
 
@@ -13,6 +13,13 @@ layout: default
 </ol>
 
 ## Trading
+
+### 📅 2026/01/29
+
+- **Trade uncertainty impact on stock-bond correlations: Insights from conditional correlation models**
+  - Demetrio Lacava et al. | [2601.21447v1](http://arxiv.org/abs/2601.21447v1)
+  - <details><summary>Abstract</summary>This paper investigates the impact of Trade Policy Uncertainty (TPU) on stock-bond correlation dynamics in the United States. Using daily data on major U.S. stock indices and the 10-year Treasury bond from 2015 to 2025, we estimate correlation within a two-step GARCH-based framework, relying on multivariate specifications, including Constant Conditional Correlation (CCC), Smooth Transition Conditional Correlation (STCC), and Dynamic Conditional Correlation (DCC) models. We extend these frameworks by incorporating TPU index and a presidential dummy to capture effects of trade uncertainty and government cycles. The findings show that constant correlation models are strongly rejected in favor of time-varying specifications. Both STCC and DCC models confirm TPU's central role in driving correlation dynamics, with significant differences across political regimes. DCC models augmented with TPU and political effects deliver the best in-sample fit and strongest forecasting performance, as measured by statistical and economic loss functions.</details>
+
 
 ### 📅 2026/01/27
 
@@ -681,9 +688,4 @@ layout: default
 - **Minimal Batch Adaptive Learning Policy Engine for Real-Time Mid-Price Forecasting in High-Frequency Trading**
   - Adamantios Ntakaris et al. | [2412.19372v2](http://arxiv.org/abs/2412.19372v2)
   - <details><summary>Abstract</summary>High-frequency trading (HFT) has transformed modern financial markets, making reliable short-term price forecasting models essential. In this study, we present a novel approach to mid-price forecasting using Level 1 limit order book (LOB) data from NASDAQ, focusing on 100 U.S. stocks from the S&P 500 index during the period from September to November 2022. Expanding on our previous work with Radial Basis Function Neural Networks (RBFNN), which leveraged automated feature importance techniques based on mean decrease impurity (MDI) and gradient descent (GD), we introduce the Adaptive Learning Policy Engine (ALPE) - a reinforcement learning (RL)-based agent designed for batch-free, immediate mid-price forecasting. ALPE incorporates adaptive epsilon decay to dynamically balance exploration and exploitation, outperforming a diverse range of highly effective machine learning (ML) and deep learning (DL) models in forecasting performance.</details>
-
-
-- **Sentiment trading with large language models**
-  - Kemal Kirtac et al. | [2412.19245v1](http://arxiv.org/abs/2412.19245v1)
-  - <details><summary>Abstract</summary>We investigate the efficacy of large language models (LLMs) in sentiment analysis of U.S. financial news and their potential in predicting stock market returns. We analyze a dataset comprising 965,375 news articles that span from January 1, 2010, to June 30, 2023; we focus on the performance of various LLMs, including BERT, OPT, FINBERT, and the traditional Loughran-McDonald dictionary model, which has been a dominant methodology in the finance literature. The study documents a significant association between LLM scores and subsequent daily stock returns. Specifically, OPT, which is a GPT-3 based LLM, shows the highest accuracy in sentiment prediction with an accuracy of 74.4%, slightly ahead of BERT (72.5%) and FINBERT (72.2%). In contrast, the Loughran-McDonald dictionary model demonstrates considerably lower effectiveness with only 50.1% accuracy. Regression analyses highlight a robust positive impact of OPT model scores on next-day stock returns, with coefficients of 0.274 and 0.254 in different model specifications. BERT and FINBERT also exhibit predictive relevance, though to a lesser extent. Notably, we do not observe a significant relationship between the Loughran-McDonald dictionary model scores and stock returns, challenging the efficacy of this traditional method in the current financial context. In portfolio performance, the long-short OPT strategy excels with a Sharpe ratio of 3.05, compared to 2.11 for BERT and 2.07 for FINBERT long-short strategies. Strategies based on the Loughran-McDonald dictionary yield the lowest Sharpe ratio of 1.23. Our findings emphasize the superior performance of advanced LLMs, especially OPT, in financial market prediction and portfolio management, marking a significant shift in the landscape of financial analysis tools with implications to financial regulation and policy analysis.</details>
 
