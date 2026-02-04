@@ -2,7 +2,7 @@
 layout: default
 ---
 
-> Updated on 2026/02/03 10:10:52
+> Updated on 2026/02/04 10:05:56
 
 <summary>Table of Contents</summary>
 
@@ -80,7 +80,7 @@ layout: default
 ### 📅 2026/01/08
 
 - **Trading Electrons: Predicting DART Spread Spikes in ISO Electricity Markets**
-  - Emma Hubert et al. | [2601.05085v1](http://arxiv.org/abs/2601.05085v1)
+  - Emma Hubert et al. | [2601.05085v2](http://arxiv.org/abs/2601.05085v2)
   - <details><summary>Abstract</summary>We study the problem of forecasting and optimally trading day-ahead versus real-time (DART) price spreads in U.S. wholesale electricity markets. Building on the framework of Galarneau-Vincent et al., we extend spike prediction from a single zone to a multi-zone setting and treat both positive and negative DART spikes within a unified statistical model. To translate directional signals into economically meaningful positions, we develop a structural and market-consistent price impact model based on day-ahead bid stacks. This yields closed-form expressions for the optimal vector of zonal INC/DEC quantities, capturing asymmetric buy/sell impacts and cross-zone congestion effects. When applied to NYISO, the resulting impact-aware strategy significantly improves the risk-return profile relative to unit-size trading and highlights substantial heterogeneity across markets and seasons.</details>
 
 
