@@ -2,7 +2,7 @@
 layout: default
 ---
 
-> Updated on 2026/02/05 10:07:07
+> Updated on 2026/02/06 10:07:13
 
 <summary>Table of Contents</summary>
 
@@ -59,8 +59,8 @@ layout: default
 ### 📅 2026/01/13
 
 - **Resisting Manipulative Bots in Meme Coin Copy Trading: A Multi-Agent Approach with Chain-of-Thought Reasoning**
-  - Yichen Luo et al. | [2601.08641v2](http://arxiv.org/abs/2601.08641v2)
-  - <details><summary>Abstract</summary>Copy trading has become the dominant entry strategy in meme coin markets. However, due to the market's extreme illiquid and volatile nature, the strategy exposes an exploitable attack surface: adversaries deploy manipulative bots to front-run trades, conceal positions, and fabricate sentiment, systematically extracting value from naïve copiers at scale. Despite its prevalence, bot-driven manipulation remains largely unexplored, and no robust defensive framework exists. We propose a manipulation-resistant copy-trading system based on a multi-agent architecture powered by a multi-modal, explainable large language model (LLM). Our system decomposes copy trading into three specialized agents for coin evaluation, wallet selection, and timing assessment. Evaluated on historical data from over 6,000 meme coins, our approach outperforms zero-shot and most statistic-driven baselines in prediction accuracy as well as all baselines in economic performance, achieving an average return of 14% for identified smart-money trades and an estimated copier return of 3% per trade under realistic market frictions. Overall, our results demonstrate the effectiveness of agent-based defenses and predictability of trader profitability in adversarial meme coin markets, providing a practical foundation for robust copy trading.</details>
+  - Yichen Luo et al. | [2601.08641v3](http://arxiv.org/abs/2601.08641v3)
+  - <details><summary>Abstract</summary>Copy trading has become the dominant entry strategy in meme coin markets. However, due to the market's extremely illiquid and volatile nature, the strategy exposes an exploitable attack surface: adversaries deploy manipulative bots to front-run trades, conceal positions, and fabricate sentiment, systematically extracting value from naïve copiers at scale. Despite its prevalence, bot-driven manipulation remains largely unexplored, and no robust defensive framework exists. We propose a manipulation-resistant copy-trading system based on a multi-agent architecture powered by a multi-modal large language model (LLM) and chain-of-thought (CoT) reasoning. Our approach outperforms zero-shot and most statistic-driven baselines in prediction accuracy as well as all baselines in economic performance, achieving an average copier return of 3% per meme coin investment under realistic market frictions. Overall, our results demonstrate the effectiveness of agent-based defenses and predictability of trader profitability in adversarial meme coin markets, providing a practical foundation for robust copy trading.</details>
 
 
 ### 📅 2026/01/10
