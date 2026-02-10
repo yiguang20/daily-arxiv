@@ -2,7 +2,7 @@
 layout: default
 ---
 
-> Updated on 2026/02/08 10:35:52
+> Updated on 2026/02/10 10:30:23
 
 <summary>Table of Contents</summary>
 
@@ -13,6 +13,20 @@ layout: default
 </ol>
 
 ## Trading
+
+### 📅 2026/02/04
+
+- **LLM as a Risk Manager: LLM Semantic Filtering for Lead-Lag Trading in Prediction Markets**
+  - Sumin Kim et al. | [2602.07048v1](http://arxiv.org/abs/2602.07048v1)
+  - <details><summary>Abstract</summary>Prediction markets provide a unique setting where event-level time series are directly tied to natural-language descriptions, yet discovering robust lead-lag relationships remains challenging due to spurious statistical correlations. We propose a hybrid two-stage causal screener to address this challenge: (i) a statistical stage that uses Granger causality to identify candidate leader-follower pairs from market-implied probability time series, and (ii) an LLM-based semantic stage that re-ranks these candidates by assessing whether the proposed direction admits a plausible economic transmission mechanism based on event descriptions. Because causal ground truth is unobserved, we evaluate the ranked pairs using a fixed, signal-triggered trading protocol that maps relationship quality into realized profit and loss (PnL). On Kalshi Economics markets, our hybrid approach consistently outperforms the statistical baseline. Across rolling evaluations, the win rate increases from 51.4% to 54.5%. Crucially, the average magnitude of losing trades decreases substantially from 649 USD to 347 USD. This reduction is driven by the LLM's ability to filter out statistically fragile links that are prone to large losses, rather than relying on rare gains. These improvements remain stable across different trading configurations, indicating that the gains are not driven by specific parameter choices. Overall, the results suggest that LLMs function as semantic risk managers on top of statistical discovery, prioritizing lead-lag relationships that generalize under changing market conditions.</details>
+
+
+### 📅 2026/02/02
+
+- **Behavioral Consistency Validation for LLM Agents: An Analysis of Trading-Style Switching through Stock-Market Simulation**
+  - Zeping Li et al. | [2602.07023v1](http://arxiv.org/abs/2602.07023v1)
+  - <details><summary>Abstract</summary>Recent works have increasingly applied Large Language Models (LLMs) as agents in financial stock market simulations to test if micro-level behaviors aggregate into macro-level phenomena. However, a crucial question arises: Do LLM agents' behaviors align with real market participants? This alignment is key to the validity of simulation results. To explore this, we select a financial stock market scenario to test behavioral consistency. Investors are typically classified as fundamental or technical traders, but most simulations fix strategies at initialization, failing to reflect real-world trading dynamics. In this work, we assess whether agents' strategy switching aligns with financial theory, providing a framework for this evaluation. We operationalize four behavioral-finance drivers-loss aversion, herding, wealth differentiation, and price misalignment-as personality traits set via prompting and stored long-term. In year-long simulations, agents process daily price-volume data, trade under a designated style, and reassess their strategy every 10 trading days. We introduce four alignment metrics and use Mann-Whitney U tests to compare agents' style-switching behavior with financial theory. Our results show that recent LLMs' switching behavior is only partially consistent with behavioral-finance theories, highlighting the need for further refinement in aligning agent behavior with financial theory.</details>
+
 
 ### 📅 2026/01/29
 
@@ -674,18 +688,4 @@ layout: default
 - **LLM-Based Routing in Mixture of Experts: A Novel Framework for Trading**
   - Kuan-Ming Liu et al. | [2501.09636v2](http://arxiv.org/abs/2501.09636v2)
   - <details><summary>Abstract</summary>Recent advances in deep learning and large language models (LLMs) have facilitated the deployment of the mixture-of-experts (MoE) mechanism in the stock investment domain. While these models have demonstrated promising trading performance, they are often unimodal, neglecting the wealth of information available in other modalities, such as textual data. Moreover, the traditional neural network-based router selection mechanism fails to consider contextual and real-world nuances, resulting in suboptimal expert selection. To address these limitations, we propose LLMoE, a novel framework that employs LLMs as the router within the MoE architecture. Specifically, we replace the conventional neural network-based router with LLMs, leveraging their extensive world knowledge and reasoning capabilities to select experts based on historical price data and stock news. This approach provides a more effective and interpretable selection mechanism. Our experiments on multimodal real-world stock datasets demonstrate that LLMoE outperforms state-of-the-art MoE models and other deep neural network approaches. Additionally, the flexible architecture of LLMoE allows for easy adaptation to various downstream tasks.</details>
-
-
-### 📅 2025/01/10
-
-- **A Modern Paradigm for Algorithmic Trading**
-  - James B. Glattfelder et al. | [2501.06032v1](http://arxiv.org/abs/2501.06032v1)
-  - <details><summary>Abstract</summary>We introduce a novel framework for developing fully-automated trading model algorithms. Unlike the traditional approach, which is grounded in analytical complexity favored by most quantitative analysts, we propose a paradigm shift that embraces real-world complexity. This approach leverages key concepts relating to self-organization, emergence, complex systems theory, scaling laws, and utilizes an event-based reframing of time. In closing, we describe an example algorithm that incorporates the outlined elements, called the Delta Engine.</details>
-
-
-### 📅 2024/12/30
-
-- **Strategic Learning and Trading in Broker-Mediated Markets**
-  - Alif Aqsha et al. | [2412.20847v2](http://arxiv.org/abs/2412.20847v2)
-  - <details><summary>Abstract</summary>We study strategic interactions in a broker-mediated market in which agents learn and exploit each other's private information. A broker provides liquidity to an informed trader and to noise traders while managing inventory in a lit market. The informed trader infers the broker's trading activity in the lit market, while the broker estimates the trader's private signal. Information leakage in the client's trading flow generates economic value for the broker that is comparable in magnitude to transaction costs: the broker can speculate profitably and manage risk more effectively, which in turn adversely affects the informed trader's performance. Brokers therefore hold a strategic advantage over traders who rely solely on prices to filter information. When the broker only relies on prices rather than client trading flow to infer information, their trading performance becomes indistinguishable from the performance of a naive strategy that internalises noise flow, externalises informed flow, and offloads inventory at a constant rate.</details>
 
