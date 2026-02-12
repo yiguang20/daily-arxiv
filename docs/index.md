@@ -2,7 +2,7 @@
 layout: default
 ---
 
-> Updated on 2026/02/11 10:27:19
+> Updated on 2026/02/12 10:21:59
 
 <summary>Table of Contents</summary>
 
@@ -13,6 +13,18 @@ layout: default
 </ol>
 
 ## Trading
+
+### 📅 2026/02/11
+
+- **Trading in CEXs and DEXs with Priority Fees and Stochastic Delays**
+  - Philippe Bergault et al. | [2602.10798v1](http://arxiv.org/abs/2602.10798v1)
+  - <details><summary>Abstract</summary>We develop a mixed control framework that combines absolutely continuous controls with impulse interventions subject to stochastic execution delays. The model extends current impulse control formulations by allowing (i) the controller to choose the mean of the stochastic delay of their impulses, and allowing (ii) for multiple pending orders, so that several impulses can be submitted and executed asynchronously at random times. The framework is motivated by an optimal trading problem between centralized (CEX) and decentralized (DEX) exchanges. In DEXs, traders control the distribution of the execution delay through the priority fee paid, introducing a fundamental trade-off between delays, uncertainty, and costs. We study the optimal trading problem of a trader exploiting trading signals in CEXs and DEXs. From a mathematical perspective, we derive the associated dynamic programming principle of this new class of impulse control problems, and establish the viscosity properties of the corresponding quasi-variational inequalities. From a financial perspective, our model provides insights on how to carry out execution across CEXs and DEXs, highlighting how traders manage latency risk optimally through priority fee selection. We show that employing the optimal priority fee has a significant outperformance over non-strategic fee selection.</details>
+
+
+- **A novel approach to trading strategy parameter optimization using double out-of-sample data and walk-forward techniques**
+  - Tomasz Mroziewicz et al. | [2602.10785v1](http://arxiv.org/abs/2602.10785v1)
+  - <details><summary>Abstract</summary>This study introduces a novel approach to walk-forward optimization by parameterizing the lengths of training and testing windows. We demonstrate that the performance of a trading strategy using the Exponential Moving Average (EMA) evaluated within a walk-forward procedure based on the Robust Sharpe Ratio is highly dependent on the chosen window size. We investigated the strategy on intraday Bitcoin data at six frequencies (1 minute to 60 minutes) using 81 combinations of walk-forward window lengths (1 day to 28 days) over a 19-month training period. The two best-performing parameter sets from the training data were applied to a 21-month out-of-sample testing period to ensure data independence. The strategy was only executed once during the testing period. To further validate the framework, strategy parameters estimated on Bitcoin were applied to Binance Coin and Ethereum. Our results suggest the robustness of our custom approach. In the training period for Bitcoin, all combinations of walk-forward windows outperformed a Buy-and-Hold strategy. During the testing period, the strategy performed similarly to Buy-and-Hold but with lower drawdown and a higher Information Ratio. Similar results were observed for Binance Coin and Ethereum. The real strength was demonstrated when a portfolio combining Buy-and-Hold with our strategies outperformed all individual strategies and Buy-and-Hold alone, achieving the highest overall performance and a 50 percent reduction in drawdown. A conservative fee of 0.1 percent per transaction was included in all calculations. A cost sensitivity analysis was performed as a sanity check, revealing that the strategy's break-even point was around 0.4 percent per transaction. This research highlights the importance of optimizing walk-forward window lengths and emphasizing the value of single-time out-of-sample testing for reliable strategy evaluation.</details>
+
 
 ### 📅 2026/02/04
 
@@ -674,18 +686,4 @@ layout: default
 - **Trade Dynamics of the Global Dry Bulk Shipping Network**
   - Yan Li et al. | [2502.00877v1](http://arxiv.org/abs/2502.00877v1)
   - <details><summary>Abstract</summary>This study investigates the inherently random structures of dry bulk shipping networks, often likened to a taxi service, and identifies the underlying trade dynamics that contribute to this randomness within individual cargo sub-networks. By analysing micro-level trade flow data from 2015 to 2023, we explore the evolution of dry commodity networks, including grain, coal, and iron ore, and suggest that the Giant Strongly Connected Components exhibit small-world phenomena, indicative of efficient bilateral trade. The significant heterogeneity of in-degree and out-degree within these sub-networks, primarily driven by importing ports, underscores the complexity of their dynamics. Our temporal analysis shows that while the Covid-19 pandemic profoundly impacted the coal network, the Ukraine conflict significantly altered the grain network, resulting in changes in community structures. Notably, grain sub-networks display periodic changes, suggesting distinct life cycles absent in coal and iron ore networks. These findings illustrate that the randomness in dry bulk shipping networks is a reflection of real-world trade dynamics, providing valuable insights for stakeholders in navigating and predicting network behaviours.</details>
-
-
-### 📅 2025/01/31
-
-- **TRADES: Generating Realistic Market Simulations with Diffusion Models**
-  - Leonardo Berti et al. | [2502.07071v3](http://arxiv.org/abs/2502.07071v3)
-  - <details><summary>Abstract</summary>Financial markets are complex systems characterized by high statistical noise, nonlinearity, volatility, and constant evolution. Thus, modeling them is extremely hard. Here, we address the task of generating realistic and responsive Limit Order Book (LOB) market simulations, which are fundamental for calibrating and testing trading strategies, performing market impact experiments, and generating synthetic market data. We propose a novel TRAnsformer-based Denoising Diffusion Probabilistic Engine for LOB Simulations (TRADES). TRADES generates realistic order flows as time series conditioned on the state of the market, leveraging a transformer-based architecture that captures the temporal and spatial characteristics of high-frequency market data. There is a notable absence of quantitative metrics for evaluating generative market simulation models in the literature. To tackle this problem, we adapt the predictive score, a metric measured as an MAE, to market data by training a stock price predictive model on synthetic data and testing it on real data. We compare TRADES with previous works on two stocks, reporting a 3.27 and 3.48 improvement over SoTA according to the predictive score, demonstrating that we generate useful synthetic market data for financial downstream tasks. Furthermore, we assess TRADES's market simulation realism and responsiveness, showing that it effectively learns the conditional data distribution and successfully reacts to an experimental agent, giving sprout to possible calibrations and evaluations of trading strategies and market impact experiments. To perform the experiments, we developed DeepMarket, the first open-source Python framework for LOB market simulation with deep learning. In our repository, we include a synthetic LOB dataset composed of TRADES's generated simulations.</details>
-
-
-### 📅 2025/01/16
-
-- **LLM-Based Routing in Mixture of Experts: A Novel Framework for Trading**
-  - Kuan-Ming Liu et al. | [2501.09636v2](http://arxiv.org/abs/2501.09636v2)
-  - <details><summary>Abstract</summary>Recent advances in deep learning and large language models (LLMs) have facilitated the deployment of the mixture-of-experts (MoE) mechanism in the stock investment domain. While these models have demonstrated promising trading performance, they are often unimodal, neglecting the wealth of information available in other modalities, such as textual data. Moreover, the traditional neural network-based router selection mechanism fails to consider contextual and real-world nuances, resulting in suboptimal expert selection. To address these limitations, we propose LLMoE, a novel framework that employs LLMs as the router within the MoE architecture. Specifically, we replace the conventional neural network-based router with LLMs, leveraging their extensive world knowledge and reasoning capabilities to select experts based on historical price data and stock news. This approach provides a more effective and interpretable selection mechanism. Our experiments on multimodal real-world stock datasets demonstrate that LLMoE outperforms state-of-the-art MoE models and other deep neural network approaches. Additionally, the flexible architecture of LLMoE allows for easy adaptation to various downstream tasks.</details>
 
