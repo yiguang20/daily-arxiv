@@ -2,7 +2,7 @@
 layout: default
 ---
 
-> Updated on 2026/02/17 10:09:03
+> Updated on 2026/02/18 10:13:00
 
 <summary>Table of Contents</summary>
 
@@ -366,7 +366,7 @@ layout: default
 ### 📅 2025/08/09
 
 - **Empirical Analysis of the Model-Free Valuation Approach: Hedging Gaps, Conservatism, and Trading Opportunities**
-  - Zixing Chen et al. | [2508.16595v1](http://arxiv.org/abs/2508.16595v1)
+  - Zixing Chen et al. | [2508.16595v2](http://arxiv.org/abs/2508.16595v2)
   - <details><summary>Abstract</summary>In this paper we study the quality of model-free valuation approaches for financial derivatives by systematically evaluating the difference between model-free super-hedging strategies and the realized payoff of financial derivatives using historical option prices from several constituents of the S&P 500 between 2018 and 2022.   Our study allows in particular to describe the realized gap between payoff and model-free hedging strategy empirically so that we can quantify to which degree model-free approaches are overly conservative. Our results imply that the model-free hedging approach is only marginally more conservative than industry-standard models such as the Heston-model while being model-free at the same time.   This finding, its statistical description and the model-independence of the hedging approach enable us to construct an explicit trading strategy which, as we demonstrate, can be profitably applied in financial markets, and additionally possesses the desirable feature with an explicit control of its downside risk due to its model-free construction preventing losses pathwise.</details>
 
 
