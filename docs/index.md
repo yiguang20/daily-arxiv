@@ -2,7 +2,7 @@
 layout: default
 ---
 
-> Updated on 2026/02/19 10:11:16
+> Updated on 2026/02/20 10:07:36
 
 <summary>Table of Contents</summary>
 
@@ -17,8 +17,8 @@ layout: default
 ### 📅 2026/02/11
 
 - **Trading in CEXs and DEXs with Priority Fees and Stochastic Delays**
-  - Philippe Bergault et al. | [2602.10798v1](http://arxiv.org/abs/2602.10798v1)
-  - <details><summary>Abstract</summary>We develop a mixed control framework that combines absolutely continuous controls with impulse interventions subject to stochastic execution delays. The model extends current impulse control formulations by allowing (i) the controller to choose the mean of the stochastic delay of their impulses, and allowing (ii) for multiple pending orders, so that several impulses can be submitted and executed asynchronously at random times. The framework is motivated by an optimal trading problem between centralized (CEX) and decentralized (DEX) exchanges. In DEXs, traders control the distribution of the execution delay through the priority fee paid, introducing a fundamental trade-off between delays, uncertainty, and costs. We study the optimal trading problem of a trader exploiting trading signals in CEXs and DEXs. From a mathematical perspective, we derive the associated dynamic programming principle of this new class of impulse control problems, and establish the viscosity properties of the corresponding quasi-variational inequalities. From a financial perspective, our model provides insights on how to carry out execution across CEXs and DEXs, highlighting how traders manage latency risk optimally through priority fee selection. We show that employing the optimal priority fee has a significant outperformance over non-strategic fee selection.</details>
+  - Philippe Bergault et al. | [2602.10798v2](http://arxiv.org/abs/2602.10798v2)
+  - <details><summary>Abstract</summary>We develop a mixed control framework that combines absolutely continuous controls with impulse interventions subject to stochastic execution delays. The model extends current impulse control formulations by allowing (i) the controller to choose the mean of the stochastic delay of their impulses, and allowing (ii) for multiple pending orders, so that several impulses can be submitted and executed asynchronously at random times. The framework is motivated by an optimal trading problem between centralized (CEX) and decentralized (DEX) exchanges. In DEXs, traders control the distribution of the execution delay through the priority fee paid, introducing a fundamental trade-off between delays, uncertainty, and costs. We study the optimal trading problem of an agent exploiting trading signals in CEXs and DEXs. From a mathematical perspective, we derive the associated dynamic programming principle of this new class of impulse control problems, and establish the viscosity properties of the corresponding quasi-variational inequalities. From a financial perspective, our model provides insights on how to carry out execution across CEXs and DEXs, highlighting how traders manage latency risk optimally through priority fee selection. We show that employing the optimal priority fee has a significant outperformance over non-strategic fee selection.</details>
 
 
 - **A novel approach to trading strategy parameter optimization using double out-of-sample data and walk-forward techniques**
