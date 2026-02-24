@@ -2,7 +2,7 @@
 layout: default
 ---
 
-> Updated on 2026/02/23 10:12:15
+> Updated on 2026/02/24 10:09:20
 
 <summary>Table of Contents</summary>
 
@@ -14,6 +14,13 @@ layout: default
 
 ## Trading
 
+### 📅 2026/02/21
+
+- **Overreaction as an indicator for momentum in algorithmic trading: A Case of AAPL stocks**
+  - Szymon Lis et al. | [2602.18912v1](http://arxiv.org/abs/2602.18912v1)
+  - <details><summary>Abstract</summary>This paper investigates whether short-term market overreactions can be systematically predicted and monetized as momentum signals using high-frequency emotional information and modern machine learning methods. Focusing on Apple Inc. (AAPL), we construct a comprehensive intraday dataset that combines volatility normalized returns with transformer-based emotion features extracted from Twitter messages. Overreactions are defined as extreme return realizations relative to contemporaneous volatility and transaction costs and are modeled as a three-class prediction problem. We evaluate the performance of several nonlinear classifiers, including XGBoost, Random Forests, Deep Neural Networks, and Bidirectional LSTMs, across multiple intraday frequencies (1, 5, 10, and 15 minute data). Model outputs are translated into trading strategies and assessed using risk-adjusted performance measures and formal statistical tests. The results show that machine learning models significantly outperform benchmark overreaction rules at ultra short horizons, while classical behavioral momentum effects dominate at intermediate frequencies, particularly around 10 minutes. Explainability analysis based on SHAP reveals that volatility and negative emotions, especially fear and sadness, play a central role in driving predicted overreactions. Overall, the findings demonstrate that emotion-driven overreactions contain a predictable structure that can be exploited by machine learning models, offering new insights into the behavioral origins of intraday momentum and the interaction between sentiment, volatility, and algorithmic trading.</details>
+
+
 ### 📅 2026/02/11
 
 - **Trading in CEXs and DEXs with Priority Fees and Stochastic Delays**
@@ -24,6 +31,13 @@ layout: default
 - **A novel approach to trading strategy parameter optimization using double out-of-sample data and walk-forward techniques**
   - Tomasz Mroziewicz et al. | [2602.10785v1](http://arxiv.org/abs/2602.10785v1)
   - <details><summary>Abstract</summary>This study introduces a novel approach to walk-forward optimization by parameterizing the lengths of training and testing windows. We demonstrate that the performance of a trading strategy using the Exponential Moving Average (EMA) evaluated within a walk-forward procedure based on the Robust Sharpe Ratio is highly dependent on the chosen window size. We investigated the strategy on intraday Bitcoin data at six frequencies (1 minute to 60 minutes) using 81 combinations of walk-forward window lengths (1 day to 28 days) over a 19-month training period. The two best-performing parameter sets from the training data were applied to a 21-month out-of-sample testing period to ensure data independence. The strategy was only executed once during the testing period. To further validate the framework, strategy parameters estimated on Bitcoin were applied to Binance Coin and Ethereum. Our results suggest the robustness of our custom approach. In the training period for Bitcoin, all combinations of walk-forward windows outperformed a Buy-and-Hold strategy. During the testing period, the strategy performed similarly to Buy-and-Hold but with lower drawdown and a higher Information Ratio. Similar results were observed for Binance Coin and Ethereum. The real strength was demonstrated when a portfolio combining Buy-and-Hold with our strategies outperformed all individual strategies and Buy-and-Hold alone, achieving the highest overall performance and a 50 percent reduction in drawdown. A conservative fee of 0.1 percent per transaction was included in all calculations. A cost sensitivity analysis was performed as a sanity check, revealing that the strategy's break-even point was around 0.4 percent per transaction. This research highlights the importance of optimizing walk-forward window lengths and emphasizing the value of single-time out-of-sample testing for reliable strategy evaluation.</details>
+
+
+### 📅 2026/02/10
+
+- **AlphaForgeBench: Benchmarking End-to-End Trading Strategy Design with Large Language Models**
+  - Wentao Zhang et al. | [2602.18481v1](http://arxiv.org/abs/2602.18481v1)
+  - <details><summary>Abstract</summary>The rapid advancement of Large Language Models (LLMs) has led to a surge of financial benchmarks, evolving from static knowledge tests to interactive trading simulations. However, current evaluations of real-time trading performance overlook a critical failure mode: severe behavioral instability in sequential decision-making under uncertainty. We empirically show that LLM-based trading agents exhibit extreme run-to-run variance, inconsistent action sequences even under deterministic decoding, and irrational action flipping across adjacent time steps. These issues stem from stateless autoregressive architectures lacking persistent action memory, as well as sensitivity to continuous-to-discrete action mappings in portfolio allocation. As a result, many existing financial trading benchmarks produce unreliable, non-reproducible, and uninformative evaluations. To address these limitations, we propose AlphaForgeBench, a principled framework that reframes LLMs as quantitative researchers rather than execution agents. Instead of emitting trading actions, LLMs generate executable alpha factors and factor-based strategies grounded in financial reasoning. This design decouples reasoning from execution, enabling fully deterministic and reproducible evaluation while aligning with real-world quantitative research workflows. Experiments across multiple state-of-the-art LLMs show that AlphaForgeBench eliminates execution-induced instability and provides a rigorous benchmark for assessing financial reasoning, strategy formulation, and alpha discovery.</details>
 
 
 ### 📅 2026/02/04
@@ -672,18 +686,4 @@ layout: default
 - **On the Effect of Alpha Decay and Transaction Costs on the Multi-period Optimal Trading Strategy**
   - Chutian Ma et al. | [2502.04284v1](http://arxiv.org/abs/2502.04284v1)
   - <details><summary>Abstract</summary>We consider the multi-period portfolio optimization problem with a single asset that can be held long or short. Due to the presence of transaction costs, maximizing the immediate reward at each period may prove detrimental, as frequent trading results in consistent negative cash outflows. To simulate alpha decay, we consider a case where not only the present value of a signal, but also past values, have predictive power. We formulate the problem as an infinite horizon Markov Decision Process and seek to characterize the optimal policy that realizes the maximum average expected reward. We propose a variant of the standard value iteration algorithm for computing the optimal policy. Establishing convergence in our setting is nontrivial, and we provide a rigorous proof. Addtionally, we compute a first-order approximation and asymptotics of the optimal policy with small transaction costs.</details>
-
-
-### 📅 2025/02/03
-
-- **An End-To-End LLM Enhanced Trading System**
-  - Ziyao Zhou et al. | [2502.01574v1](http://arxiv.org/abs/2502.01574v1)
-  - <details><summary>Abstract</summary>This project introduces an end-to-end trading system that leverages Large Language Models (LLMs) for real-time market sentiment analysis. By synthesizing data from financial news and social media, the system integrates sentiment-driven insights with technical indicators to generate actionable trading signals. FinGPT serves as the primary model for sentiment analysis, ensuring domain-specific accuracy, while Kubernetes is used for scalable and efficient deployment.</details>
-
-
-### 📅 2025/02/02
-
-- **Trade Dynamics of the Global Dry Bulk Shipping Network**
-  - Yan Li et al. | [2502.00877v1](http://arxiv.org/abs/2502.00877v1)
-  - <details><summary>Abstract</summary>This study investigates the inherently random structures of dry bulk shipping networks, often likened to a taxi service, and identifies the underlying trade dynamics that contribute to this randomness within individual cargo sub-networks. By analysing micro-level trade flow data from 2015 to 2023, we explore the evolution of dry commodity networks, including grain, coal, and iron ore, and suggest that the Giant Strongly Connected Components exhibit small-world phenomena, indicative of efficient bilateral trade. The significant heterogeneity of in-degree and out-degree within these sub-networks, primarily driven by importing ports, underscores the complexity of their dynamics. Our temporal analysis shows that while the Covid-19 pandemic profoundly impacted the coal network, the Ukraine conflict significantly altered the grain network, resulting in changes in community structures. Notably, grain sub-networks display periodic changes, suggesting distinct life cycles absent in coal and iron ore networks. These findings illustrate that the randomness in dry bulk shipping networks is a reflection of real-world trade dynamics, providing valuable insights for stakeholders in navigating and predicting network behaviours.</details>
 
