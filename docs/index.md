@@ -2,7 +2,7 @@
 layout: default
 ---
 
-> Updated on 2026/03/01 10:26:36
+> Updated on 2026/03/02 10:09:01
 
 <summary>Table of Contents</summary>
 
@@ -13,6 +13,13 @@ layout: default
 </ol>
 
 ## Trading
+
+### 📅 2026/02/27
+
+- **TradeFM: A Generative Foundation Model for Trade-flow and Market Microstructure**
+  - Maxime Kawawa-Beaudan et al. | [2602.23784v1](http://arxiv.org/abs/2602.23784v1)
+  - <details><summary>Abstract</summary>Foundation models have transformed domains from language to genomics by learning general-purpose representations from large-scale, heterogeneous data. We introduce TradeFM, a 524M-parameter generative Transformer that brings this paradigm to market microstructure, learning directly from billions of trade events across >9K equities. To enable cross-asset generalization, we develop scale-invariant features and a universal tokenization scheme that map the heterogeneous, multi-modal event stream of order flow into a unified discrete sequence -- eliminating asset-specific calibration. Integrated with a deterministic market simulator, TradeFM-generated rollouts reproduce key stylized facts of financial returns, including heavy tails, volatility clustering, and absence of return autocorrelation. Quantitatively, TradeFM achieves 2-3x lower distributional error than Compound Hawkes baselines and generalizes zero-shot to geographically out-of-distribution APAC markets with moderate perplexity degradation. Together, these results suggest that scale-invariant trade representations capture transferable structure in market microstructure, opening a path toward synthetic data generation, stress testing, and learning-based trading agents.</details>
+
 
 ### 📅 2026/02/26
 
@@ -64,7 +71,7 @@ layout: default
 ### 📅 2026/02/04
 
 - **LLM as a Risk Manager: LLM Semantic Filtering for Lead-Lag Trading in Prediction Markets**
-  - Sumin Kim et al. | [2602.07048v1](http://arxiv.org/abs/2602.07048v1)
+  - Sumin Kim et al. | [2602.07048v2](http://arxiv.org/abs/2602.07048v2)
   - <details><summary>Abstract</summary>Prediction markets provide a unique setting where event-level time series are directly tied to natural-language descriptions, yet discovering robust lead-lag relationships remains challenging due to spurious statistical correlations. We propose a hybrid two-stage causal screener to address this challenge: (i) a statistical stage that uses Granger causality to identify candidate leader-follower pairs from market-implied probability time series, and (ii) an LLM-based semantic stage that re-ranks these candidates by assessing whether the proposed direction admits a plausible economic transmission mechanism based on event descriptions. Because causal ground truth is unobserved, we evaluate the ranked pairs using a fixed, signal-triggered trading protocol that maps relationship quality into realized profit and loss (PnL). On Kalshi Economics markets, our hybrid approach consistently outperforms the statistical baseline. Across rolling evaluations, the win rate increases from 51.4% to 54.5%. Crucially, the average magnitude of losing trades decreases substantially from 649 USD to 347 USD. This reduction is driven by the LLM's ability to filter out statistically fragile links that are prone to large losses, rather than relying on rare gains. These improvements remain stable across different trading configurations, indicating that the gains are not driven by specific parameter choices. Overall, the results suggest that LLMs function as semantic risk managers on top of statistical discovery, prioritizing lead-lag relationships that generalize under changing market conditions.</details>
 
 
@@ -681,11 +688,4 @@ layout: default
 - **A Novel Loss Function for Deep Learning Based Daily Stock Trading System**
   - Ruoyu Guo et al. | [2502.17493v2](http://arxiv.org/abs/2502.17493v2)
   - <details><summary>Abstract</summary>Making consistently profitable financial decisions in a continuously evolving and volatile stock market has always been a difficult task. Professionals from different disciplines have developed foundational theories to anticipate price movement and evaluate securities such as the famed Capital Asset Pricing Model (CAPM). In recent years, the role of artificial intelligence (AI) in asset pricing has been growing. Although the black-box nature of deep learning models lacks interpretability, they have continued to solidify their position in the financial industry. We aim to further enhance AI's potential and utility by introducing a return-weighted loss function that will drive top growth while providing the ML models a limited amount of information. Using only publicly accessible stock data (open/close/high/low, trading volume, sector information) and several technical indicators constructed from them, we propose an efficient daily trading system that detects top growth opportunities. Our best models achieve 61.73\% annual return on daily rebalancing with an annualized Sharpe Ratio of 1.18 over 1340 testing days from 2019 to 2024, and 37.61\% annual return with an annualized Sharpe Ratio of 0.97 over 1360 testing days from 2005 to 2010. The main drivers for success, especially independent of any domain knowledge, are the novel return-weighted loss function, the integration of categorical and continuous data, and the ML model architecture. We also demonstrate the superiority of our novel loss function over traditional loss functions via several performance metrics and statistical evidence.</details>
-
-
-### 📅 2025/02/17
-
-- **FLAG-Trader: Fusion LLM-Agent with Gradient-based Reinforcement Learning for Financial Trading**
-  - Guojun Xiong et al. | [2502.11433v3](http://arxiv.org/abs/2502.11433v3)
-  - <details><summary>Abstract</summary>Large language models (LLMs) fine-tuned on multimodal financial data have demonstrated impressive reasoning capabilities in various financial tasks. However, they often struggle with multi-step, goal-oriented scenarios in interactive financial markets, such as trading, where complex agentic approaches are required to improve decision-making. To address this, we propose \textsc{FLAG-Trader}, a unified architecture integrating linguistic processing (via LLMs) with gradient-driven reinforcement learning (RL) policy optimization, in which a partially fine-tuned LLM acts as the policy network, leveraging pre-trained knowledge while adapting to the financial domain through parameter-efficient fine-tuning. Through policy gradient optimization driven by trading rewards, our framework not only enhances LLM performance in trading but also improves results on other financial-domain tasks. We present extensive empirical evidence to validate these enhancements.</details>
 
