@@ -2,7 +2,7 @@
 layout: default
 ---
 
-> Updated on 2026/03/12 10:09:01
+> Updated on 2026/03/13 10:06:50
 
 <summary>Table of Contents</summary>
 
@@ -113,7 +113,7 @@ layout: default
 ### 📅 2026/01/19
 
 - **A Learnable Wavelet Transformer for Long-Short Equity Trading and Risk-Adjusted Return Optimization**
-  - Shuozhe Li et al. | [2601.13435v3](http://arxiv.org/abs/2601.13435v3)
+  - Shuozhe Li et al. | [2601.13435v4](http://arxiv.org/abs/2601.13435v4)
   - <details><summary>Abstract</summary>Learning profitable intraday trading policies from financial time series is challenging due to heavy noise, non-stationarity, and strong cross-sectional dependence among related assets. We propose \emph{WaveLSFormer}, a learnable wavelet-based long-short Transformer that jointly performs multi-scale decomposition and return-oriented decision learning. Unlike standard time-series forecasting that optimizes prediction error and typically requires a separate position-sizing or portfolio-construction step, our model directly outputs a market-neutral long/short portfolio and is trained end-to-end on a trading objective with risk-aware regularization. Specifically, a learnable wavelet front-end generates low-/high-frequency components via an end-to-end trained filter bank, guided by spectral regularizers that encourage stable and well-separated frequency bands. To fuse multi-scale information, we introduce a low-guided high-frequency injection (LGHI) module that refines low-frequency representations with high-frequency cues while controlling training stability. The model outputs a portfolio of long/short positions that is rescaled to satisfy a fixed risk budget and is optimized directly with a trading objective and risk-aware regularization. Extensive experiments on five years of hourly data across six industry groups, evaluated over ten random seeds, demonstrate that WaveLSFormer consistently outperforms MLP, LSTM and Transformer backbones, with and without fixed discrete wavelet front-ends. On average in all industries, WaveLSFormer achieves a cumulative overall strategy return of $0.607 \pm 0.045$ and a Sharpe ratio of $2.157 \pm 0.166$, substantially improving both profitability and risk-adjusted returns over the strongest baselines.</details>
 
 
