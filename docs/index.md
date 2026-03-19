@@ -2,7 +2,7 @@
 layout: default
 ---
 
-> Updated on 2026/03/18 10:13:30
+> Updated on 2026/03/19 10:22:19
 
 <summary>Table of Contents</summary>
 
@@ -13,6 +13,20 @@ layout: default
 </ol>
 
 ## Trading
+
+### 📅 2026/03/18
+
+- **Can Blindfolded LLMs Still Trade? An Anonymization-First Framework for Portfolio Optimization**
+  - Joohyoung Jeon et al. | [2603.17692v1](http://arxiv.org/abs/2603.17692v1)
+  - <details><summary>Abstract</summary>For LLM trading agents to be genuinely trustworthy, they must demonstrate understanding of market dynamics rather than exploitation of memorized ticker associations. Building responsible multi-agent systems demands rigorous signal validation: proving that predictions reflect legitimate patterns, not pre-trained recall. We address two sources of spurious performance: memorization bias from ticker-specific pre-training, and survivorship bias from flawed backtesting. Our approach is to blindfold the agents--anonymizing all identifiers--and verify whether meaningful signals persist. BlindTrade anonymizes tickers and company names, and four LLM agents output scores along with reasoning. We construct a GNN graph from reasoning embeddings and trade using PPO-DSR policy. On 2025 YTD (through 2025-08-01), we achieved Sharpe 1.40 +/- 0.22 across 20 seeds and validated signal legitimacy through negative control experiments. To assess robustness beyond a single OOS window, we additionally evaluate an extended period (2024--2025), revealing market-regime dependency: the policy excels in volatile conditions but shows reduced alpha in trending bull markets.</details>
+
+
+### 📅 2026/03/04
+
+- **Quantum-Assisted Optimal Rebalancing with Uncorrelated Asset Selection for Algorithmic Trading Walk-Forward QUBO Scheduling via QAOA**
+  - Abraham Itzhak Weinberg | [2603.16904v1](http://arxiv.org/abs/2603.16904v1)
+  - <details><summary>Abstract</summary>We present a hybrid classical-quantum framework for portfolio construction and rebalancing. Asset selection is performed using Ledoit-Wolf shrinkage covariance estimation combined with hierarchical correlation clustering to extract n = 10 decorrelated stocks from the S&P 500 universe without survivorship bias. Portfolio weights are optimised via an entropy-regularised Genetic Algorithm (GA) accelerated on GPU, alongside closed-form minimum-variance and equal-weight benchmarks.   Our primary contribution is the formulation of the portfolio rebalancing schedule as a Quadratic Unconstrained Binary Optimisation (QUBO) problem. The resulting combinatorial optimisation task is solved using the Quantum Approximate Optimisation Algorithm (QAOA) within a walk-forward framework designed to eliminate lookahead bias. This approach recasts dynamic rebalancing as a structured binary scheduling problem amenable to variational quantum methods.   Backtests on S&P 500 data (training: 2010-2024; out-of-sample test: 2025, n = 249 trading days) show that the GA + QAOA strategy attains a Sharpe ratio of 0.588 and total return of 10.1%, modestly outperforming the strongest classical baseline (GA with 10-day periodic rebalancing, Sharpe 0.575) while executing 8 rebalances versus 24, corresponding to a 44.5% reduction in transaction costs. Multi-restart QAOA (4096 measurement shots per run) exhibits concentrated probability mass on high-quality schedules, indicating stable convergence of the variational procedure.   These findings suggest that hybrid classical-quantum architectures can reduce turnover in portfolio rebalancing while preserving competitive risk-adjusted performance, providing a structured testbed for near-term quantum optimisation in financial applications.</details>
+
 
 ### 📅 2026/02/27
 
@@ -674,18 +688,4 @@ layout: default
 - **Ensemble RL through Classifier Models: Enhancing Risk-Return Trade-offs in Trading Strategies**
   - Zheli Xiong | [2502.17518v1](http://arxiv.org/abs/2502.17518v1)
   - <details><summary>Abstract</summary>This paper presents a comprehensive study on the use of ensemble Reinforcement Learning (RL) models in financial trading strategies, leveraging classifier models to enhance performance. By combining RL algorithms such as A2C, PPO, and SAC with traditional classifiers like Support Vector Machines (SVM), Decision Trees, and Logistic Regression, we investigate how different classifier groups can be integrated to improve risk-return trade-offs. The study evaluates the effectiveness of various ensemble methods, comparing them with individual RL models across key financial metrics, including Cumulative Returns, Sharpe Ratios (SR), Calmar Ratios, and Maximum Drawdown (MDD). Our results demonstrate that ensemble methods consistently outperform base models in terms of risk-adjusted returns, providing better management of drawdowns and overall stability. However, we identify the sensitivity of ensemble performance to the choice of variance threshold τ, highlighting the importance of dynamic τ adjustment to achieve optimal performance. This study emphasizes the value of combining RL with classifiers for adaptive decision-making, with implications for financial trading, robotics, and other dynamic environments.</details>
-
-
-### 📅 2025/02/21
-
-- **Multi-Agent Stock Prediction Systems: Machine Learning Models, Simulations, and Real-Time Trading Strategies**
-  - Daksh Dave et al. | [2502.15853v1](http://arxiv.org/abs/2502.15853v1)
-  - <details><summary>Abstract</summary>This paper presents a comprehensive study on stock price prediction, leveragingadvanced machine learning (ML) and deep learning (DL) techniques to improve financial forecasting accuracy. The research evaluates the performance of various recurrent neural network (RNN) architectures, including Long Short-Term Memory (LSTM) networks, Gated Recurrent Units (GRU), and attention-based models. These models are assessed for their ability to capture complex temporal dependencies inherent in stock market data. Our findings show that attention-based models outperform other architectures, achieving the highest accuracy by capturing both short and long-term dependencies. This study contributes valuable insights into AI-driven financial forecasting, offering practical guidance for developing more accurate and efficient trading systems.</details>
-
-
-### 📅 2025/02/20
-
-- **A Novel Loss Function for Deep Learning Based Daily Stock Trading System**
-  - Ruoyu Guo et al. | [2502.17493v2](http://arxiv.org/abs/2502.17493v2)
-  - <details><summary>Abstract</summary>Making consistently profitable financial decisions in a continuously evolving and volatile stock market has always been a difficult task. Professionals from different disciplines have developed foundational theories to anticipate price movement and evaluate securities such as the famed Capital Asset Pricing Model (CAPM). In recent years, the role of artificial intelligence (AI) in asset pricing has been growing. Although the black-box nature of deep learning models lacks interpretability, they have continued to solidify their position in the financial industry. We aim to further enhance AI's potential and utility by introducing a return-weighted loss function that will drive top growth while providing the ML models a limited amount of information. Using only publicly accessible stock data (open/close/high/low, trading volume, sector information) and several technical indicators constructed from them, we propose an efficient daily trading system that detects top growth opportunities. Our best models achieve 61.73\% annual return on daily rebalancing with an annualized Sharpe Ratio of 1.18 over 1340 testing days from 2019 to 2024, and 37.61\% annual return with an annualized Sharpe Ratio of 0.97 over 1360 testing days from 2005 to 2010. The main drivers for success, especially independent of any domain knowledge, are the novel return-weighted loss function, the integration of categorical and continuous data, and the ML model architecture. We also demonstrate the superiority of our novel loss function over traditional loss functions via several performance metrics and statistical evidence.</details>
 
