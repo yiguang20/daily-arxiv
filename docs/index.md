@@ -2,7 +2,7 @@
 layout: default
 ---
 
-> Updated on 2026/03/22 10:22:21
+> Updated on 2026/03/23 10:23:29
 
 <summary>Table of Contents</summary>
 
@@ -45,7 +45,7 @@ layout: default
 ### 📅 2026/02/24
 
 - **An Infinite-Dimensional Insider Trading Game**
-  - Christian Keller et al. | [2602.21125v2](http://arxiv.org/abs/2602.21125v2)
+  - Christian Keller et al. | [2602.21125v3](http://arxiv.org/abs/2602.21125v3)
   - <details><summary>Abstract</summary>We generalize the seminal framework of Kyle (1985) to a many-asset setting, bridging the gap between informed-trading theory and modern trading practices. Specifically, we formulate an infinite-dimensional Bayesian trading game in which the informed trader's private information may concern arbitrary aspects of the cross-sectional payoff structure across a continuum of traded assets. In this general setting, we obtain a parsimonious equilibrium characterized by a single scalar fixed point, which yields closed-form characterizations of equilibrium trading strategy, price impact within and across markets, and the information efficiency of equilibrium prices.</details>
 
 
