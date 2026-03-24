@@ -2,7 +2,7 @@
 layout: default
 ---
 
-> Updated on 2026/03/23 10:23:29
+> Updated on 2026/03/24 10:08:03
 
 <summary>Table of Contents</summary>
 
@@ -13,6 +13,13 @@ layout: default
 </ol>
 
 ## Trading
+
+### 📅 2026/03/22
+
+- **FinRL-X: An AI-Native Modular Infrastructure for Quantitative Trading**
+  - Hongyang Yang et al. | [2603.21330v1](http://arxiv.org/abs/2603.21330v1)
+  - <details><summary>Abstract</summary>We present FinRL-X, a modular and deployment-consistent trading architecture that unifies data processing, strategy construction, backtesting, and broker execution under a weight-centric interface. While existing open-source platforms are often backtesting- or model-centric, they rarely provide system-level consistency between research evaluation and live deployment. FinRL-X addresses this gap through a composable strategy pipeline that integrates stock selection, portfolio allocation, timing, and portfolio-level risk overlays within a unified protocol. The framework supports both rule-based and AI-driven components, including reinforcement learning allocators and LLM-based sentiment signals, without altering downstream execution semantics. FinRL-X provides an extensible foundation for reproducible, end-to-end quantitative trading research and deployment. The official FinRL-X implementation is available at https://github.com/AI4Finance-Foundation/FinRL-Trading.</details>
+
 
 ### 📅 2026/03/18
 
@@ -681,11 +688,4 @@ layout: default
 - **Agent Trading Arena: A Study on Numerical Understanding in LLM-Based Agents**
   - Tianmi Ma et al. | [2502.17967v2](http://arxiv.org/abs/2502.17967v2)
   - <details><summary>Abstract</summary>Large language models (LLMs) have demonstrated remarkable capabilities in natural language tasks, yet their performance in dynamic, real-world financial environments remains underexplored. Existing approaches are limited to historical backtesting, where trading actions cannot influence market prices and agents train only on static data. To address this limitation, we present the Agent Trading Arena, a virtual zero-sum stock market in which LLM-based agents engage in competitive multi-agent trading and directly impact price dynamics. By simulating realistic bid-ask interactions, our platform enables training in scenarios that closely mirror live markets, thereby narrowing the gap between training and evaluation. Experiments reveal that LLMs struggle with numerical reasoning when given plain-text data, often overfitting to local patterns and recent values. In contrast, chart-based visualizations significantly enhance both numerical reasoning and trading performance. Furthermore, incorporating a reflection module yields additional improvements, especially with visual inputs. Evaluations on NASDAQ and CSI datasets demonstrate the superiority of our method, particularly under high volatility. All code and data are available at https://github.com/wekjsdvnm/Agent-Trading-Arena.</details>
-
-
-### 📅 2025/02/23
-
-- **Ensemble RL through Classifier Models: Enhancing Risk-Return Trade-offs in Trading Strategies**
-  - Zheli Xiong | [2502.17518v1](http://arxiv.org/abs/2502.17518v1)
-  - <details><summary>Abstract</summary>This paper presents a comprehensive study on the use of ensemble Reinforcement Learning (RL) models in financial trading strategies, leveraging classifier models to enhance performance. By combining RL algorithms such as A2C, PPO, and SAC with traditional classifiers like Support Vector Machines (SVM), Decision Trees, and Logistic Regression, we investigate how different classifier groups can be integrated to improve risk-return trade-offs. The study evaluates the effectiveness of various ensemble methods, comparing them with individual RL models across key financial metrics, including Cumulative Returns, Sharpe Ratios (SR), Calmar Ratios, and Maximum Drawdown (MDD). Our results demonstrate that ensemble methods consistently outperform base models in terms of risk-adjusted returns, providing better management of drawdowns and overall stability. However, we identify the sensitivity of ensemble performance to the choice of variance threshold τ, highlighting the importance of dynamic τ adjustment to achieve optimal performance. This study emphasizes the value of combining RL with classifiers for adaptive decision-making, with implications for financial trading, robotics, and other dynamic environments.</details>
 
