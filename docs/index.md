@@ -2,7 +2,7 @@
 layout: default
 ---
 
-> Updated on 2026/03/24 10:08:03
+> Updated on 2026/03/25 10:13:10
 
 <summary>Table of Contents</summary>
 
@@ -99,7 +99,7 @@ layout: default
 ### 📅 2026/02/02
 
 - **Behavioral Consistency Validation for LLM Agents: An Analysis of Trading-Style Switching through Stock-Market Simulation**
-  - Zeping Li et al. | [2602.07023v1](http://arxiv.org/abs/2602.07023v1)
+  - Zeping Li et al. | [2602.07023v2](http://arxiv.org/abs/2602.07023v2)
   - <details><summary>Abstract</summary>Recent works have increasingly applied Large Language Models (LLMs) as agents in financial stock market simulations to test if micro-level behaviors aggregate into macro-level phenomena. However, a crucial question arises: Do LLM agents' behaviors align with real market participants? This alignment is key to the validity of simulation results. To explore this, we select a financial stock market scenario to test behavioral consistency. Investors are typically classified as fundamental or technical traders, but most simulations fix strategies at initialization, failing to reflect real-world trading dynamics. In this work, we assess whether agents' strategy switching aligns with financial theory, providing a framework for this evaluation. We operationalize four behavioral-finance drivers-loss aversion, herding, wealth differentiation, and price misalignment-as personality traits set via prompting and stored long-term. In year-long simulations, agents process daily price-volume data, trade under a designated style, and reassess their strategy every 10 trading days. We introduce four alignment metrics and use Mann-Whitney U tests to compare agents' style-switching behavior with financial theory. Our results show that recent LLMs' switching behavior is only partially consistent with behavioral-finance theories, highlighting the need for further refinement in aligning agent behavior with financial theory.</details>
 
 
