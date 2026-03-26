@@ -2,7 +2,7 @@
 layout: default
 ---
 
-> Updated on 2026/03/25 10:13:10
+> Updated on 2026/03/26 10:27:02
 
 <summary>Table of Contents</summary>
 
@@ -655,7 +655,7 @@ layout: default
 ### 📅 2025/03/07
 
 - **Multi-asset optimal trade execution with stochastic cross-effects: An Obizhaeva-Wang-type framework**
-  - Julia Ackermann et al. | [2503.05594v1](http://arxiv.org/abs/2503.05594v1)
+  - Julia Ackermann et al. | [2503.05594v2](http://arxiv.org/abs/2503.05594v2)
   - <details><summary>Abstract</summary>We analyze a continuous-time optimal trade execution problem in multiple assets where the price impact and the resilience can be matrix-valued stochastic processes that incorporate cross-impact effects. In addition, we allow for stochastic terminal and running targets. Initially, we formulate the optimal trade execution task as a stochastic control problem with a finite-variation control process that acts as an integrator both in the state dynamics and in the cost functional. We then extend this problem continuously to a stochastic control problem with progressively measurable controls. By identifying this extended problem as equivalent to a certain linear-quadratic stochastic control problem, we can use established results in linear-quadratic stochastic control to solve the extended problem. This work generalizes [Ackermann, Kruse, Urusov; FinancStoch'24] from the single-asset setting to the multi-asset case. In particular, we reveal cross-hedging effects, showing that it can be optimal to trade in an asset despite having no initial position. Moreover, as a subsetting we discuss a multi-asset variant of the model in [Obizhaeva, Wang; JFinancMark'13].</details>
 
 
