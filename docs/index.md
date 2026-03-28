@@ -2,7 +2,7 @@
 layout: default
 ---
 
-> Updated on 2026/03/26 10:27:02
+> Updated on 2026/03/28 10:11:16
 
 <summary>Table of Contents</summary>
 
@@ -13,6 +13,13 @@ layout: default
 </ol>
 
 ## Trading
+
+### 📅 2026/03/26
+
+- **Shifting Correlations: How Trade Policy Uncertainty Alters stock-T bill Relationships**
+  - Demetrio Lacava | [2603.25285v1](http://arxiv.org/abs/2603.25285v1)
+  - <details><summary>Abstract</summary>This paper examines how trade policy uncertainty influences the correlation between U.S. stock indices and short-term government bonds. The objective is to assess whether policy-related shocks, especially those linked to trade tensions, alter the traditional stock-T bill relationship and its implications for investors. We extend the Dynamic Conditional Correlation (DCC) framework by incorporating exogenous variables to account for external shocks. Three specifications are analyzed: one using the Trade Policy Uncertainty (TPU) index, one including a dummy variable reflecting presidential-cycle effects, and one combining both through an interaction term. The analysis is based on daily data for major U.S. stock indices and the 3-month Treasury bill. Results indicate that trade policy uncertainty exerts a significant effect on stock-T bill correlations. Moreover, its influence becomes stronger under specific political conditions, suggesting that political agendas can amplify the impact of trade-related shocks on financial markets. Crucially, augmenting the DCC framework with trade-policy-related variables improves also the economic relevance of correlation forecasts. Therefore, this study contributes to the literature by explicitly integrating policy-related uncertainty into correlation modeling through an augmented DCC framework. The findings provide new insights for portfolio allocation and risk management in environments characterized by heightened trade tensions.</details>
+
 
 ### 📅 2026/03/22
 
@@ -683,9 +690,4 @@ layout: default
 - **Recurrent Neural Networks for Dynamic VWAP Execution: Adaptive Trading Strategies with Temporal Kolmogorov-Arnold Networks**
   - Remi Genet | [2502.18177v1](http://arxiv.org/abs/2502.18177v1)
   - <details><summary>Abstract</summary>The execution of Volume Weighted Average Price (VWAP) orders remains a critical challenge in modern financial markets, particularly as trading volumes and market complexity continue to increase. In my previous work arXiv:2502.13722, I introduced a novel deep learning approach that demonstrated significant improvements over traditional VWAP execution methods by directly optimizing the execution problem rather than relying on volume curve predictions. However, that model was static because it employed the fully linear approach described in arXiv:2410.21448, which is not designed for dynamic adjustment. This paper extends that foundation by developing a dynamic neural VWAP framework that adapts to evolving market conditions in real time. We introduce two key innovations: first, the integration of recurrent neural networks to capture complex temporal dependencies in market dynamics, and second, a sophisticated dynamic adjustment mechanism that continuously optimizes execution decisions based on market feedback. The empirical analysis, conducted across five major cryptocurrency markets, demonstrates that this dynamic approach achieves substantial improvements over both traditional methods and our previous static implementation, with execution performance gains of 10 to 15% in liquid markets and consistent outperformance across varying conditions. These results suggest that adaptive neural architectures can effectively address the challenges of modern VWAP execution while maintaining computational efficiency suitable for practical deployment.</details>
-
-
-- **Agent Trading Arena: A Study on Numerical Understanding in LLM-Based Agents**
-  - Tianmi Ma et al. | [2502.17967v2](http://arxiv.org/abs/2502.17967v2)
-  - <details><summary>Abstract</summary>Large language models (LLMs) have demonstrated remarkable capabilities in natural language tasks, yet their performance in dynamic, real-world financial environments remains underexplored. Existing approaches are limited to historical backtesting, where trading actions cannot influence market prices and agents train only on static data. To address this limitation, we present the Agent Trading Arena, a virtual zero-sum stock market in which LLM-based agents engage in competitive multi-agent trading and directly impact price dynamics. By simulating realistic bid-ask interactions, our platform enables training in scenarios that closely mirror live markets, thereby narrowing the gap between training and evaluation. Experiments reveal that LLMs struggle with numerical reasoning when given plain-text data, often overfitting to local patterns and recent values. In contrast, chart-based visualizations significantly enhance both numerical reasoning and trading performance. Furthermore, incorporating a reflection module yields additional improvements, especially with visual inputs. Evaluations on NASDAQ and CSI datasets demonstrate the superiority of our method, particularly under high volatility. All code and data are available at https://github.com/wekjsdvnm/Agent-Trading-Arena.</details>
 
