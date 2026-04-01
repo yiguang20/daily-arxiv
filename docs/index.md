@@ -2,7 +2,7 @@
 layout: default
 ---
 
-> Updated on 2026/03/31 10:28:35
+> Updated on 2026/04/01 10:39:13
 
 <summary>Table of Contents</summary>
 
@@ -13,6 +13,13 @@ layout: default
 </ol>
 
 ## Trading
+
+### 📅 2026/03/30
+
+- **Model Predictive Control For Trade Execution**
+  - Thomas P. McAuliffe et al. | [2603.28898v1](http://arxiv.org/abs/2603.28898v1)
+  - <details><summary>Abstract</summary>We address the problem of executing large client orders in continuous double-auction markets under time and liquidity constraints. We propose a model predictive control (MPC) framework that balances three competing objectives: order completion, market impact, and opportunity cost. Our algorithm is guided by a trading schedule (such as time-weighted average price or volume-weighted average price) but allows for deviations to reduce the expected execution cost, with due regard to risk.   Our MPC algorithm executes the order progressively, and at each decision step it solves a fast quadratic program that trades off expected transaction cost against schedule deviation, while incorporating a residual cost term derived from a simple base policy. Approximate schedule adherence is maintained through explicit bounds, while variance constraints on deviation provide direct risk control. The resulting system is modular, data-driven, and suitable for deployment in production trading infrastructure.   Using six months of NASDAQ 'level 3' data and simulated orders, we show that our MPC approach reduces schedule shortfall by approximately 40-50% relative to spread-crossing benchmarks and achieves significant reductions in slippage. Moreover, augmenting the base policy with predictive price information further enhances performance, highlighting the framework's flexibility for integration with forecasting components.</details>
+
 
 ### 📅 2026/03/26
 
@@ -685,9 +692,4 @@ layout: default
 - **The Market Maker's Dilemma: Navigating the Fill Probability vs. Post-Fill Returns Trade-Off**
   - Jakob Albers et al. | [2502.18625v2](http://arxiv.org/abs/2502.18625v2)
   - <details><summary>Abstract</summary>Using data from a live trading experiment on the Binance Bitcoin perpetual, we examine the effects of (i) basic order book mechanics and (ii) the persistence of price changes from immediate to short timescales, revealing the interplay between returns, queue sizes, and orders' queue positions. We document a fundamental trade-off: a negative correlation between maker fill likelihood and post-fill returns. This dictates that viable maker strategies often require a contrarian approach, counter-trading the prevailing order book imbalance. These dynamics render commonly-cited strategies highly unprofitable, leading us to model `Reversals': situations where a contrarian maker strategy at the touch proves effective.</details>
-
-
-- **Recurrent Neural Networks for Dynamic VWAP Execution: Adaptive Trading Strategies with Temporal Kolmogorov-Arnold Networks**
-  - Remi Genet | [2502.18177v1](http://arxiv.org/abs/2502.18177v1)
-  - <details><summary>Abstract</summary>The execution of Volume Weighted Average Price (VWAP) orders remains a critical challenge in modern financial markets, particularly as trading volumes and market complexity continue to increase. In my previous work arXiv:2502.13722, I introduced a novel deep learning approach that demonstrated significant improvements over traditional VWAP execution methods by directly optimizing the execution problem rather than relying on volume curve predictions. However, that model was static because it employed the fully linear approach described in arXiv:2410.21448, which is not designed for dynamic adjustment. This paper extends that foundation by developing a dynamic neural VWAP framework that adapts to evolving market conditions in real time. We introduce two key innovations: first, the integration of recurrent neural networks to capture complex temporal dependencies in market dynamics, and second, a sophisticated dynamic adjustment mechanism that continuously optimizes execution decisions based on market feedback. The empirical analysis, conducted across five major cryptocurrency markets, demonstrates that this dynamic approach achieves substantial improvements over both traditional methods and our previous static implementation, with execution performance gains of 10 to 15% in liquid markets and consistent outperformance across varying conditions. These results suggest that adaptive neural architectures can effectively address the challenges of modern VWAP execution while maintaining computational efficiency suitable for practical deployment.</details>
 
