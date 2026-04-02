@@ -2,7 +2,7 @@
 layout: default
 ---
 
-> Updated on 2026/04/01 10:39:13
+> Updated on 2026/04/02 10:25:36
 
 <summary>Table of Contents</summary>
 
@@ -33,6 +33,13 @@ layout: default
 - **FinRL-X: An AI-Native Modular Infrastructure for Quantitative Trading**
   - Hongyang Yang et al. | [2603.21330v1](http://arxiv.org/abs/2603.21330v1)
   - <details><summary>Abstract</summary>We present FinRL-X, a modular and deployment-consistent trading architecture that unifies data processing, strategy construction, backtesting, and broker execution under a weight-centric interface. While existing open-source platforms are often backtesting- or model-centric, they rarely provide system-level consistency between research evaluation and live deployment. FinRL-X addresses this gap through a composable strategy pipeline that integrates stock selection, portfolio allocation, timing, and portfolio-level risk overlays within a unified protocol. The framework supports both rule-based and AI-driven components, including reinforcement learning allocators and LLM-based sentiment signals, without altering downstream execution semantics. FinRL-X provides an extensible foundation for reproducible, end-to-end quantitative trading research and deployment. The official FinRL-X implementation is available at https://github.com/AI4Finance-Foundation/FinRL-Trading.</details>
+
+
+### 📅 2026/03/20
+
+- **Decomposable Reward Modeling and Realistic Environment Design for Reinforcement Learning-Based Forex Trading**
+  - Nabeel Ahmad Saidd | [2604.00031v1](http://arxiv.org/abs/2604.00031v1)
+  - <details><summary>Abstract</summary>Applying reinforcement learning (RL) to foreign exchange (Forex) trading remains challenging because realistic environments, well-defined reward functions, and expressive action spaces must be satisfied simultaneously, yet many prior studies rely on simplified simulators, single scalar rewards, and restricted action representations, limiting both interpretability and practical relevance. This paper presents a modular RL framework designed to address these limitations through three tightly integrated components: a friction-aware execution engine that enforces strict anti-lookahead semantics, with observations at time t, execution at time t+1, and mark-to-market at time t+1, while incorporating realistic costs such as spread, commission, slippage, rollover financing, and margin-triggered liquidation; a decomposable 11-component reward architecture with fixed weights and per-step diagnostic logging to enable systematic ablation and component-level attribution; and a 10-action discrete interface with legal-action masking that encodes explicit trading primitives while enforcing margin-aware feasibility constraints. Empirical evaluation on EURUSD focuses on learning dynamics rather than generalization and reveals strongly non-monotonic reward interactions, where additional penalties do not reliably improve outcomes; the full reward configuration achieves the highest training Sharpe (0.765) and cumulative return (57.09 percent). The expanded action space increases return but also turnover and reduces Sharpe relative to a conservative 3-action baseline, indicating a return-activity trade-off under a fixed training budget, while scaling-enabled variants consistently reduce drawdown, with the combined configuration achieving the strongest endpoint performance.</details>
 
 
 ### 📅 2026/03/18
@@ -685,11 +692,4 @@ layout: default
 - **To Hedge or Not to Hedge: Optimal Strategies for Stochastic Trade Flow Management**
   - Philippe Bergault et al. | [2503.02496v1](http://arxiv.org/abs/2503.02496v1)
   - <details><summary>Abstract</summary>This paper addresses the trade-off between internalisation and externalisation in the management of stochastic trade flows. We consider agents who must absorb flows and manage risk by deciding whether to warehouse it or hedge in the market, thereby incurring transaction costs and market impact. Unlike market makers, these agents cannot skew their quotes to attract offsetting flows and deter risk-increasing ones, leading to a fundamentally different problem. Within the Almgren-Chriss framework, we derive almost-closed-form solutions in the case of quadratic execution costs, while more general cases require numerical methods. In particular, we discuss the challenges posed by artificial boundary conditions when using classical grid-based numerical PDE techniques and propose reinforcement learning methods as an alternative.</details>
-
-
-### 📅 2025/02/25
-
-- **The Market Maker's Dilemma: Navigating the Fill Probability vs. Post-Fill Returns Trade-Off**
-  - Jakob Albers et al. | [2502.18625v2](http://arxiv.org/abs/2502.18625v2)
-  - <details><summary>Abstract</summary>Using data from a live trading experiment on the Binance Bitcoin perpetual, we examine the effects of (i) basic order book mechanics and (ii) the persistence of price changes from immediate to short timescales, revealing the interplay between returns, queue sizes, and orders' queue positions. We document a fundamental trade-off: a negative correlation between maker fill likelihood and post-fill returns. This dictates that viable maker strategies often require a contrarian approach, counter-trading the prevailing order book imbalance. These dynamics render commonly-cited strategies highly unprofitable, leading us to model `Reversals': situations where a contrarian maker strategy at the touch proves effective.</details>
 
