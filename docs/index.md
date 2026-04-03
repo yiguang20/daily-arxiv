@@ -2,7 +2,7 @@
 layout: default
 ---
 
-> Updated on 2026/04/02 10:25:36
+> Updated on 2026/04/03 10:26:18
 
 <summary>Table of Contents</summary>
 
@@ -13,6 +13,13 @@ layout: default
 </ol>
 
 ## Trading
+
+### 📅 2026/04/02
+
+- **Reinforcement Learning for Speculative Trading under Exploratory Framework**
+  - Yun Zhao et al. | [2604.02035v1](http://arxiv.org/abs/2604.02035v1)
+  - <details><summary>Abstract</summary>We study a speculative trading problem within the exploratory reinforcement learning (RL) framework of Wang et al. [2020]. The problem is formulated as a sequential optimal stopping problem over entry and exit times under general utility function and price process. We first consider a relaxed version of the problem in which the stopping times are modeled by the jump times of Cox processes driven by bounded, non-randomized intensity controls. Under the exploratory formulation, the agent's randomized control is characterized via the probability measure over the jump intensities, and their objective function is regularized by Shannon's differential entropy. This yields a system of the exploratory HJB equations and Gibbs distributions in closed-form as the optimal policy. Error estimates and convergence of the RL objective to the value function of the original problem are established. Finally, an RL algorithm is designed, and its implementation is showcased in a pairs-trading application.</details>
+
 
 ### 📅 2026/03/30
 
@@ -685,11 +692,4 @@ layout: default
 - **Risk-aware Trading Portfolio Optimization**
   - Marco Bianchetti et al. | [2503.04662v1](http://arxiv.org/abs/2503.04662v1)
   - <details><summary>Abstract</summary>We investigate portfolio optimization in financial markets from a trading and risk management perspective. We term this task Risk-Aware Trading Portfolio Optimization (RATPO), formulate the corresponding optimization problem, and propose an efficient Risk-Aware Trading Swarm (RATS) algorithm to solve it. The key elements of RATPO are a generic initial portfolio P, a specific set of Unique Eligible Instruments (UEIs), their combination into an Eligible Optimization Strategy (EOS), an objective function, and a set of constraints. RATS searches for an optimal EOS that, added to P, improves the objective function repecting the constraints.   RATS is a specialized Particle Swarm Optimization method that leverages the parameterization of P in terms of UEIs, enables parallel computation with a large number of particles, and is fully general with respect to specific choices of the key elements, which can be customized to encode financial knowledge and needs of traders and risk managers.   We showcase two RATPO applications involving a real trading portfolio made of hundreds of different financial instruments, an objective function combining both market risk (VaR) and profit&loss measures, constrains on market sensitivities and UEIs trading costs. In the case of small-sized EOS, RATS successfully identifies the optimal solution and demonstrates robustness with respect to hyper-parameters tuning. In the case of large-sized EOS, RATS markedly improves the portfolio objective value, optimizing risk and capital charge while respecting risk limits and preserving expected profits.   Our work bridges the gap between the implementation of effective trading strategies and compliance with stringent regulatory and economic capital requirements, allowing a better alignment of business and risk management objectives.</details>
-
-
-### 📅 2025/03/04
-
-- **To Hedge or Not to Hedge: Optimal Strategies for Stochastic Trade Flow Management**
-  - Philippe Bergault et al. | [2503.02496v1](http://arxiv.org/abs/2503.02496v1)
-  - <details><summary>Abstract</summary>This paper addresses the trade-off between internalisation and externalisation in the management of stochastic trade flows. We consider agents who must absorb flows and manage risk by deciding whether to warehouse it or hedge in the market, thereby incurring transaction costs and market impact. Unlike market makers, these agents cannot skew their quotes to attract offsetting flows and deter risk-increasing ones, leading to a fundamentally different problem. Within the Almgren-Chriss framework, we derive almost-closed-form solutions in the case of quadratic execution costs, while more general cases require numerical methods. In particular, we discuss the challenges posed by artificial boundary conditions when using classical grid-based numerical PDE techniques and propose reinforcement learning methods as an alternative.</details>
 
