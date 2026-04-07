@@ -2,7 +2,7 @@
 layout: default
 ---
 
-> Updated on 2026/04/06 10:34:50
+> Updated on 2026/04/07 10:29:35
 
 <summary>Table of Contents</summary>
 
@@ -13,6 +13,13 @@ layout: default
 </ol>
 
 ## Trading
+
+### 📅 2026/04/04
+
+- **PolySwarm: A Multi-Agent Large Language Model Framework for Prediction Market Trading and Latency Arbitrage**
+  - Rajat M. Barot et al. | [2604.03888v1](http://arxiv.org/abs/2604.03888v1)
+  - <details><summary>Abstract</summary>This paper presents PolySwarm, a novel multi-agent large language model (LLM) framework designed for real-time prediction market trading and latency arbitrage on decentralized platforms such as Polymarket. PolySwarm deploys a swarm of 50 diverse LLM personas that concurrently evaluate binary outcome markets, aggregating individual probability estimates through confidence-weighted Bayesian combination of swarm consensus with market-implied probabilities, and applying quarter-Kelly position sizing for risk-controlled execution. The system incorporates an information-theoretic market analysis engine using Kullback-Leibler (KL) divergence and Jensen-Shannon (JS) divergence to detect cross-market inefficiencies and negation pair mispricings. A latency arbitrage module exploits stale Polymarket prices by deriving CEX-implied probabilities from a log-normal pricing model and executing trades within the human reaction-time window. We provide a full architectural description, implementation details, and evaluation methodology using Brier scores, calibration analysis, and log-loss metrics benchmarked against human superforecaster performance. We further discuss open challenges including hallucination in agent pools, computational cost at scale, regulatory exposure, and feedback-loop risk, and outline five priority directions for future research. Experimental results demonstrate that swarm aggregation consistently outperforms single-model baselines in probability calibration on Polymarket prediction tasks.</details>
+
 
 ### 📅 2026/04/02
 
@@ -685,11 +692,4 @@ layout: default
 - **Multi-asset optimal trade execution with stochastic cross-effects: An Obizhaeva-Wang-type framework**
   - Julia Ackermann et al. | [2503.05594v2](http://arxiv.org/abs/2503.05594v2)
   - <details><summary>Abstract</summary>We analyze a continuous-time optimal trade execution problem in multiple assets where the price impact and the resilience can be matrix-valued stochastic processes that incorporate cross-impact effects. In addition, we allow for stochastic terminal and running targets. Initially, we formulate the optimal trade execution task as a stochastic control problem with a finite-variation control process that acts as an integrator both in the state dynamics and in the cost functional. We then extend this problem continuously to a stochastic control problem with progressively measurable controls. By identifying this extended problem as equivalent to a certain linear-quadratic stochastic control problem, we can use established results in linear-quadratic stochastic control to solve the extended problem. This work generalizes [Ackermann, Kruse, Urusov; FinancStoch'24] from the single-asset setting to the multi-asset case. In particular, we reveal cross-hedging effects, showing that it can be optimal to trade in an asset despite having no initial position. Moreover, as a subsetting we discuss a multi-asset variant of the model in [Obizhaeva, Wang; JFinancMark'13].</details>
-
-
-### 📅 2025/03/06
-
-- **Risk-aware Trading Portfolio Optimization**
-  - Marco Bianchetti et al. | [2503.04662v1](http://arxiv.org/abs/2503.04662v1)
-  - <details><summary>Abstract</summary>We investigate portfolio optimization in financial markets from a trading and risk management perspective. We term this task Risk-Aware Trading Portfolio Optimization (RATPO), formulate the corresponding optimization problem, and propose an efficient Risk-Aware Trading Swarm (RATS) algorithm to solve it. The key elements of RATPO are a generic initial portfolio P, a specific set of Unique Eligible Instruments (UEIs), their combination into an Eligible Optimization Strategy (EOS), an objective function, and a set of constraints. RATS searches for an optimal EOS that, added to P, improves the objective function repecting the constraints.   RATS is a specialized Particle Swarm Optimization method that leverages the parameterization of P in terms of UEIs, enables parallel computation with a large number of particles, and is fully general with respect to specific choices of the key elements, which can be customized to encode financial knowledge and needs of traders and risk managers.   We showcase two RATPO applications involving a real trading portfolio made of hundreds of different financial instruments, an objective function combining both market risk (VaR) and profit&loss measures, constrains on market sensitivities and UEIs trading costs. In the case of small-sized EOS, RATS successfully identifies the optimal solution and demonstrates robustness with respect to hyper-parameters tuning. In the case of large-sized EOS, RATS markedly improves the portfolio objective value, optimizing risk and capital charge while respecting risk limits and preserving expected profits.   Our work bridges the gap between the implementation of effective trading strategies and compliance with stringent regulatory and economic capital requirements, allowing a better alignment of business and risk management objectives.</details>
 
