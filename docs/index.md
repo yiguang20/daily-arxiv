@@ -2,7 +2,7 @@
 layout: default
 ---
 
-> Updated on 2026/04/15 10:35:15
+> Updated on 2026/04/17 10:37:40
 
 <summary>Table of Contents</summary>
 
@@ -14,11 +14,25 @@ layout: default
 
 ## Trading
 
+### 📅 2026/04/14
+
+- **Against a Universal Trading Strategy: No-Arbitrage, No-Free-Lunch, and Adversarial Cantor Diagonalization**
+  - Karl Svozil | [2604.13334v1](http://arxiv.org/abs/2604.13334v1)
+  - <details><summary>Abstract</summary>We investigate the impossibility of universally winning trading strategies -- those generating strict profit across all market trajectories -- through three distinct mathematical paradigms. Fundamentally, under standard admissibility constraints, the existence of such a strategy is a strict subset of strong arbitrage, which is mathematically precluded in competitive markets admitting an equivalent martingale measure. Beyond this rigorous measure-theoretic foundation, we explore analogous limitations in two alternative modeling regimes. Combinatorially, the No-Free-Lunch theorem demonstrates that outperformance requires exploitation of non-uniform market structure, as uniform averaging precludes universal dominance. Computationally, a Turing diagonalization argument constructs an adversarial environment that defeats any computable trading algorithm, shifting the impossibility from exogenous price paths to adaptive adversaries. These mathematical limits are framed by a time-reversal heuristic that establishes a formal analogy between financial martingale measures and thermodynamic detailed balance, resolving the Maxwell's Demon analogy for markets without relying on physically irrelevant Landauer erasure costs. Using the Wheel Options Strategy as a case study, we demonstrate that strategies succeeding ``for all practical purposes'' (FAPP) inherently depend on transient regime assumptions, meaning their automated execution systematically amplifies tail risks.</details>
+
+
 ### 📅 2026/04/04
 
 - **PolySwarm: A Multi-Agent Large Language Model Framework for Prediction Market Trading and Latency Arbitrage**
   - Rajat M. Barot et al. | [2604.03888v1](http://arxiv.org/abs/2604.03888v1)
   - <details><summary>Abstract</summary>This paper presents PolySwarm, a novel multi-agent large language model (LLM) framework designed for real-time prediction market trading and latency arbitrage on decentralized platforms such as Polymarket. PolySwarm deploys a swarm of 50 diverse LLM personas that concurrently evaluate binary outcome markets, aggregating individual probability estimates through confidence-weighted Bayesian combination of swarm consensus with market-implied probabilities, and applying quarter-Kelly position sizing for risk-controlled execution. The system incorporates an information-theoretic market analysis engine using Kullback-Leibler (KL) divergence and Jensen-Shannon (JS) divergence to detect cross-market inefficiencies and negation pair mispricings. A latency arbitrage module exploits stale Polymarket prices by deriving CEX-implied probabilities from a log-normal pricing model and executing trades within the human reaction-time window. We provide a full architectural description, implementation details, and evaluation methodology using Brier scores, calibration analysis, and log-loss metrics benchmarked against human superforecaster performance. We further discuss open challenges including hallucination in agent pools, computational cost at scale, regulatory exposure, and feedback-loop risk, and outline five priority directions for future research. Experimental results demonstrate that swarm aggregation consistently outperforms single-model baselines in probability calibration on Polymarket prediction tasks.</details>
+
+
+### 📅 2026/04/03
+
+- **PolyBench: Benchmarking LLM Forecasting and Trading Capabilities on Live Prediction Market Data**
+  - Pu Cheng et al. | [2604.14199v1](http://arxiv.org/abs/2604.14199v1)
+  - <details><summary>Abstract</summary>Predicting real-world events from live market signals demands systems that fuse qualitative news with quantitative order-book dynamics under strict temporal discipline -- a challenge existing benchmarks fail to capture. We present \textbf{PolyBench}, a multimodal benchmark derived from Polymarket that records point-in-time cross-sections of 38,666 binary prediction markets spanning 4,997 events, synchronously coupling each snapshot with a Central Limit Order Book (CLOB) state and a real-time news stream. Using PolyBench, we evaluate seven state-of-the-art Large Language Models -- spanning open- and closed-source families -- generating 36,165 predictions under identical, timestamp-locked market states collected between February 6 and 12, 2026. Our multidimensional framework assesses directional accuracy, our proposed Confidence-Weighted Return (CWR), Annualized Percentage Yield (APY), and Sharpe ratio via realistic order-book execution simulation. The results reveal a pronounced performance divergence: only two of seven models achieve positive financial returns -- MiMo-V2-Flash at \textbf{17.6%} CWR and Gemini-3-Flash at 6.2% CWR -- while the remaining five incur losses despite uniformly high stated confidence. These findings highlight the gap between surface-level language fluency and genuine probabilistic reasoning under live market uncertainty, and establish PolyBench as a contamination-proof, financially-grounded evaluation standard for future LLM research. Our dataset and code available at \underline{\href{https://github.com/PolyBench/PolyBench}{https://github.com/PolyBench/PolyBench}}.</details>
 
 
 ### 📅 2026/04/02
@@ -680,16 +694,4 @@ layout: default
 - **A Deep Reinforcement Learning Approach to Automated Stock Trading, using xLSTM Networks**
   - Faezeh Sarlakifar et al. | [2503.09655v1](http://arxiv.org/abs/2503.09655v1)
   - <details><summary>Abstract</summary>Traditional Long Short-Term Memory (LSTM) networks are effective for handling sequential data but have limitations such as gradient vanishing and difficulty in capturing long-term dependencies, which can impact their performance in dynamic and risky environments like stock trading. To address these limitations, this study explores the usage of the newly introduced Extended Long Short Term Memory (xLSTM) network in combination with a deep reinforcement learning (DRL) approach for automated stock trading. Our proposed method utilizes xLSTM networks in both actor and critic components, enabling effective handling of time series data and dynamic market environments. Proximal Policy Optimization (PPO), with its ability to balance exploration and exploitation, is employed to optimize the trading strategy. Experiments were conducted using financial data from major tech companies over a comprehensive timeline, demonstrating that the xLSTM-based model outperforms LSTM-based methods in key trading evaluation metrics, including cumulative return, average profitability per trade, maximum earning rate, maximum pullback, and Sharpe ratio. These findings mark the potential of xLSTM for enhancing DRL-based stock trading systems.</details>
-
-
-- **Leveraging LLMS for Top-Down Sector Allocation In Automated Trading**
-  - Ryan Quek Wei Heng et al. | [2503.09647v5](http://arxiv.org/abs/2503.09647v5)
-  - <details><summary>Abstract</summary>This paper introduces a methodology leveraging Large Language Models (LLMs) for sector-level portfolio allocation through systematic analysis of macroeconomic conditions and market sentiment. Our framework emphasizes top-down sector allocation by processing multiple data streams simultaneously, including policy documents, economic indicators, and sentiment patterns. Empirical results demonstrate superior risk-adjusted returns compared to traditional cross momentum strategies, achieving a Sharpe ratio of 2.51 and portfolio return of 8.79% versus -0.61 and -1.39% respectively. These results suggest that LLM-based systematic macro analysis presents a viable approach for enhancing automated portfolio allocation decisions at the sector level.</details>
-
-
-### 📅 2025/03/07
-
-- **Multi-asset optimal trade execution with stochastic cross-effects: An Obizhaeva-Wang-type framework**
-  - Julia Ackermann et al. | [2503.05594v2](http://arxiv.org/abs/2503.05594v2)
-  - <details><summary>Abstract</summary>We analyze a continuous-time optimal trade execution problem in multiple assets where the price impact and the resilience can be matrix-valued stochastic processes that incorporate cross-impact effects. In addition, we allow for stochastic terminal and running targets. Initially, we formulate the optimal trade execution task as a stochastic control problem with a finite-variation control process that acts as an integrator both in the state dynamics and in the cost functional. We then extend this problem continuously to a stochastic control problem with progressively measurable controls. By identifying this extended problem as equivalent to a certain linear-quadratic stochastic control problem, we can use established results in linear-quadratic stochastic control to solve the extended problem. This work generalizes [Ackermann, Kruse, Urusov; FinancStoch'24] from the single-asset setting to the multi-asset case. In particular, we reveal cross-hedging effects, showing that it can be optimal to trade in an asset despite having no initial position. Moreover, as a subsetting we discuss a multi-asset variant of the model in [Obizhaeva, Wang; JFinancMark'13].</details>
 
