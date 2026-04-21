@@ -2,7 +2,7 @@
 layout: default
 ---
 
-> Updated on 2026/04/20 10:44:38
+> Updated on 2026/04/21 10:38:28
 
 <summary>Table of Contents</summary>
 
@@ -340,8 +340,8 @@ layout: default
 ### 📅 2025/10/25
 
 - **Understanding Carbon Trade Dynamics: A European Union Emissions Trading System Perspective**
-  - Avirup Chakraborty | [2510.22341v1](http://arxiv.org/abs/2510.22341v1)
-  - <details><summary>Abstract</summary>The European Union Emissions Trading System (EU ETS), the worlds largest cap-and-trade carbon market, is central to EU climate policy. This study analyzes its efficiency, price behavior, and market structure from 2010 to 2020. Using an AR-GARCH framework, we find pronounced price clustering and short-term return predictability, with 60.05 percent directional accuracy and a 70.78 percent hit rate within forecast intervals. Network analysis of inter-country transactions shows a concentrated structure dominated by a few registries that control most high-value flows. Country-specific log-log regressions of price on traded quantity reveal heterogeneous and sometimes positive elasticities exceeding unity, implying that trading volumes often rise with prices. These results point to persistent inefficiencies in the EU ETS, including partial predictability, asymmetric market power, and unconventional price-volume relationships, suggesting that while the system contributes to decarbonization, its trading dynamics and price formation remain imperfect.</details>
+  - Avirup Chakraborty | [2510.22341v2](http://arxiv.org/abs/2510.22341v2)
+  - <details><summary>Abstract</summary>The European Union Emissions Trading System (EU ETS), the world's first and largest cap-and-trade carbon market, is a cornerstone of EU climate policy. This study provides a comprehensive empirical analysis of the EU carbon market's efficiency, price dynamics, and structural network from 2010 to 2020. First, we identify significant price clustering and short-term return predictability using an AR-GARCH model, achieving around 60 percent directional accuracy and a 80 percent hit rate within forecasted confidence intervals. These observed patterns motivate a deeper exploration of market structure. Second, leveraging this insight, a weighted network analysis of inter-country transactions uncovers a concentrated market where a few registries dominate high-value flows and exert disproportionate influence. Finally, building upon the network findings, country-specific log-log regressions of price on traded quantity reveal heterogeneous and sometimes counter-intuitive elasticities; in several cases, positive elasticities exceed unity, indicating that trading volumes rise with prices, a deviation from conventional demand behavior that highlights potential inefficiencies driven by speculation, strategic behavior, or policy distortions. Collectively, these results point to persistent inefficiencies within the EU ETS, including partial predictability, asymmetric market power, and anomalous price-volume relationships, implying that while the system has driven decarbonization, its trading and pricing mechanisms remain imperfect.</details>
 
 
 ### 📅 2025/10/22
