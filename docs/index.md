@@ -2,7 +2,7 @@
 layout: default
 ---
 
-> Updated on 2026/04/21 10:38:28
+> Updated on 2026/04/22 10:37:05
 
 <summary>Table of Contents</summary>
 
@@ -13,6 +13,20 @@ layout: default
 </ol>
 
 ## Trading
+
+### 📅 2026/04/21
+
+- **Probabilistic Forecasting for Day-ahead Electricity Prices, Battery Trading Strategies and the Economic Evaluation of Predictive Accuracy**
+  - Simon Hirsch et al. | [2604.19580v1](http://arxiv.org/abs/2604.19580v1)
+  - <details><summary>Abstract</summary>Electricity price forecasting supports decision-making in energy markets and asset operation. Probabilistic forecasts are increasingly adopted to explicitly quantify uncertainty, typically issued as quantile predictions or ensembles of the full predictive distribution. However, how improvements in statistical forecast quality translate into economic value remains unclear. Battery storage arbitrage in day-ahead markets is a popular application-based benchmark for this purpose. We analyze quantile-based trading strategies (QBTS) and identify two critical flaws: they do not incentivize honest probabilistic forecasting and they ignore the intertemporal dependence structure of electricity prices. We therefore frame battery optimization as a stochastic program based on fully probabilistic forecasts and examine decision quality measurement for risk-neutral and risk-averse settings under different uncertainty models. Our discussion touches both sides of the coin: How reliable is the economic evaluation of forecasting models though (simplified) application studies - and how do improvements in statistical forecast quality for stochastic programs relate to the decision-quality and economic performance? We provide theoretical justification and empirical evidence from a case study on the German electricity market. Our results highlight the pitfalls of ranking forecasting models through battery trading strategies. We conclude with implications for evaluation practice and directions for future research in application-based forecast assessment.</details>
+
+
+### 📅 2026/04/20
+
+- **Dissecting AI Trading: Behavioral Finance and Market Bubbles**
+  - Shumiao Ouyang et al. | [2604.18373v1](http://arxiv.org/abs/2604.18373v1)
+  - <details><summary>Abstract</summary>We study how AI agents form expectations and trade in experimental asset markets. Using a simulated open-call auction populated by autonomous Large Language Model (LLM) agents, we document three main findings. First, AI agents exhibit classic behavioral patterns: a pronounced disposition effect and recency-weighted extrapolative beliefs. Second, these individual-level patterns aggregate into equilibrium dynamics that replicate classic experimental findings (Smith et al., 1988), including the predictive power of excess demand for future prices and the positive relationship between disagreement and trading volume. Third, by analyzing the agents' reasoning text through a twenty-mechanism scoring framework, we show that targeted prompt interventions causally amplify or suppress specific behavioral mechanisms, significantly altering the magnitude of market bubbles.</details>
+
 
 ### 📅 2026/04/14
 
@@ -464,7 +478,7 @@ layout: default
 
 
 - **QTMRL: An Agent for Quantitative Trading Decision-Making Based on Multi-Indicator Guided Reinforcement Learning**
-  - Xiangdong Liu et al. | [2508.20467v1](http://arxiv.org/abs/2508.20467v1)
+  - Jingfeng Pan et al. | [2508.20467v2](http://arxiv.org/abs/2508.20467v2)
   - <details><summary>Abstract</summary>In the highly volatile and uncertain global financial markets, traditional quantitative trading models relying on statistical modeling or empirical rules often fail to adapt to dynamic market changes and black swan events due to rigid assumptions and limited generalization. To address these issues, this paper proposes QTMRL (Quantitative Trading Multi-Indicator Reinforcement Learning), an intelligent trading agent combining multi-dimensional technical indicators with reinforcement learning (RL) for adaptive and stable portfolio management. We first construct a comprehensive multi-indicator dataset using 23 years of S&P 500 daily OHLCV data (2000-2022) for 16 representative stocks across 5 sectors, enriching raw data with trend, volatility, and momentum indicators to capture holistic market dynamics. Then we design a lightweight RL framework based on the Advantage Actor-Critic (A2C) algorithm, including data processing, A2C algorithm, and trading agent modules to support policy learning and actionable trading decisions. Extensive experiments compare QTMRL with 9 baselines (e.g., ARIMA, LSTM, moving average strategies) across diverse market regimes, verifying its superiority in profitability, risk adjustment, and downside risk control. The code of QTMRL is publicly available at https://github.com/ChenJiahaoJNU/QTMRL.git</details>
 
 
@@ -680,18 +694,4 @@ layout: default
 - **Practical Portfolio Optimization with Metaheuristics:Pre-assignment Constraint and Margin Trading**
   - Hang Kin Poon | [2503.15965v1](http://arxiv.org/abs/2503.15965v1)
   - <details><summary>Abstract</summary>Portfolio optimization is a critical area in finance, aiming to maximize returns while minimizing risk. Metaheuristic algorithms were shown to solve complex optimization problems efficiently, with Genetic Algorithms and Particle Swarm Optimization being among the most popular methods. This paper introduces an innovative approach to portfolio optimization that incorporates pre-assignment to limit the search space for investor preferences and better results. Additionally, taking margin trading strategies in account and using a rare performance ratio to evaluate portfolio efficiency. Through an illustrative example, this paper demonstrates that the metaheuristic-based methodology yields superior risk-adjusted returns compared to traditional benchmarks. The results highlight the potential of metaheuristics with help of assets filtering in enhancing portfolio performance in terms of risk adjusted return.</details>
-
-
-### 📅 2025/03/13
-
-- **Label Unbalance in High-frequency Trading**
-  - Zijian Zhao et al. | [2503.09988v3](http://arxiv.org/abs/2503.09988v3)
-  - <details><summary>Abstract</summary>In financial trading, return prediction is one of the foundation for a successful trading system. By the fast development of the deep learning in various areas such as graphical processing, natural language, it has also demonstrate significant edge in handling with financial data. While the success of the deep learning relies on huge amount of labeled sample, labeling each time/event as profitable or unprofitable, under the transaction cost, especially in the high-frequency trading world, suffers from serious label imbalance issue.In this paper, we adopts rigurious end-to-end deep learning framework with comprehensive label imbalance adjustment methods and succeed in predicting in high-frequency return in the Chinese future market. The code for our method is publicly available at https://github.com/RS2002/Label-Unbalance-in-High-Frequency-Trading .</details>
-
-
-### 📅 2025/03/12
-
-- **A Deep Reinforcement Learning Approach to Automated Stock Trading, using xLSTM Networks**
-  - Faezeh Sarlakifar et al. | [2503.09655v1](http://arxiv.org/abs/2503.09655v1)
-  - <details><summary>Abstract</summary>Traditional Long Short-Term Memory (LSTM) networks are effective for handling sequential data but have limitations such as gradient vanishing and difficulty in capturing long-term dependencies, which can impact their performance in dynamic and risky environments like stock trading. To address these limitations, this study explores the usage of the newly introduced Extended Long Short Term Memory (xLSTM) network in combination with a deep reinforcement learning (DRL) approach for automated stock trading. Our proposed method utilizes xLSTM networks in both actor and critic components, enabling effective handling of time series data and dynamic market environments. Proximal Policy Optimization (PPO), with its ability to balance exploration and exploitation, is employed to optimize the trading strategy. Experiments were conducted using financial data from major tech companies over a comprehensive timeline, demonstrating that the xLSTM-based model outperforms LSTM-based methods in key trading evaluation metrics, including cumulative return, average profitability per trade, maximum earning rate, maximum pullback, and Sharpe ratio. These findings mark the potential of xLSTM for enhancing DRL-based stock trading systems.</details>
 
