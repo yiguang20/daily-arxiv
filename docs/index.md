@@ -2,7 +2,7 @@
 layout: default
 ---
 
-> Updated on 2026/04/28 10:56:22
+> Updated on 2026/04/30 10:56:25
 
 <summary>Table of Contents</summary>
 
@@ -13,6 +13,13 @@ layout: default
 </ol>
 
 ## Trading
+
+### 📅 2026/04/28
+
+- **A Volume-Price-Adjusted MACD Trading Strategy with Sensitivity Calibration for U.S. Equity Indices**
+  - Luyun Lin et al. | [2604.26063v1](http://arxiv.org/abs/2604.26063v1)
+  - <details><summary>Abstract</summary>Traditional moving average convergence divergence (MACD) trading rules are often constrained by signal lag and susceptibility to false signals. To address these limitations, this study develops a volume-price-adjusted MACD (VP-MACD) framework that incorporates volume, volatility, and intraday price structure into the conventional indicator, and introduces a sensitivity parameter to allow earlier trade entry and improve responsiveness to market movements. Using the S&P 500, Nasdaq-100, and Dow Jones Industrial Average as representative U.S. equity indices, the model is calibrated over historical records from 2018 to 2022 and evaluated out of sample over 2023 to February 2026. The results indicate that the proposed framework generally delivers better economic performance than the baseline MACD strategy in terms of profitability, risk-adjusted return, and downside-risk control, while generating fewer but more selective trading signals. These findings suggest that incorporating additional market information into technical trading rules may enhance signal quality in U.S. equity index markets.</details>
+
 
 ### 📅 2026/04/21
 
@@ -687,11 +694,4 @@ layout: default
 - **China and G7 in the Current Context of the World Trading**
   - N. S. Gonchar et al. | [2503.17225v1](http://arxiv.org/abs/2503.17225v1)
   - <details><summary>Abstract</summary>The paper analyses trade between the most developed economies of the world. The analysis is based on the previously proposed model of international trade. This model of international trade is based on the theory of general economic equilibrium. The demand for goods in this model is built on the import of goods by each of the countries participating in the trade. The structure of supply of goods in this model is determined by the structure of exports of each country. It is proved that in such a model, given a certain structure of supply and demand, there exists a so-called ideal equilibrium state in which the trade balance of each country is zero. Under certain conditions on the structure of supply and demand, there is an equilibrium state in which each country have a strictly positive trade balance. Among the equilibrium states under a certain structure of supply and demand, there are some that differ from the ones described above. Such states are characterized by the fact that there is an inequitable distribution of income between the participants in the trade. Such states are called degenerate. In this paper, based on the previously proposed model of international trade, an analysis of the dynamics of international trade of 8 of the world's most developed economies is made. It is shown that trade between these countries was not in a state of economic equilibrium. The found relative equilibrium price vector turned out to be very degenerate, which indicates the unequal exchange of goods on the market of the 8 studied countries. An analysis of the dynamics of supply to the market of the world's most developed economies showed an increase in China's share. The same applies to the share of demand.</details>
-
-
-### 📅 2025/03/20
-
-- **Practical Portfolio Optimization with Metaheuristics:Pre-assignment Constraint and Margin Trading**
-  - Hang Kin Poon | [2503.15965v1](http://arxiv.org/abs/2503.15965v1)
-  - <details><summary>Abstract</summary>Portfolio optimization is a critical area in finance, aiming to maximize returns while minimizing risk. Metaheuristic algorithms were shown to solve complex optimization problems efficiently, with Genetic Algorithms and Particle Swarm Optimization being among the most popular methods. This paper introduces an innovative approach to portfolio optimization that incorporates pre-assignment to limit the search space for investor preferences and better results. Additionally, taking margin trading strategies in account and using a rare performance ratio to evaluate portfolio efficiency. Through an illustrative example, this paper demonstrates that the metaheuristic-based methodology yields superior risk-adjusted returns compared to traditional benchmarks. The results highlight the potential of metaheuristics with help of assets filtering in enhancing portfolio performance in terms of risk adjusted return.</details>
 
