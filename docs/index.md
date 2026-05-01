@@ -2,7 +2,7 @@
 layout: default
 ---
 
-> Updated on 2026/04/30 10:56:25
+> Updated on 2026/05/01 11:27:32
 
 <summary>Table of Contents</summary>
 
@@ -13,6 +13,13 @@ layout: default
 </ol>
 
 ## Trading
+
+### 📅 2026/04/30
+
+- **Data-Driven Stochastic Optimal Control for Intraday Electricity Trading by Renewable Producers**
+  - Chiheb Ben Hammouda et al. | [2604.27700v1](http://arxiv.org/abs/2604.27700v1)
+  - <details><summary>Abstract</summary>The rapid growth of weather-dependent renewable generation increases price volatility and imbalance penalty risk in power markets, creating the need for advanced quantitative trading strategies. We develop a data-driven continuous-time stochastic optimal control framework for intraday electricity trading using stochastic differential equations with drift terms ensuring mean reversion to deterministic forecast trajectories. Production follows a Jacobi diffusion, while prices follow an asymmetric jump-diffusion to reflect the heavy-tailed behavior observed in intraday markets. The framework accounts for realistic market features by incorporating gate closure and energy-based imbalance settlement over the delivery window, where the path-dependent imbalance cost is handled by state augmentation to preserve the Markovian structure. The value function is characterized via the dynamic programming principle by a three-stage sequence of two linear Kolmogorov backward equations and a nonlinear Hamilton-Jacobi-Bellman partial integro-differential equation. To solve this problem efficiently, we propose a monotone IMEX finite-difference scheme with operator splitting, semi-implicit linearization, and a differential formulation for the jump operator. Numerical experiments based on German market data indicate that, under the provided forecasts, the computed strategy outperforms the TWAP benchmark and approaches the perfect-foresight benchmark. Sensitivity experiments further show how jump intensity, delivery-window length, and trading horizon affect the trading policy and the resulting profit-and-loss distribution.</details>
+
 
 ### 📅 2026/04/28
 
@@ -687,11 +694,4 @@ layout: default
 - **Maximizing Battery Storage Profits via High-Frequency Intraday Trading**
   - David Schaurecker et al. | [2504.06932v3](http://arxiv.org/abs/2504.06932v3)
   - <details><summary>Abstract</summary>Maximizing revenue for grid-scale battery energy storage systems in continuous intraday electricity markets requires strategies that are able to seize trading opportunities as soon as new information arrives. This paper introduces and evaluates an automated high-frequency trading strategy for battery energy storage systems trading on the intraday market for power while explicitly considering the dynamics of the limit order book, market rules, and technical parameters. The standard rolling intrinsic strategy is adapted for continuous intraday electricity markets and solved using a dynamic programming approximation that is two to three orders of magnitude faster than an exact mixed-integer linear programming solution. A detailed backtest over a full year of German order book data demonstrates that the proposed dynamic programming formulation does not reduce trading profits and enables the policy to react to every relevant order book update, enabling realistic rapid backtesting. Our results show the significant revenue potential of high-frequency trading: our policy earns 58% more than when re-optimizing only once every hour and 14% more than when re-optimizing once per minute, highlighting that profits critically depend on trading speed. Furthermore, we leverage the speed of our algorithm to train a parametric extension of the rolling intrinsic, increasing yearly revenue by 8.4% out of sample.</details>
-
-
-### 📅 2025/03/21
-
-- **China and G7 in the Current Context of the World Trading**
-  - N. S. Gonchar et al. | [2503.17225v1](http://arxiv.org/abs/2503.17225v1)
-  - <details><summary>Abstract</summary>The paper analyses trade between the most developed economies of the world. The analysis is based on the previously proposed model of international trade. This model of international trade is based on the theory of general economic equilibrium. The demand for goods in this model is built on the import of goods by each of the countries participating in the trade. The structure of supply of goods in this model is determined by the structure of exports of each country. It is proved that in such a model, given a certain structure of supply and demand, there exists a so-called ideal equilibrium state in which the trade balance of each country is zero. Under certain conditions on the structure of supply and demand, there is an equilibrium state in which each country have a strictly positive trade balance. Among the equilibrium states under a certain structure of supply and demand, there are some that differ from the ones described above. Such states are characterized by the fact that there is an inequitable distribution of income between the participants in the trade. Such states are called degenerate. In this paper, based on the previously proposed model of international trade, an analysis of the dynamics of international trade of 8 of the world's most developed economies is made. It is shown that trade between these countries was not in a state of economic equilibrium. The found relative equilibrium price vector turned out to be very degenerate, which indicates the unequal exchange of goods on the market of the 8 studied countries. An analysis of the dynamics of supply to the market of the world's most developed economies showed an increase in China's share. The same applies to the share of demand.</details>
 
