@@ -2,7 +2,7 @@
 layout: default
 ---
 
-> Updated on 2026/05/04 10:54:15
+> Updated on 2026/05/05 10:46:27
 
 <summary>Table of Contents</summary>
 
@@ -13,6 +13,18 @@ layout: default
 </ol>
 
 ## Trading
+
+### 📅 2026/05/04
+
+- **Deepening the Secondary Market: Integrating Trade Credit into Market Clearing with the Cycles Protocol**
+  - Tomaž Fleischman et al. | [2605.02436v1](http://arxiv.org/abs/2605.02436v1)
+  - <details><summary>Abstract</summary>Current post-trade clearing systems rely almost exclusively on cash or cash-like collateral, leaving vast reserves of short-term liquidity embedded in trade credit outside formal settlement infrastructures. A key barrier to integrating this liquidity is the near-universal dependence of clearing services on novation, which imposes institutional overhead that restricts accessibility and limits the range of obligations that can be brought into settlement.   This paper introduces the Cycles Protocol: a distributed, multilateral clearing mechanism based on double-entry accounting and atomic cycle execution that maximizes balance sheet compression. Unlike novation-based clearing, Cycles does not redistribute counterparty risk; it can thus be applied generally to existing financial networks, without any change in counterparty relations, allowing it to complement existing clearing systems and Central Counterparties (CCPs).   By representing commitments as edges on a unified directed graph, Cycles surfaces liquidity hiding within existing network structure. We focus here on two applications of Cycles to deepening secondary market liquidity: first, as a compression layer between existing clearing participants and CCPs; and second, as a means to incorporate the liquidity of the trade credit network into formal settlement, extending market clearing beyond financial obligations and into real-economy financing.</details>
+
+
+- **Per-Market Information Leakage and Order-Flow Skill: Two Methodological Lenses on Informed Trading in Decentralized Prediction Markets**
+  - Maksym Nechepurenko | [2605.02287v1](http://arxiv.org/abs/2605.02287v1)
+  - <details><summary>Abstract</summary>April 2026 saw notable methodological convergence in the academic study of informed trading on decentralized prediction markets. Three approaches surfaced almost simultaneously: Mitts and Ofir (2026) apply a composite screen to over 210,000 wallet-market pairs; Gomez-Cram et al. (2026) apply an event-level sign-randomization test to Polymarket's complete transaction history, classifying 3.14% of accounts as "skilled winners" and separately flagging 1,950 accounts as "insiders" via a lifecycle heuristic; Nechepurenko (2026) develops the Information Leakage Score (ILS) framework, which quantifies per-market information front-loading at an article-derived public-event timestamp. This paper provides a methodological comparison. The central claim is that these are three distinct layers of detection, not competing methods on a single layer. Sign-randomization is best understood as an account-level test of persistent directional skill conditional on opportunity selection -- not a direct test of insider trading, and not a per-market measure. The heuristic insider flag is separate from the skill classifier, applies to a population the classifier excludes by design, and has unknown precision. The Polymarket sample pools politics, sports, crypto, and other categories with different information technologies, so a platform-wide "skilled winner" classification is mechanism-ambiguous. The January 2026 U.S.-Venezuela operation cluster, where the DOJ indictment of Master Sergeant Gannon Van Dyke provides a rare external enforcement benchmark, illustrates how the layers stack: lifecycle heuristics identify suspicious accounts; legal investigation addresses non-public-information possession; per-market scoring would quantify how much information was leaked into each contract. A combined pipeline gains in precision because each layer filters a different dimension.</details>
+
 
 ### 📅 2026/04/30
 
@@ -680,18 +692,4 @@ layout: default
 - **Can Large Language Models Trade? Testing Financial Theories with LLM Agents in Market Simulations**
   - Alejandro Lopez-Lira | [2504.10789v1](http://arxiv.org/abs/2504.10789v1)
   - <details><summary>Abstract</summary>This paper presents a realistic simulated stock market where large language models (LLMs) act as heterogeneous competing trading agents. The open-source framework incorporates a persistent order book with market and limit orders, partial fills, dividends, and equilibrium clearing alongside agents with varied strategies, information sets, and endowments. Agents submit standardized decisions using structured outputs and function calls while expressing their reasoning in natural language. Three findings emerge: First, LLMs demonstrate consistent strategy adherence and can function as value investors, momentum traders, or market makers per their instructions. Second, market dynamics exhibit features of real financial markets, including price discovery, bubbles, underreaction, and strategic liquidity provision. Third, the framework enables analysis of LLMs' responses to varying market conditions, similar to partial dependence plots in machine-learning interpretability. The framework allows simulating financial theories without closed-form solutions, creating experimental designs that would be costly with human participants, and establishing how prompts can generate correlated behaviors affecting market stability.</details>
-
-
-### 📅 2025/04/10
-
-- **Trading Graph Neural Network**
-  - Xian Wu | [2504.07923v1](http://arxiv.org/abs/2504.07923v1)
-  - <details><summary>Abstract</summary>This paper proposes a new algorithm -- Trading Graph Neural Network (TGNN) that can structurally estimate the impact of asset features, dealer features and relationship features on asset prices in trading networks. It combines the strength of the traditional simulated method of moments (SMM) and recent machine learning techniques -- Graph Neural Network (GNN). It outperforms existing reduced-form methods with network centrality measures in prediction accuracy. The method can be used on networks with any structure, allowing for heterogeneity among both traders and assets.</details>
-
-
-### 📅 2025/04/09
-
-- **Maximizing Battery Storage Profits via High-Frequency Intraday Trading**
-  - David Schaurecker et al. | [2504.06932v3](http://arxiv.org/abs/2504.06932v3)
-  - <details><summary>Abstract</summary>Maximizing revenue for grid-scale battery energy storage systems in continuous intraday electricity markets requires strategies that are able to seize trading opportunities as soon as new information arrives. This paper introduces and evaluates an automated high-frequency trading strategy for battery energy storage systems trading on the intraday market for power while explicitly considering the dynamics of the limit order book, market rules, and technical parameters. The standard rolling intrinsic strategy is adapted for continuous intraday electricity markets and solved using a dynamic programming approximation that is two to three orders of magnitude faster than an exact mixed-integer linear programming solution. A detailed backtest over a full year of German order book data demonstrates that the proposed dynamic programming formulation does not reduce trading profits and enables the policy to react to every relevant order book update, enabling realistic rapid backtesting. Our results show the significant revenue potential of high-frequency trading: our policy earns 58% more than when re-optimizing only once every hour and 14% more than when re-optimizing once per minute, highlighting that profits critically depend on trading speed. Furthermore, we leverage the speed of our algorithm to train a parametric extension of the rolling intrinsic, increasing yearly revenue by 8.4% out of sample.</details>
 
