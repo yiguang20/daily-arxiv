@@ -2,7 +2,7 @@
 layout: default
 ---
 
-> Updated on 2026/05/05 10:46:27
+> Updated on 2026/05/06 10:52:42
 
 <summary>Table of Contents</summary>
 
@@ -361,8 +361,8 @@ layout: default
 
 
 - **Trade Execution Flow as the Underlying Source of Market Dynamics**
-  - Mikhail Gennadievich Belov et al. | [2511.01471v1](http://arxiv.org/abs/2511.01471v1)
-  - <details><summary>Abstract</summary>In this work, we demonstrate experimentally that the execution flow, $I = dV/dt$, is the fundamental driving force of market dynamics. We develop a numerical framework to calculate execution flow from sampled moments using the Radon-Nikodym derivative. A notable feature of this approach is its ability to automatically determine thresholds that can serve as actionable triggers. The technique also determines the characteristic time scale directly from the corresponding eigenproblem. The methodology has been validated on actual market data to support these findings. Additionally, we introduce a framework based on the Christoffel function spectrum, which is invariant under arbitrary non-degenerate linear transformations of input attributes and offers an alternative to traditional principal component analysis (PCA), which is limited to unitary invariance.</details>
+  - Mikhail Gennadievich Belov et al. | [2511.01471v2](http://arxiv.org/abs/2511.01471v2)
+  - <details><summary>Abstract</summary>In this work, we demonstrate experimentally that the execution flow, $I = dV/dt$, is the fundamental driving force of market dynamics. We develop a numerical framework to calculate execution flow from the data using the Radon-Nikodym derivative. A notable feature of this approach is its ability to automatically determine thresholds that can serve as actionable triggers. The technique also determines the characteristic time scale directly from the corresponding eigenproblem. The methodology has been validated on actual market data to support these findings. Additionally, we introduce a framework based on the Christoffel function spectrum, which is invariant under arbitrary non-degenerate linear transformations of input attributes and offers an alternative to traditional principal component analysis (PCA), which is limited to unitary invariance.</details>
 
 
 ### 📅 2025/10/31
