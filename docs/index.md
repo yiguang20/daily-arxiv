@@ -2,7 +2,7 @@
 layout: default
 ---
 
-> Updated on 2026/05/06 10:52:42
+> Updated on 2026/05/07 10:53:36
 
 <summary>Table of Contents</summary>
 
@@ -13,6 +13,13 @@ layout: default
 </ol>
 
 ## Trading
+
+### 📅 2026/05/06
+
+- **Dynamic Collateral Control for Permissionless Spot Perpetual Basis Trading**
+  - Anatoly Krestenko et al. | [2605.05089v1](http://arxiv.org/abs/2605.05089v1)
+  - <details><summary>Abstract</summary>We study permissionless spot--perpetual basis trading in decentralized finance as a collateral control problem. The strategy holds spot inventory, hedges directional exposure with a short perpetual, and allocates capital between spot inventory and derivative margin under on-chain liquidity and execution frictions.   The paper delivers three results. First, it solves a static control problem for the collateral share and shows that the risk-constrained formulation provides a more robust operating benchmark relative to the economic optimum. In comparative calibration, the required collateral rises monotonically under volatility stress. The collateral is the lowest for BTC and increases significantly for long tail assets such as LINK and DOGE. Second, the paper derives an asymmetric dynamic extension in which the lower boundary of intervention is solvency driven, and the upper boundary is determined by a trade-off between carry-loss and the cost of rebalancing. Monte Carlo simulation shows that the lower boundary remains structurally relevant, whereas meaningful interior upper triggers survive mainly in the regimes with high carry and low costs. Third, the paper validates an execution-aware implementation with live routed execution and historical backtests. The execution layer shows that the realized wedges are significant, but become worse in the case of selling the basis. This justifies a minimum effective rebalancing size and a positive execution buffer. The historical validation shows that in the case of a fixed control rule the realized performance is predominantly explained by the funding environment.</details>
+
 
 ### 📅 2026/05/04
 
@@ -685,11 +692,4 @@ layout: default
 - **ClusterLOB: Enhancing Trading Strategies by Clustering Orders in Limit Order Books**
   - Yichi Zhang et al. | [2504.20349v3](http://arxiv.org/abs/2504.20349v3)
   - <details><summary>Abstract</summary>In the rapidly evolving world of financial markets, understanding the dynamics of limit order book (LOB) is crucial for unraveling market microstructure and participant behavior. We introduce ClusterLOB as a method to cluster individual market events in a stream of market-by-order (MBO) data into different groups. To do so, each market event is augmented with six time-dependent features. By applying the K-means++ clustering algorithm to the resulting order features, we are then able to assign each new order to one of three distinct clusters, which we identify as directional, opportunistic, and market-making participants, each capturing unique trading behaviors. Our experimental results are performed on one year of MBO data containing small-tick, medium-tick, and large-tick stocks from NASDAQ. To validate the usefulness of our clustering, we compute order flow imbalances across each cluster within 30-minute buckets during the trading day. We treat each cluster's imbalance as a signal that provides insights into trading strategies and participants' responses to varying market conditions. To assess the effectiveness of these signals, we identify the trading strategy with the highest Sharpe ratio in the training dataset, and demonstrate that its performance in the test dataset is superior to benchmark trading strategies that do not incorporate clustering. We also evaluate trading strategies based on order flow imbalance decompositions across different market event types, including add, cancel, and trade events, to assess their robustness in various market conditions. This work establishes a robust framework for clustering market participant behavior, which helps us to better understand market microstructure, and inform the development of more effective predictive trading signals with practical applications in algorithmic trading and quantitative finance.</details>
-
-
-### 📅 2025/04/15
-
-- **Can Large Language Models Trade? Testing Financial Theories with LLM Agents in Market Simulations**
-  - Alejandro Lopez-Lira | [2504.10789v1](http://arxiv.org/abs/2504.10789v1)
-  - <details><summary>Abstract</summary>This paper presents a realistic simulated stock market where large language models (LLMs) act as heterogeneous competing trading agents. The open-source framework incorporates a persistent order book with market and limit orders, partial fills, dividends, and equilibrium clearing alongside agents with varied strategies, information sets, and endowments. Agents submit standardized decisions using structured outputs and function calls while expressing their reasoning in natural language. Three findings emerge: First, LLMs demonstrate consistent strategy adherence and can function as value investors, momentum traders, or market makers per their instructions. Second, market dynamics exhibit features of real financial markets, including price discovery, bubbles, underreaction, and strategic liquidity provision. Third, the framework enables analysis of LLMs' responses to varying market conditions, similar to partial dependence plots in machine-learning interpretability. The framework allows simulating financial theories without closed-form solutions, creating experimental designs that would be costly with human participants, and establishing how prompts can generate correlated behaviors affecting market stability.</details>
 
