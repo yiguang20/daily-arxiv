@@ -2,7 +2,7 @@
 layout: default
 ---
 
-> Updated on 2026/05/17 11:29:52
+> Updated on 2026/05/21 11:43:20
 
 <summary>Table of Contents</summary>
 
@@ -13,6 +13,13 @@ layout: default
 </ol>
 
 ## Trading
+
+### 📅 2026/05/19
+
+- **Memory-Induced Supra-Competitive Outcomes Between Deep Reinforcement Learning Agents in Optimal Trade Execution**
+  - Christos Spyridon Koulouris et al. | [2605.20348v1](http://arxiv.org/abs/2605.20348v1)
+  - <details><summary>Abstract</summary>In this paper, we investigate whether deep reinforcement-learning agents interacting in a shared optimal-execution environment can sustain supra-competitive outcomes, in the sense of achieving lower implementation shortfalls than the relevant game-theoretical competitive benchmark. We study a two-agent Almgren-Chriss liquidation game and examine how learned behavior depends on intra-episode environment feedback, the ability to interpret the mid-price and the agent's knoledge of the past. We first use ex-ante schedule-learning agents to remove intra-episode feedback and isolate what can arise when agents commit to complete liquidation trajectories before execution begins. We then allow agents to condition on the evolving state using a variety of DDQN architectures. We find that, when agents are given access to intra-episode history, especially recent prices and own past actions, supra-competitive outcomes become substantially more frequent and more persistent. These findings indicate that supra-competitive behavior in this execution game is driven not by multi-agent learning or by current price observation alone, but by feedback, memory, and state-contingent interaction along the realized execution path.</details>
+
 
 ### 📅 2026/05/12
 
@@ -43,6 +50,13 @@ layout: default
 - **Per-Market Information Leakage and Order-Flow Skill: Two Methodological Lenses on Informed Trading in Decentralized Prediction Markets**
   - Maksym Nechepurenko | [2605.02287v2](http://arxiv.org/abs/2605.02287v2)
   - <details><summary>Abstract</summary>April 2026 saw notable methodological convergence in the academic study of informed trading on decentralized prediction markets. Three approaches surfaced almost simultaneously: Mitts and Ofir (2026) apply a composite screen to over 210,000 wallet-market pairs; Gomez-Cram et al. (2026) apply an event-level sign-randomization test to Polymarket's complete transaction history, classifying 3.14% of accounts as "skilled winners" and separately flagging 1,950 accounts as "insiders" via a lifecycle heuristic; Nechepurenko (2026) develops the Information Leakage Score (ILS) framework, which quantifies per-market information front-loading at an article-derived public-event timestamp. This paper provides a methodological comparison. The central claim is that these are three distinct layers of detection, not competing methods on a single layer. Sign-randomization is best understood as an account-level test of persistent directional skill conditional on opportunity selection -- not a direct test of insider trading, and not a per-market measure. The heuristic insider flag is separate from the skill classifier, applies to a population the classifier excludes by design, and has unknown precision. The Polymarket sample pools politics, sports, crypto, and other categories with different information technologies, so a platform-wide "skilled winner" classification is mechanism-ambiguous. The January 2026 U.S.-Venezuela operation cluster, where the DOJ indictment of Master Sergeant Gannon Van Dyke provides a rare external enforcement benchmark, illustrates how the layers stack: lifecycle heuristics identify suspicious accounts; legal investigation addresses non-public-information possession; per-market scoring would quantify how much information was leaked into each contract. A combined pipeline gains in precision because each layer filters a different dimension.</details>
+
+
+### 📅 2026/05/03
+
+- **TradeMech: A Method to Multilaterally Net Trades Without Altering Counterparty Exposure**
+  - Daniel Aronoff et al. | [2605.15210v1](http://arxiv.org/abs/2605.15210v1)
+  - <details><summary>Abstract</summary>Financial markets such as bond, derivatives, and repo markets form networks of interdependent obligations. Existing multilateral netting methods typically trade off the extent of netting against preservation of counterparty exposure: central clearing reallocates exposure to a central counterparty, while trade compression may alter bilateral counterparty relationships. TradeMech is a mechanism for markets in which one or two homogeneous fungible objects are traded. The mechanism transforms a network of initial bilateral contracts into chains and cycles, nets the designated object multilaterally on those chains and cycles, and replaces initial contracts with multiparty contracts whose assigned trades remain fractions of the original bilateral trades. The construction achieves maximal multilateral netting of the designated object while preserving each agent's contractual profit and preserving the location of counterparty risk. When a party fails to pre-commit a required object, the affected assigned trade is recovered as a bilateral contract between the same original counterparties and the remaining assigned trades are re-netted on residual chains, so no new counterparty exposure is created.</details>
 
 
 ### 📅 2026/05/01
@@ -284,7 +298,7 @@ layout: default
 ### 📅 2026/01/08
 
 - **Trading Electrons: Predicting DART Spread Spikes in ISO Electricity Markets**
-  - Emma Hubert et al. | [2601.05085v2](http://arxiv.org/abs/2601.05085v2)
+  - Emma Hubert et al. | [2601.05085v3](http://arxiv.org/abs/2601.05085v3)
   - <details><summary>Abstract</summary>We study the problem of forecasting and optimally trading day-ahead versus real-time (DART) price spreads in U.S. wholesale electricity markets. Building on the framework of Galarneau-Vincent et al., we extend spike prediction from a single zone to a multi-zone setting and treat both positive and negative DART spikes within a unified statistical model. To translate directional signals into economically meaningful positions, we develop a structural and market-consistent price impact model based on day-ahead bid stacks. This yields closed-form expressions for the optimal vector of zonal INC/DEC quantities, capturing asymmetric buy/sell impacts and cross-zone congestion effects. When applied to NYISO, the resulting impact-aware strategy significantly improves the risk-return profile relative to unit-size trading and highlights substantial heterogeneity across markets and seasons.</details>
 
 
@@ -448,7 +462,7 @@ layout: default
 ### 📅 2025/10/10
 
 - **ATLAS: Adaptive Trading with LLM AgentS Through Dynamic Prompt Optimization and Multi-Agent Coordination**
-  - Charidimos Papadakis et al. | [2510.15949v4](http://arxiv.org/abs/2510.15949v4)
+  - Charidimos Papadakis et al. | [2510.15949v5](http://arxiv.org/abs/2510.15949v5)
   - <details><summary>Abstract</summary>Large language models show promise for financial decision-making, yet deploying them as autonomous trading agents raises fundamental challenges: how to adapt instructions when rewards arrive late and obscured by market noise, how to synthesize heterogeneous information streams into coherent decisions, and how to bridge the gap between model outputs and executable market actions. We present ATLAS (Adaptive Trading with LLM AgentS), a unified multi-agent framework that integrates structured information from markets, news, and corporate fundamentals to support robust trading decisions. Within ATLAS, the central trading agent operates in an order-aware action space, ensuring that outputs correspond to executable market orders rather than abstract signals. The agent can incorporate feedback while trading using Adaptive-OPRO, a novel prompt-optimization technique that dynamically adapts the prompt by incorporating real-time, stochastic feedback, leading to increasing performance over time. Across regime-specific equity studies and multiple LLM families, Adaptive-OPRO consistently outperforms fixed prompts, while reflection-based feedback fails to provide systematic gains.</details>
 
 
@@ -678,16 +692,4 @@ layout: default
 - **Machine Learning Enhanced Multi-Factor Quantitative Trading: A Cross-Sectional Portfolio Optimization Approach with Bias Correction**
   - Yimin Du | [2507.07107v2](http://arxiv.org/abs/2507.07107v2)
   - <details><summary>Abstract</summary>Rolling-window factor pipelines for Chinese A-share markets contain a subtle but costly flaw: daily price-move limits (+/-10% main-board, +/-20% STAR/ChiNext) render a fraction of closing prices non-executable, yet standard implementations ingest these values before any row-filtering runs. The contaminated aggregates propagate silently through moving averages, correlations, and ranks--a failure mode we term "upstream contamination". On real A-share data it inflates apparent information coefficient by 18% while reducing realised Sharpe by 0.44 points, because the model learns to predict returns it cannot trade. We resolve this with a mask-first design: a Boolean tradability mask is constructed at data load time and threaded through every operator, so that no window ever reads a non-tradable price. Built on this foundation, the system adds (i) a GPU-vectorised 213-factor engine via PyTorch unfold primitives (51x over pandas); (ii) an Adjusted-MSE loss penalising wrong-sign predictions 11x more heavily than magnitude errors; (iii) block-bootstrap GBM augmentation; and (iv) Markowitz-Ledoit-Wolf portfolio optimisation with cvxpy warm-start caching. On a calibrated 3,000-stock synthetic panel the system achieves annualised Sharpe 2.05; on proprietary real A-share data (2022-2024) it achieves Sharpe 1.63. Ablation shows the mask contract is the single largest contributor (+0.44), exceeding any model or loss choice. The full implementation is released under MIT licence at https://github.com/initial-d/ml-quant-trading.</details>
-
-
-### 📅 2025/05/27
-
-- **Classifying and Clustering Trading Agents**
-  - Mateusz Wilinski et al. | [2505.21662v1](http://arxiv.org/abs/2505.21662v1)
-  - <details><summary>Abstract</summary>The rapid development of sophisticated machine learning methods, together with the increased availability of financial data, has the potential to transform financial research, but also poses a challenge in terms of validation and interpretation. A good case study is the task of classifying financial investors based on their behavioral patterns. Not only do we have access to both classification and clustering tools for high-dimensional data, but also data identifying individual investors is finally available. The problem, however, is that we do not have access to ground truth when working with real-world data. This, together with often limited interpretability of modern machine learning methods, makes it difficult to fully utilize the available research potential. In order to deal with this challenge we propose to use a realistic agent-based model as a way to generate synthetic data. This way one has access to ground truth, large replicable data, and limitless research scenarios. Using this approach we show how, even when classifying trading agents in a supervised manner is relatively easy, a more realistic task of unsupervised clustering may give incorrect or even misleading results. We complete the results with investigating the details of how supervised techniques were able to successfully distinguish between different trading behaviors.</details>
-
-
-- **Replication of Reference-Dependent Preferences and the Risk-Return Trade-Off in the Chinese Market**
-  - Penggan Xu | [2505.20608v1](http://arxiv.org/abs/2505.20608v1)
-  - <details><summary>Abstract</summary>This study replicates the findings of Wang et al. (2017) on reference-dependent preferences and their impact on the risk-return trade-off in the Chinese stock market, a unique context characterized by high retail investor participation, speculative trading behavior, and regulatory complexities. Capital Gains Overhang (CGO), a proxy for unrealized gains or losses, is employed to explore how behavioral biases shape cross-sectional stock returns in an emerging market setting. Utilizing data from 1995 to 2024 and econometric techniques such as Dependent Double Sorting and Fama-MacBeth regressions, this research investigates the interaction between CGO and five risk proxies: Beta, Return Volatility (RETVOL), Idiosyncratic Volatility (IVOL), Firm Age (AGE), and Cash Flow Volatility (CFVOL). Key findings reveal a weaker or absent positive risk-return relationship among high-CGO firms and stronger positive relationships among low-CGO firms, diverging from U.S. market results, and the interaction effects between CGO and risk proxies, significant and positive in the U.S., are predominantly negative in the Chinese market, reflecting structural and behavioral differences, such as speculative trading and diminished reliance on reference points. The results suggest that reference-dependent preferences play a less pronounced role in the Chinese market, emphasizing the need for tailored investment strategies in emerging economies.</details>
 
