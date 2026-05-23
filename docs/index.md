@@ -2,7 +2,7 @@
 layout: default
 ---
 
-> Updated on 2026/05/21 11:43:20
+> Updated on 2026/05/23 10:57:32
 
 <summary>Table of Contents</summary>
 
@@ -284,8 +284,8 @@ layout: default
 ### 📅 2026/01/10
 
 - **Cross-Market Alpha: Testing Short-Term Trading Factors in the U.S. Market via Double-Selection LASSO**
-  - Jin Du et al. | [2601.06499v1](http://arxiv.org/abs/2601.06499v1)
-  - <details><summary>Abstract</summary>Current asset pricing research exhibits a significant gap: a lack of sufficient cross-market validation regarding short-term trading-based factors. Against this backdrop, the development of the Chinese A-share market which is characterized by its retail-investor dominance, policy sensitivity, and high-frequency active trading -- has given rise to specific short-term trading-based factors. This study systematically examines the universality of factors from the Alpha191 library in the U.S. market, addressing the challenge of high-dimensional factor screening through the double-selection LASSO algorithm an established method for cross-market, high-dimensional research. After controlling for 151 fundamental factors from the U.S. equity factor zoo, 17 Alpha191 factors selected by this procedure exhibit significant incremental explanatory power for the cross-section of U.S. stock returns at the 5% level. Together these findings demonstrate that short-term trading-based factors, originating from the unique structure of the Chinese A-share market, provide incremental information not captured by existing mainstream pricing models, thereby enhancing the explanation of cross-sectional return differences.</details>
+  - Jin Du et al. | [2601.06499v2](http://arxiv.org/abs/2601.06499v2)
+  - <details><summary>Abstract</summary>While traditional equity factor investing relies heavily on slow-moving fundamental accounting metrics, these models frequently suffer from factor crowding and miss real-time, sentiment-driven market dislocations. This study explores how institutional investors can leverage a high-dimensional library of 191 short-term, trading-based signals, originally developed for the retail-heavy Chinese A-share market, to enhance alpha generation within the highly institutionalized U.S. S&P 500 universe from 2002 to 2022. Utilizing a robust double-selection LASSO framework to control for 151 established fundamental factors, we isolate 17 distinct price-volume and microstructural signals that capture significant, non-redundant risk premiums. Our empirical evidence demonstrates that these fast trading signals capture universal behavioral dynamics that do not dilute over a monthly rebalancing horizon. Integrating these short-term behavioral footprints with slow fundamental data offers a powerful dual-horizon framework to mitigate model misspecification risk and enhance large-cap portfolio diversification.</details>
 
 
 ### 📅 2026/01/09
