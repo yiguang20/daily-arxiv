@@ -2,7 +2,7 @@
 layout: default
 ---
 
-> Updated on 2026/05/23 10:57:32
+> Updated on 2026/05/25 11:52:57
 
 <summary>Table of Contents</summary>
 
@@ -13,6 +13,13 @@ layout: default
 </ol>
 
 ## Trading
+
+### 📅 2026/05/21
+
+- **MadEvolve: Evolutionary Optimization of Trading Systems with Large Language Models**
+  - Yurii Kvasiuk et al. | [2605.23007v1](http://arxiv.org/abs/2605.23007v1)
+  - <details><summary>Abstract</summary>We explore the application of LLM-driven algorithm optimization to several common tasks in quantitative finance. MadEvolve, a general-purpose algorithm optimization framework inspired by DeepMind's Alpha-Evolve, was recently developed to optimize algorithms in computational cosmology. Here we demonstrate the utility of MadEvolve to optimize algorithmic trading strategies and alpha generation at the example of Bitcoin trading. On our simulation and backtesting setup, we achieve significant improvements on all tasks we considered, such as evolving feature sets for signal generation, optimizing separate components of the trading strategy, and jointly evolving the feature pipeline together with the execution strategy. Additionally, we compare our method to other agentic search approaches, specifically Claude Code, and carefully evaluate p-hacking probabilities on our simulation setup. Our findings strongly support the utility of AI-driven agentic and evolutionary algorithms for algorithmic trading and quantitative finance.</details>
+
 
 ### 📅 2026/05/19
 
@@ -685,11 +692,4 @@ layout: default
 - **Can Artificial Intelligence Trade the Stock Market?**
   - Jędrzej Maskiewicz et al. | [2506.04658v1](http://arxiv.org/abs/2506.04658v1)
   - <details><summary>Abstract</summary>The paper explores the use of Deep Reinforcement Learning (DRL) in stock market trading, focusing on two algorithms: Double Deep Q-Network (DDQN) and Proximal Policy Optimization (PPO) and compares them with Buy and Hold benchmark. It evaluates these algorithms across three currency pairs, the S&P 500 index and Bitcoin, on the daily data in the period of 2019-2023. The results demonstrate DRL's effectiveness in trading and its ability to manage risk by strategically avoiding trades in unfavorable conditions, providing a substantial edge over classical approaches, based on supervised learning in terms of risk-adjusted returns.</details>
-
-
-### 📅 2025/06/02
-
-- **Machine Learning Enhanced Multi-Factor Quantitative Trading: A Cross-Sectional Portfolio Optimization Approach with Bias Correction**
-  - Yimin Du | [2507.07107v2](http://arxiv.org/abs/2507.07107v2)
-  - <details><summary>Abstract</summary>Rolling-window factor pipelines for Chinese A-share markets contain a subtle but costly flaw: daily price-move limits (+/-10% main-board, +/-20% STAR/ChiNext) render a fraction of closing prices non-executable, yet standard implementations ingest these values before any row-filtering runs. The contaminated aggregates propagate silently through moving averages, correlations, and ranks--a failure mode we term "upstream contamination". On real A-share data it inflates apparent information coefficient by 18% while reducing realised Sharpe by 0.44 points, because the model learns to predict returns it cannot trade. We resolve this with a mask-first design: a Boolean tradability mask is constructed at data load time and threaded through every operator, so that no window ever reads a non-tradable price. Built on this foundation, the system adds (i) a GPU-vectorised 213-factor engine via PyTorch unfold primitives (51x over pandas); (ii) an Adjusted-MSE loss penalising wrong-sign predictions 11x more heavily than magnitude errors; (iii) block-bootstrap GBM augmentation; and (iv) Markowitz-Ledoit-Wolf portfolio optimisation with cvxpy warm-start caching. On a calibrated 3,000-stock synthetic panel the system achieves annualised Sharpe 2.05; on proprietary real A-share data (2022-2024) it achieves Sharpe 1.63. Ablation shows the mask contract is the single largest contributor (+0.44), exceeding any model or loss choice. The full implementation is released under MIT licence at https://github.com/initial-d/ml-quant-trading.</details>
 
