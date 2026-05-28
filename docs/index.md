@@ -2,7 +2,7 @@
 layout: default
 ---
 
-> Updated on 2026/05/25 11:52:57
+> Updated on 2026/05/28 11:38:48
 
 <summary>Table of Contents</summary>
 
@@ -13,6 +13,13 @@ layout: default
 </ol>
 
 ## Trading
+
+### 📅 2026/05/27
+
+- **From Knowing to Doing: A Memory-Controlled Benchmark for LLM Trading Agents on Stock Markets**
+  - Taojie Zhu et al. | [2605.28359v1](http://arxiv.org/abs/2605.28359v1)
+  - <details><summary>Abstract</summary>Evaluating whether large language model (LLM) agents can profit in capital markets is increasingly framed as end-to-end trading: place an agent in a historical market, let it trade, and measure portfolio returns. This setup is vulnerable to two evaluation failures. First, long backtests often overlap with the knowledge cutoffs of frontier LLMs, allowing memorized tickers, dates, prices, and market narratives to substitute for investment reasoning. Second, raw returns are a noisy proxy for stock-selection ability, since positive performance may come from market beta, style exposure, or favorable regimes rather than genuine alpha.   We introduce KTD-Fin (Knowing-To-Doing Financial Benchmark), an end-to-end stock-market trading benchmark that addresses both issues. KTD-Fin uses a data-side masking protocol to anonymize key identifiers and calendar information consistently across prompts and tools, separating historical market memory from investment decision-making. It also incorporates a Barra-style performance attribution framework that decomposes portfolio returns into market, style, and stock-selection alpha components.   Across ten frontier LLM agents evaluated on the Chinese CSI300 over a 2024--2026 window, masking substantially changes agent rationales, pushing them towards anonymized factor-based reasoning. Attribution analysis further shows that LLM agents' cumulative returns under leakage-controlled evaluation are largely explained by passive market and style exposure, with limited evidence of persistent stock-selection alpha. These findings suggest that financial LLM benchmarks should evaluate not only whether an agent makes money, but also whether the source of returns reflects transferable investment skill. We release KTD-Fin as a reproducible template for leakage-controlled and attribution-aware evaluation of LLM trading agents.</details>
+
 
 ### 📅 2026/05/21
 
@@ -221,8 +228,8 @@ layout: default
 ### 📅 2026/02/10
 
 - **AlphaForgeBench: Benchmarking End-to-End Trading Strategy Design with Large Language Models**
-  - Wentao Zhang et al. | [2602.18481v1](http://arxiv.org/abs/2602.18481v1)
-  - <details><summary>Abstract</summary>The rapid advancement of Large Language Models (LLMs) has led to a surge of financial benchmarks, evolving from static knowledge tests to interactive trading simulations. However, current evaluations of real-time trading performance overlook a critical failure mode: severe behavioral instability in sequential decision-making under uncertainty. We empirically show that LLM-based trading agents exhibit extreme run-to-run variance, inconsistent action sequences even under deterministic decoding, and irrational action flipping across adjacent time steps. These issues stem from stateless autoregressive architectures lacking persistent action memory, as well as sensitivity to continuous-to-discrete action mappings in portfolio allocation. As a result, many existing financial trading benchmarks produce unreliable, non-reproducible, and uninformative evaluations. To address these limitations, we propose AlphaForgeBench, a principled framework that reframes LLMs as quantitative researchers rather than execution agents. Instead of emitting trading actions, LLMs generate executable alpha factors and factor-based strategies grounded in financial reasoning. This design decouples reasoning from execution, enabling fully deterministic and reproducible evaluation while aligning with real-world quantitative research workflows. Experiments across multiple state-of-the-art LLMs show that AlphaForgeBench eliminates execution-induced instability and provides a rigorous benchmark for assessing financial reasoning, strategy formulation, and alpha discovery.</details>
+  - Wentao Zhang et al. | [2602.18481v2](http://arxiv.org/abs/2602.18481v2)
+  - <details><summary>Abstract</summary>The rapid advancement of Large Language Models (LLMs) has led to a surge of financial benchmarks, evolving from static knowledge evaluation toward interactive trading simulations. However, existing frameworks for evaluating real-time trading largely overlook a critical failure mode: the severe behavioral instability of LLMs in sequential decision-making under financial uncertainty. Through extensive experiments, we show that when deployed as trading agents, LLMs exhibit extreme run-to-run variance, generate inconsistent action sequences even under deterministic decoding, and frequently produce irrational action flipping across adjacent time steps. We attribute these behaviors to the stateless autoregressive nature of LLMs, which lack persistent memory of prior actions, together with their sensitivity to continuous-to-discrete action mappings in portfolio allocation tasks. These deficiencies fundamentally undermine the reliability and reproducibility of many existing online and offline trading benchmarks. To address these limitations, we propose AlphaForgeBench, a principled evaluation framework that redefines LLMs as quantitative researchers rather than stochastic trading agents. Instead of producing discrete trading actions, AlphaForgeBench requires models to generate executable alpha factors and compose factor-based trading strategies grounded in financial knowledge. This paradigm decouples reasoning from execution mechanics, enabling deterministic and reproducible evaluation while remaining aligned with real-world quantitative research workflows. Extensive experiments across multiple state-of-the-art LLMs demonstrate that AlphaForgeBench eliminates execution-induced instability and provides a rigorous benchmark for evaluating financial reasoning, strategy formulation, and alpha discovery. Webpage at https://finbrain-lab-hkustgz.github.io/AlphaForgeBench</details>
 
 
 ### 📅 2026/02/04
@@ -685,11 +692,4 @@ layout: default
 - **Dynamic Grid Trading Strategy: From Zero Expectation to Market Outperformance**
   - Kai-Yuan Chen et al. | [2506.11921v1](http://arxiv.org/abs/2506.11921v1)
   - <details><summary>Abstract</summary>We propose a profitable trading strategy for the cryptocurrency market based on grid trading. Starting with an analysis of the expected value of the traditional grid strategy, we show that under simple assumptions, its expected return is essentially zero. We then introduce a novel Dynamic Grid-based Trading (DGT) strategy that adapts to market conditions by dynamically resetting grid positions. Our backtesting results using minute-level data from Bitcoin and Ethereum between January 2021 and July 2024 demonstrate that the DGT strategy significantly outperforms both the traditional grid and buy-and-hold strategies in terms of internal rate of return and risk control.</details>
-
-
-### 📅 2025/06/05
-
-- **Can Artificial Intelligence Trade the Stock Market?**
-  - Jędrzej Maskiewicz et al. | [2506.04658v1](http://arxiv.org/abs/2506.04658v1)
-  - <details><summary>Abstract</summary>The paper explores the use of Deep Reinforcement Learning (DRL) in stock market trading, focusing on two algorithms: Double Deep Q-Network (DDQN) and Proximal Policy Optimization (PPO) and compares them with Buy and Hold benchmark. It evaluates these algorithms across three currency pairs, the S&P 500 index and Bitcoin, on the daily data in the period of 2019-2023. The results demonstrate DRL's effectiveness in trading and its ability to manage risk by strategically avoiding trades in unfavorable conditions, providing a substantial edge over classical approaches, based on supervised learning in terms of risk-adjusted returns.</details>
 
