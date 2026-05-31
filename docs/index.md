@@ -2,7 +2,7 @@
 layout: default
 ---
 
-> Updated on 2026/05/28 11:38:48
+> Updated on 2026/05/31 11:55:42
 
 <summary>Table of Contents</summary>
 
@@ -33,6 +33,13 @@ layout: default
 - **Memory-Induced Supra-Competitive Outcomes Between Deep Reinforcement Learning Agents in Optimal Trade Execution**
   - Christos Spyridon Koulouris et al. | [2605.20348v1](http://arxiv.org/abs/2605.20348v1)
   - <details><summary>Abstract</summary>In this paper, we investigate whether deep reinforcement-learning agents interacting in a shared optimal-execution environment can sustain supra-competitive outcomes, in the sense of achieving lower implementation shortfalls than the relevant game-theoretical competitive benchmark. We study a two-agent Almgren-Chriss liquidation game and examine how learned behavior depends on intra-episode environment feedback, the ability to interpret the mid-price and the agent's knoledge of the past. We first use ex-ante schedule-learning agents to remove intra-episode feedback and isolate what can arise when agents commit to complete liquidation trajectories before execution begins. We then allow agents to condition on the evolving state using a variety of DDQN architectures. We find that, when agents are given access to intra-episode history, especially recent prices and own past actions, supra-competitive outcomes become substantially more frequent and more persistent. These findings indicate that supra-competitive behavior in this execution game is driven not by multi-agent learning or by current price observation alone, but by feedback, memory, and state-contingent interaction along the realized execution path.</details>
+
+
+### 📅 2026/05/16
+
+- **Representation Signatures and Risk-Feedback Alignment in LLM Trading Agents**
+  - Weicheng Xue | [2605.28850v1](http://arxiv.org/abs/2605.28850v1)
+  - <details><summary>Abstract</summary>We study behavioral alignment and representation dynamics of large language model (LLM) agents in financial decision environments. Using TradeArena, an auditable trading-agent testbed with risk reports, execution simulation, memory, and replayable trajectories, we analyze how rationales, positions, and interventions evolve under market stress. We find measurable pre-failure signatures: planning embeddings drift from normal-state centroids, fused plan-risk representations separate normal from pre-drawdown states, and manifold diagnostics show effective-rank contraction before failures. To address small-sample and embedding-choice concerns, we use 80 rolling failure anchors across eight LLM trajectories and show that contraction persists across hash, LSA, Transformer, and white-box hidden-state probes. Stress tests with CoT-free target weights, lexical controls, OHLCV noise, and false-audit reports indicate that rationale-level contraction can vanish without rationales, while intent-space contraction may remain; lexical diversity does not collapse; and fused signatures remain informative under noise. We also find that structured risk feedback can act as an external alignment signal without fine-tuning, but not as a universal performance enhancer: true audit feedback improves calibration for some models, return and drawdown for others, and reveals cases where hidden or placebo feedback has higher short-horizon return but weaker alignment diagnostics. Finally, a 51-stock intraday experiment reveals a correlation blind spot: LLM rationales often justify concentrated exposure to coupled assets that the risk layer repeatedly clips, with a rolling Markowitz baseline as a covariance reference. These results support a research claim rather than a profitability claim: auditable risk feedback and representation trajectories reveal when LLM financial reasoning is aligning, drifting, or failing.</details>
 
 
 ### 📅 2026/05/12
@@ -685,11 +692,4 @@ layout: default
 - **Making Leveraged Exchange-Traded Funds Work for your Portfolio**
   - Peter Forsyth et al. | [2506.19200v1](http://arxiv.org/abs/2506.19200v1)
   - <details><summary>Abstract</summary>We examine strategically incorporating broad stock market leveraged exchange-traded funds (LETFs) into investment portfolios. We demonstrate that easily understandable and implementable strategies can enhance the risk-return profile of a portfolio containing LETFs. Our analysis shows that seemingly reasonable investment strategies may result in undesirable Omega ratios, with these effects compounding across rebalancing periods. By contrast, relatively simple dynamic strategies that systematically de-risk the portfolio once gains are observed can exploit this compounding effect, taking advantage of favorable Omega ratio dynamics. Our findings suggest that LETFs represent a valuable tool for investors employing dynamic strategies, while confirming their well-documented unsuitability for passive or static approaches.</details>
-
-
-### 📅 2025/06/13
-
-- **Dynamic Grid Trading Strategy: From Zero Expectation to Market Outperformance**
-  - Kai-Yuan Chen et al. | [2506.11921v1](http://arxiv.org/abs/2506.11921v1)
-  - <details><summary>Abstract</summary>We propose a profitable trading strategy for the cryptocurrency market based on grid trading. Starting with an analysis of the expected value of the traditional grid strategy, we show that under simple assumptions, its expected return is essentially zero. We then introduce a novel Dynamic Grid-based Trading (DGT) strategy that adapts to market conditions by dynamically resetting grid positions. Our backtesting results using minute-level data from Bitcoin and Ethereum between January 2021 and July 2024 demonstrate that the DGT strategy significantly outperforms both the traditional grid and buy-and-hold strategies in terms of internal rate of return and risk control.</details>
 
