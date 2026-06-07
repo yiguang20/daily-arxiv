@@ -2,7 +2,7 @@
 layout: default
 ---
 
-> Updated on 2026/06/03 12:09:33
+> Updated on 2026/06/07 11:58:38
 
 <summary>Table of Contents</summary>
 
@@ -13,6 +13,13 @@ layout: default
 </ol>
 
 ## Trading
+
+### 📅 2026/06/03
+
+- **Dynamic Multi-Pair Trading Strategy in Cryptocurrency Markets with Deep Reinforcement Learning**
+  - Damian Lebiedź et al. | [2606.04574v1](http://arxiv.org/abs/2606.04574v1)
+  - <details><summary>Abstract</summary>This study aims to determine whether the application of Deep Reinforcement Learning (DRL) as a specialized execution overlay can enhance pair trading in highly volatile cryptocurrency markets. Although classical implementations of the strategy have proven successful in traditional equities, they frequently exhibit rigidity and suffer from severe divergence risks when applied to high-variance environments. To address this need, this research introduces novel concepts. To construct a robust system, we developed a hierarchical "Filter-then-Rank" pair selection methodology and a proprietary "Fixed Risk, Adaptive Mean" execution model. The system employs a Proximal Policy Optimization (PPO) agent with a Long Short-Term Memory (LSTM) layer to govern execution decisions within strict deterministic risk management boundaries. Evaluated on 1-hour interval data from the Binance USD-M Futures market, the optimized RL policy achieved an out-of-sample performance that substantially outperformed the heuristic baseline. A stationary circular block bootstrap robustness check confirms that the agent's risk-adjusted outperformance is statistically significant at the 10 percent level. Although falling marginally short of the stricter 5 percent threshold, this result highlights the extreme idiosyncratic variance characteristic of digital assets. Ultimately, this thesis contributes to the quantitative finance literature by introducing a hybrid architecture that combines statistical arbitrage with DRL execution policies. Furthermore, it delivers a novel framework for safe reinforcement learning via deterministic shielding, proving that anchoring a neural policy to statistically robust boundaries successfully mitigates severe divergence risks.</details>
+
 
 ### 📅 2026/06/02
 
@@ -683,11 +690,4 @@ layout: default
 - **To Trade or Not to Trade: An Agentic Approach to Estimating Market Risk Improves Trading Decisions**
   - Dimitrios Emmanoulopoulos et al. | [2507.08584v1](http://arxiv.org/abs/2507.08584v1)
   - <details><summary>Abstract</summary>Large language models (LLMs) are increasingly deployed in agentic frameworks, in which prompts trigger complex tool-based analysis in pursuit of a goal. While these frameworks have shown promise across multiple domains including in finance, they typically lack a principled model-building step, relying instead on sentiment- or trend-based analysis. We address this gap by developing an agentic system that uses LLMs to iteratively discover stochastic differential equations for financial time series. These models generate risk metrics which inform daily trading decisions. We evaluate our system in both traditional backtests and using a market simulator, which introduces synthetic but causally plausible price paths and news events. We find that model-informed trading strategies outperform standard LLM-based agents, improving Sharpe ratios across multiple equities. Our results show that combining LLMs with agentic model discovery enhances market risk estimation and enables more profitable trading decisions.</details>
-
-
-### 📅 2025/07/08
-
-- **Reinforcement Learning for Trade Execution with Market and Limit Orders**
-  - Patrick Cheridito et al. | [2507.06345v2](http://arxiv.org/abs/2507.06345v2)
-  - <details><summary>Abstract</summary>In this paper, we introduce a novel reinforcement learning framework for optimal trade execution in a limit order book. We formulate the trade execution problem as a dynamic allocation task whose objective is the optimal placement of market and limit orders to maximize expected revenue. By modeling market and limit order allocations with multivariate logistic-normal distributions, the framework enables efficient training of the reinforcement learning algorithm. Numerical experiments show that the proposed method outperforms traditional benchmark strategies in simulated limit order book environments featuring noise traders submitting random orders, tactical traders responding to order book imbalances, and a strategic trader seeking to acquire or liquidate an asset position.</details>
 
