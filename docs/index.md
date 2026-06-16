@@ -2,7 +2,7 @@
 layout: default
 ---
 
-> Updated on 2026/06/15 12:19:21
+> Updated on 2026/06/16 12:10:11
 
 <summary>Table of Contents</summary>
 
@@ -13,6 +13,20 @@ layout: default
 </ol>
 
 ## Trading
+
+### 📅 2026/06/15
+
+- **Revisiting Trade-sign Long-memory and Square-root Law price impact**
+  - Chris Angstmann et al. | [2606.16269v1](http://arxiv.org/abs/2606.16269v1)
+  - <details><summary>Abstract</summary>Starting with a coupled discrete reaction--diffusion formulation for the lit and latent order books with non-uniformly sampled event times and meta-order source terms we show how two familiar market-microstructure regularities can emerge from this framework: the long-memory of trade signs associated with the Lillo--Mike--Farmer (LMF) theory and the square-root law (SQRL) of meta-order impact. This uses the well known locally linear order book and constant participation-rate execution in the front dynamics to reduce the dynamics to a Volterra equation whose leading-order solution then yields the well know result of concave impact trajectory, and a completion impact proportional to the square root of the meta-order size. We then re-derive the heavy-tailed Pareto-distributed meta-order lengths induce a power-law trade-sign autocorrelation through the interface source term to discuss the interface representation. These are familiar derivations, what is slightly different here is that we reinterpret these known derivations to make it clear that LMF law is an event-time sign-memory statement, whereas the square-root law is a physical-time viability statement where non-uniform event waiting times can alter the calendar-time impact trajectories depending on the mappings and interpolation used to set continuum operational time.</details>
+
+
+### 📅 2026/06/14
+
+- **Trading in the Sunshine or in the Shade: Market Impact and Adverse Selection on Hyperliquid**
+  - Davide Barone et al. | [2606.15715v1](http://arxiv.org/abs/2606.15715v1)
+  - <details><summary>Abstract</summary>Sunshine trading theory predicts that publicly disclosing trading intentions can reduce adverse selection and attract liquidity provision, lowering execution costs. Evidence is scarce, because explicit preannouncement of large orders is rare in traditional markets. We study Hyperliquid, a fully on-chain limit order book for cryptocurrency perpetual futures, where protocol-native TWAP orders disclose their terms from inception and remain visible while active, a natural form of sunshine trading. Using address-level data, we reconstruct 4.3 million hidden metaorders and compare them with 465,000 visible TWAP executions. The two execution styles differ sharply: hidden metaorders follow front-loaded, U-shaped schedules consistent with transient-impact optimal execution, whereas TWAPs trade nearly uniformly. We test the preannouncement predictions of Admati and Pfleiderer (1991). Visible TWAPs face lower execution costs than comparable hidden metaorders and leave a smaller permanent price impact. Hidden metaorders executed alongside already-visible same-direction TWAP flow incur higher permanent costs: adverse-selection costs shift toward non-announcers. Finally, visible TWAP programs elicit liquidity provision: while active, displayed depth rises and the book tilts toward the absorbing side, the more so the larger the announced order.</details>
+
 
 ### 📅 2026/06/07
 
@@ -676,18 +690,4 @@ layout: default
 - **FinDPO: Financial Sentiment Analysis for Algorithmic Trading through Preference Optimization of LLMs**
   - Giorgos Iacovides et al. | [2507.18417v1](http://arxiv.org/abs/2507.18417v1)
   - <details><summary>Abstract</summary>Opinions expressed in online finance-related textual data are having an increasingly profound impact on trading decisions and market movements. This trend highlights the vital role of sentiment analysis as a tool for quantifying the nature and strength of such opinions. With the rapid development of Generative AI (GenAI), supervised fine-tuned (SFT) large language models (LLMs) have become the de facto standard for financial sentiment analysis. However, the SFT paradigm can lead to memorization of the training data and often fails to generalize to unseen samples. This is a critical limitation in financial domains, where models must adapt to previously unobserved events and the nuanced, domain-specific language of finance. To this end, we introduce FinDPO, the first finance-specific LLM framework based on post-training human preference alignment via Direct Preference Optimization (DPO). The proposed FinDPO achieves state-of-the-art performance on standard sentiment classification benchmarks, outperforming existing supervised fine-tuned models by 11% on the average. Uniquely, the FinDPO framework enables the integration of a fine-tuned causal LLM into realistic portfolio strategies through a novel 'logit-to-score' conversion, which transforms discrete sentiment predictions into continuous, rankable sentiment scores (probabilities). In this way, simulations demonstrate that FinDPO is the first sentiment-based approach to maintain substantial positive returns of 67% annually and strong risk-adjusted performance, as indicated by a Sharpe ratio of 2.0, even under realistic transaction costs of 5 basis points (bps).</details>
-
-
-### 📅 2025/07/23
-
-- **Optimal Trading under Instantaneous and Persistent Price Impact, Predictable Returns and Multiscale Stochastic Volatility**
-  - Patrick Chan et al. | [2507.17162v1](http://arxiv.org/abs/2507.17162v1)
-  - <details><summary>Abstract</summary>We consider a dynamic portfolio optimization problem that incorporates predictable returns, instantaneous transaction costs, price impact, and stochastic volatility, extending the classical results of Garleanu and Pedersen (2013), which assume constant volatility. Constructing the optimal portfolio strategy in this general setting is challenging due to the nonlinear nature of the resulting Hamilton-Jacobi-Bellman (HJB) equations. To address this, we propose a multi-scale volatility expansion that captures stochastic volatility dynamics across different time scales. Specifically, the analysis involves a singular perturbation for the fast mean-reverting volatility factor and a regular perturbation for the slow-moving factor. We also introduce an approximation for small price impact and demonstrate its numerical accuracy. We formally derive asymptotic approximations up to second order and use Monte Carlo simulations to show how incorporating these corrections improves the Profit and Loss (PnL) of the resulting portfolio strategy.</details>
-
-
-### 📅 2025/07/14
-
-- **Kernel Learning for Mean-Variance Trading Strategies**
-  - Owen Futter et al. | [2507.10701v1](http://arxiv.org/abs/2507.10701v1)
-  - <details><summary>Abstract</summary>In this article, we develop a kernel-based framework for constructing dynamic, pathdependent trading strategies under a mean-variance optimisation criterion. Building on the theoretical results of (Muca Cirone and Salvi, 2025), we parameterise trading strategies as functions in a reproducing kernel Hilbert space (RKHS), enabling a flexible and non-Markovian approach to optimal portfolio problems. We compare this with the signature-based framework of (Futter, Horvath, Wiese, 2023) and demonstrate that both significantly outperform classical Markovian methods when the asset dynamics or predictive signals exhibit temporal dependencies for both synthetic and market-data examples. Using kernels in this context provides significant modelling flexibility, as the choice of feature embedding can range from randomised signatures to the final layers of neural network architectures. Crucially, our framework retains closed-form solutions and provides an alternative to gradient-based optimisation.</details>
 
