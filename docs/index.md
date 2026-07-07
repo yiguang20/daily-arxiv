@@ -2,7 +2,7 @@
 layout: default
 ---
 
-> Updated on 2026/07/06 11:33:53
+> Updated on 2026/07/07 11:24:43
 
 <summary>Table of Contents</summary>
 
@@ -13,6 +13,27 @@ layout: default
 </ol>
 
 ## Trading
+
+### 📅 2026/07/06
+
+- **Look-Ahead-Freedom as Temporal Non-Interference: A Verifiable Correctness Property for Backtesting and Agentic Trading Pipelines**
+  - Xavier Fonseca | [2607.04958v1](http://arxiv.org/abs/2607.04958v1)
+  - <details><summary>Abstract</summary>Look-ahead bias (using information from after a decision epoch to make the decision at that epoch) is the dominant way a backtest or a machine-learning evaluation flatters a system that will disappoint in deployment. The field manages it with construct-specific recipes and empirical detectors, which are sound only channel by channel and certify nothing by their silence. We show that look-ahead-freedom is a formal property in disguise: fixing an epoch, the demand that the future not influence the present is temporal non-interference over a time-indexed information lattice. From this identification we develop a pipeline calculus separating a datum's availability from its reference time, and settle the problem's boundary. Where availability may depend on data values, look-ahead-freedom is undecidable (indeed Pi-0-1-hard): leakage is recursively enumerable but freedom is not. On the value-independent fragment (covering windowing, resampling, joins, point-in-time and vintage reads, and agentic retrieval) we give a type-and-effect system that is sound and decidable in linear time. An artifact confirms the theory: the check scales linearly, an independent oracle witnesses no leak in any accepted pipeline, and the checker catches every planted leak that differential and tiling detectors miss.</details>
+
+
+### 📅 2026/07/05
+
+- **A Limit Order Market with Uncertain Informed Trading Participation**
+  - Umut Çetin et al. | [2607.04221v1](http://arxiv.org/abs/2607.04221v1)
+  - <details><summary>Abstract</summary>We study a one period limit order market with informed traders, noise traders, and competitive liquidity suppliers, in which the number of informed traders is random. Liquidity suppliers know the distribution of the informed trader count, but not its realization, and therefore face uncertainty about both the presence and the intensity of informed trading. We characterize equilibrium by a fixed point integral equation for the marginal cost function and establish existence of equilibrium for bounded asset values. We then analyse large order asymptotics. For bounded asset values with power law endpoint behaviour, equilibrium price impact follows a power law whose exponent is determined jointly by the asset value tail and the full distribution of the informed trader count. In particular, this exponent is not determined by the expected number of informed traders alone. In the light endpoint regime, price impact is instead logarithmic. Finally, we solve the fixed point numerically across several asset value and informed trader count distributions. The numerical results are consistent with the theoretical asymptotics in the cases covered by the theory and provide comparative statics beyond them.</details>
+
+
+### 📅 2026/07/02
+
+- **Outcome-Classified Precision Auditing of Filter Rules in Algorithmic DEX Trading: Evidence from 2,400 Rejection Events**
+  - Arati Uday Kamat | [2607.02830v1](http://arxiv.org/abs/2607.02830v1)
+  - <details><summary>Abstract</summary>This paper reports a precision audit of a production filter stack against a 13-day window of post-rejection forward-market observations on Solana DEX trading (2026-04-10 to 2026-04-23, UTC). The audit yielded 99,510 follow-up samples across 2,402 unique rejection events spanning eight active filter rules. We classify each event under a five-tier outcome rule and report per-filter distributions. The headline result is the conservative save-to-miss ratio of 3.7 : 1 from windowed measured-drawdown saves alone; every active filter with adequate sample size is individually net-positive. A wider interpretation that credits single-sample-within-60-minute events as saves yields 14.8 : 1. We then test the interpretive premise of that wider tier against the deposited lifecycle data of a separately-published benchmark (RED-2400). The matched comparison shows that early-death-classified mints reach the gone state at 48.9 percent. Non-early-death rejected mints reach gone at 57.6 percent. The early-death classification does not identify tokens at elevated rug-pull risk relative to other rejected tokens. The wider 14.8 : 1 ratio therefore rests on a tier that the matched test does not validate. The conservative 3.7 : 1 is the report the lifecycle data supports. The methodological contribution is the separation of the two evidence bases and the demonstration that the wider tier does not survive matched-comparison testing.</details>
+
 
 ### 📅 2026/07/01
 
@@ -671,23 +692,4 @@ layout: default
 - **Event-Aware Sentiment Factors from LLM-Augmented Financial Tweets: A Transparent Framework for Interpretable Quant Trading**
   - Yueyi Wang et al. | [2508.07408v1](http://arxiv.org/abs/2508.07408v1)
   - <details><summary>Abstract</summary>In this study, we wish to showcase the unique utility of large language models (LLMs) in financial semantic annotation and alpha signal discovery. Leveraging a corpus of company-related tweets, we use an LLM to automatically assign multi-label event categories to high-sentiment-intensity tweets. We align these labeled sentiment signals with forward returns over 1-to-7-day horizons to evaluate their statistical efficacy and market tradability. Our experiments reveal that certain event labels consistently yield negative alpha, with Sharpe ratios as low as -0.38 and information coefficients exceeding 0.05, all statistically significant at the 95\% confidence level. This study establishes the feasibility of transforming unstructured social media text into structured, multi-label event variables. A key contribution of this work is its commitment to transparency and reproducibility; all code and methodologies are made publicly available. Our results provide compelling evidence that social media sentiment is a valuable, albeit noisy, signal in financial forecasting and underscore the potential of open-source frameworks to democratize algorithmic trading research.</details>
-
-
-### 📅 2025/08/09
-
-- **Empirical Analysis of the Model-Free Valuation Approach: Hedging Gaps, Conservatism, and Trading Opportunities**
-  - Zixing Chen et al. | [2508.16595v3](http://arxiv.org/abs/2508.16595v3)
-  - <details><summary>Abstract</summary>In this paper we study the quality of model-free valuation approaches for financial derivatives by systematically evaluating the difference between model-free super-hedging strategies and the realized payoff of financial derivatives using historical option prices from several constituents of the S&P 500 between 2018 and 2022.   Our study allows in particular to describe the realized gap between payoff and model-free hedging strategy empirically so that we can quantify to which degree model-free approaches are overly conservative. Our results imply that the model-free hedging approach is only marginally more conservative than industry-standard models such as the Heston-model while being model-free at the same time.   This finding, its statistical description and the model-independence of the hedging approach enable us to construct an explicit trading strategy which, as we demonstrate, can be profitably applied in financial markets, and additionally possesses the desirable feature with an explicit control of its downside risk due to its model-free construction preventing losses pathwise.</details>
-
-
-### 📅 2025/08/04
-
-- **Language Model Guided Reinforcement Learning in Quantitative Trading**
-  - Adam Darmanin et al. | [2508.02366v3](http://arxiv.org/abs/2508.02366v3)
-  - <details><summary>Abstract</summary>Algorithmic trading requires short-term tactical decisions consistent with long-term financial objectives. Reinforcement Learning (RL) has been applied to such problems, but adoption is limited by myopic behaviour and opaque policies. Large Language Models (LLMs) offer complementary strategic reasoning and multi-modal signal interpretation when guided by well-structured prompts. This paper proposes a hybrid framework in which LLMs generate high-level trading strategies to guide RL agents. We evaluate (i) the economic rationale of LLM-generated strategies through expert review, and (ii) the performance of LLM-guided agents against unguided RL baselines using Sharpe Ratio (SR) and Maximum Drawdown (MDD). Empirical results indicate that LLM guidance improves both return and risk metrics relative to standard RL.</details>
-
-
-- **Neural Network-Based Algorithmic Trading Systems: Multi-Timeframe Analysis and High-Frequency Execution in Cryptocurrency Markets**
-  - Wěi Zhāng | [2508.02356v1](http://arxiv.org/abs/2508.02356v1)
-  - <details><summary>Abstract</summary>This paper explores neural network-based approaches for algorithmic trading in cryptocurrency markets. Our approach combines multi-timeframe trend analysis with high-frequency direction prediction networks, achieving positive risk-adjusted returns through statistical modeling and systematic market exploitation. The system integrates diverse data sources including market data, on-chain metrics, and orderbook dynamics, translating these into unified buy/sell pressure signals. We demonstrate how machine learning models can effectively capture cross-timeframe relationships, enabling sub-second trading decisions with statistical confidence.</details>
 
