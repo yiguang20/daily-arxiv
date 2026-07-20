@@ -2,7 +2,7 @@
 layout: default
 ---
 
-> Updated on 2026/07/10 11:20:15
+> Updated on 2026/07/20 11:33:07
 
 <summary>Table of Contents</summary>
 
@@ -13,6 +13,34 @@ layout: default
 </ol>
 
 ## Trading
+
+### 📅 2026/07/16
+
+- **AI Trading: Evaluating Large Language Models for Technical Market Analysis**
+  - Geofrey Ntale | [2607.15414v1](http://arxiv.org/abs/2607.15414v1)
+  - <details><summary>Abstract</summary>Large Language Models (LLMs) have emerged as powerful tools for processing the heterogeneous information environments of modern financial markets. This paper presents a systematic, comparative evaluation of five prominent LLMs: GPT-4 Turbo, Claude 3 Opus, Gemini 1.5 Pro, Llama 3 70B, and the domain-specialized FinGPT, with respect to their capacity for technical market analysis. The evaluation spans four structured tasks: candlestick pattern recognition from OHLCV data, directional signal generation (BUY/SELL/HOLD), backtesting of signal quality through a simulated execution pipeline, and financial report comprehension. Our experimental framework employs rigorous quantitative metrics, including Sharpe ratio, maximum drawdown, Sortino ratio, information coefficient, F1-score, and BLEU score. Findings from simulated backtesting indicate that GPT-4 Turbo achieves the highest annualized return and Sharpe ratio among general-purpose models, while FinGPT demonstrates competitive risk-adjusted performance due to domain-specific fine-tuning. Both models outperform a passive S&P 500 benchmark under the tested conditions. The study identifies persistent failure modes across all evaluated models, including numerical hallucination, context-window limitations, and inconsistent performance in sideways market regimes. We conclude that while LLMs hold genuine promise within AI trading systems, robust deployment requires careful task decomposition, rigorous backtesting protocols, and domain-aware fine-tuning strategies.</details>
+
+
+### 📅 2026/07/15
+
+- **Detecting unusual trading patterns on cryptocurrency exchanges by means of complexity measures**
+  - Jakub Zwydak et al. | [2607.13916v1](http://arxiv.org/abs/2607.13916v1)
+  - <details><summary>Abstract</summary>Artificial transaction generation remains an important source of potential market manipulation on cryptocurrency exchanges, as it may distort reported liquidity and reduce market transparency. This study proposes a diagnostic framework for detecting unusual trading patterns based on complexity and statistical-structure measures derived from high-frequency trade-level data. The analysis considers log-returns, trading volume, and transaction counts, using tail distributions, autocorrelation functions, multifractal characteristics, approximate entropy, and detrended cross-correlations. The methodology is applied to BTC, ETH, and XRP traded on Binance, Bitget, KuCoin, and Kraken over the period from April 1 to June 30, 2025. The results reveal a pronounced anomaly on Bitget for BTC and ETH after mid-May 2025. The number of transactions increases sharply, but there is no proportional increase in traded volume or return fluctuations. This regime is characterised by numerous low-volume trades, weaker autocorrelations, reduced multifractal organisation, higher short-pattern irregularity, and weaker cross-correlations involving the transaction-count series. These features are consistent with a noise-like component in trading activity and may indicate artificially increased transaction counts, although they do not provide direct proof of wash trading. The findings show that complexity-based indicators can be useful for detecting exchange-specific trading anomalies that remain hidden in price-based measures.</details>
+
+
+### 📅 2026/07/12
+
+- **Multidimensional stochastic liquidity in Kyle's model of informed trading**
+  - Ibrahim Ekren et al. | [2607.10934v1](http://arxiv.org/abs/2607.10934v1)
+  - <details><summary>Abstract</summary>We develop a variational formulation of Kyle's model of informed trading that accommodates stochastic liquidity and multiple traded assets. The main equilibrium result is stated first: under a martingale dual condition, a matrix-valued martingale depth process generates a linear-Gaussian equilibrium with stochastic matrix-valued price impact. We derive this martingale from a primal-dual problem, inspired by causal optimal transport, that characterizes the endogenous speed at which the insider injects private information into prices; in general, this problem admits only local martingale optimizers, and the martingale dual condition is the hypothesis that the optimizer is a true martingale. We interpret informed trading as the optimal liquidation of private information and verify the construction in the scalar and common-eigenbasis cases. The fully general matrix-valued case reduces to a coupled matrix FBSDE, which we isolate as the remaining obstruction. Along the way, we establish an independently interesting Doob-Meyer decomposition for general (not necessarily symmetric) matrix-valued submartingales.</details>
+
+
+### 📅 2026/07/10
+
+- **The Quarter-Hour Effect: Periodic Algorithmic Trading and Return Predictability in Cryptocurrency Futures**
+  - Chan Kim et al. | [2607.09426v2](http://arxiv.org/abs/2607.09426v2)
+  - <details><summary>Abstract</summary>Cryptocurrency markets exhibit periodic bursts in volatility and volume at one-minute, five-minute, and quarter-hour marks. Using trade data for six Binance perpetual contracts, we link these bursts to algorithmic participation: trade-size roundness declines sharply during them. The Autocorrelation Map, a clock-phase-resolved display, reveals serial dependence in order flow and returns at quarter-hour openings that conventional measures obscure. Opening returns are predictable out of sample, while opening order imbalance predicts returns over four to twelve hours, with much weaker effects at finer clock-time frequencies. Together, these findings characterize periodic algorithmic trading and its cross-frequency variation.</details>
+
 
 ### 📅 2026/07/06
 
@@ -666,30 +694,4 @@ layout: default
 - **Adaptive Alpha Weighting with PPO: Enhancing Prompt-Based LLM-Generated Alphas in Quant Trading**
   - Qizhao Chen et al. | [2509.01393v2](http://arxiv.org/abs/2509.01393v2)
   - <details><summary>Abstract</summary>This paper introduces a reinforcement learning framework that employs Proximal Policy Optimization (PPO) to dynamically optimize the weights of multiple large language model (LLM)-generated formulaic alphas for stock trading strategies. Formulaic alphas are mathematically defined trading signals derived from price, volume, sentiment, and other data. Although recent studies have shown that LLMs can generate diverse and effective alphas, a critical challenge lies in how to adaptively integrate them under varying market conditions. To address this gap, we leverage a DeepSeek model to generate fifty alphas for ten stocks, and then use PPO to adjust their weights in real time. Experimental results indicate that the PPO-optimized strategy does not consistently deliver the highest cumulative returns across all stocks, but it achieves comparatively higher Sharpe ratios and smaller maximum drawdowns in most cases. When compared with baseline strategies, including equal-weighted, buy-and-hold, random entry/exit, and momentum approaches, PPO demonstrates more stable risk-adjusted performance. The findings highlight the importance of reinforcement learning in the allocation of alpha weights and show the potential of combining LLM-generated signals with adaptive optimization for robust financial forecasting and trading.</details>
-
-
-### 📅 2025/08/31
-
-- **Prospects of Imitating Trading Agents in the Stock Market**
-  - Mateusz Wilinski et al. | [2509.00982v1](http://arxiv.org/abs/2509.00982v1)
-  - <details><summary>Abstract</summary>In this work we show how generative tools, which were successfully applied to limit order book data, can be utilized for the task of imitating trading agents. To this end, we propose a modified generative architecture based on the state-space model, and apply it to limit order book data with identified investors. The model is trained on synthetic data, generated from a heterogeneous agent-based model. Finally, we compare model's predicted distribution over different aspects of investors' actions, with the ground truths known from the agent-based model.</details>
-
-
-### 📅 2025/08/28
-
-- **Agent-based model of information diffusion in the limit order book trading**
-  - Mateusz Wilinski et al. | [2508.20672v1](http://arxiv.org/abs/2508.20672v1)
-  - <details><summary>Abstract</summary>There are multiple explanations for stylized facts in high-frequency trading, including adaptive and informed agents, many of which have been studied through agent-based models. This paper investigates an alternative explanation by examining whether, and under what circumstances, interactions between traders placing limit order book messages can reproduce stylized facts, and what forms of interaction are required. While the agent-based modeling literature has introduced interconnected agents on networks, little attention has been paid to whether specific trading network topologies can generate stylized facts in limit order book markets. In our model, agents are strictly zero-intelligence, with no fundamental knowledge or chartist-like strategies, so that the role of network topology can be isolated. We find that scale-free connectivity between agents reproduces stylized facts observed in markets, whereas no-interaction does not. Our experiments show that regular lattices and Erdos-Renyi networks are not significantly different from the no-interaction baseline. Thus, we provide a completely new, potentially complementary, explanation for the emergence of stylized facts.</details>
-
-
-- **QTMRL: An Agent for Quantitative Trading Decision-Making Based on Multi-Indicator Guided Reinforcement Learning**
-  - Jingfeng Pan et al. | [2508.20467v2](http://arxiv.org/abs/2508.20467v2)
-  - <details><summary>Abstract</summary>In the highly volatile and uncertain global financial markets, traditional quantitative trading models relying on statistical modeling or empirical rules often fail to adapt to dynamic market changes and black swan events due to rigid assumptions and limited generalization. To address these issues, this paper proposes QTMRL (Quantitative Trading Multi-Indicator Reinforcement Learning), an intelligent trading agent combining multi-dimensional technical indicators with reinforcement learning (RL) for adaptive and stable portfolio management. We first construct a comprehensive multi-indicator dataset using 23 years of S&P 500 daily OHLCV data (2000-2022) for 16 representative stocks across 5 sectors, enriching raw data with trend, volatility, and momentum indicators to capture holistic market dynamics. Then we design a lightweight RL framework based on the Advantage Actor-Critic (A2C) algorithm, including data processing, A2C algorithm, and trading agent modules to support policy learning and actionable trading decisions. Extensive experiments compare QTMRL with 9 baselines (e.g., ARIMA, LSTM, moving average strategies) across diverse market regimes, verifying its superiority in profitability, risk adjustment, and downside risk control. The code of QTMRL is publicly available at https://github.com/ChenJiahaoJNU/QTMRL.git</details>
-
-
-### 📅 2025/08/10
-
-- **Event-Aware Sentiment Factors from LLM-Augmented Financial Tweets: A Transparent Framework for Interpretable Quant Trading**
-  - Yueyi Wang et al. | [2508.07408v1](http://arxiv.org/abs/2508.07408v1)
-  - <details><summary>Abstract</summary>In this study, we wish to showcase the unique utility of large language models (LLMs) in financial semantic annotation and alpha signal discovery. Leveraging a corpus of company-related tweets, we use an LLM to automatically assign multi-label event categories to high-sentiment-intensity tweets. We align these labeled sentiment signals with forward returns over 1-to-7-day horizons to evaluate their statistical efficacy and market tradability. Our experiments reveal that certain event labels consistently yield negative alpha, with Sharpe ratios as low as -0.38 and information coefficients exceeding 0.05, all statistically significant at the 95\% confidence level. This study establishes the feasibility of transforming unstructured social media text into structured, multi-label event variables. A key contribution of this work is its commitment to transparency and reproducibility; all code and methodologies are made publicly available. Our results provide compelling evidence that social media sentiment is a valuable, albeit noisy, signal in financial forecasting and underscore the potential of open-source frameworks to democratize algorithmic trading research.</details>
 
