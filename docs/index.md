@@ -2,7 +2,7 @@
 layout: default
 ---
 
-> Updated on 2026/08/27 15:49:46
+> Updated on 2026/08/28 17:54:03
 
 <summary>Table of Contents</summary>
 
@@ -13,6 +13,13 @@ layout: default
 </ol>
 
 ## Trading
+
+### 📅 2026/08/27
+
+- **Tabular Deep Learning for Algorithmic Trading: Cross-Regime Bayesian Optimisation for Equity Signal Generation**
+  - Joshua Le Grice | [2608.27076v1](http://arxiv.org/abs/2608.27076v1)
+  - <details><summary>Abstract</summary>Algorithmic trading now represents a market exceeding $20 billion, where even marginal gains in signal robustness can translate into economically significant returns. Existing evaluations of equity prediction models do not explicitly target regime robustness during hyperparameter selection. Five model classes are trained on daily observations from approximately 300 large-cap US equities over eleven years, with Bayesian optimisation configured to target trading performance across three statistically different market regimes. Regime-robust hyperparameter selection is associated with out-of-sample generalisation, as signal precision remains above the random baseline across all four quarters of the test period, and portfolio performance slowly degrades under simulated input noise before collapsing beyond a defined threshold. No individual tabular deep learning architecture outperforms gradient-boosted trees, but combining XGBoost and TabNet using rank aggregation produces a Hybrid ensemble with an annualised return of 51.26%, a Sharpe ratio of 2.44, and a statistically significant CAPM alpha of 0.423 (p = 0.011). A near-zero beta indicates this outperformance is driven by stock selection, not market exposure. Alternative data plays a secondary role once technical and fundamental features are accounted for, as well as contributing more strongly on the short side than the long, and varies by model class. An interactive application makes these results explorable in real time, with live data integration the remaining step toward practical deployment.</details>
+
 
 ### 📅 2026/08/24
 
@@ -160,6 +167,13 @@ layout: default
 - **Liquidity-Based Audit of Algorithmic Trading Strategies**
   - Irene Aldridge | [2606.29018v2](http://arxiv.org/abs/2606.29018v2)
   - <details><summary>Abstract</summary>We show that net demand for liquidity by algo strategies is identifiable from its trade and price history alone, with no knowledge of its signal or optimization problem. An exact multi-period regret decomposition implies that the sign of this statistic classifies a linear strategy as a net liquidity consumer or provider, recovering the Kyle (1985) informed-trader/market-maker dichotomy from observables alone. Under an AR(1) cost process, the same statistic equals the product of strategy size and the squared Roll (1984) implied spread, making the correction a direct proxy for prevailing illiquidity. Extending to endogenous price impact and aggregating across N correlated strategies yields a liquidity-balance condition whose violation produces welfare loss scaling as N squared, a closed-form fire-sale externality. We calibrate to CRSP equity data (2016-2025), tracking implied spreads through the COVID-19 and 2022 rate-shock episodes, with an estimator computable in O(Tnd) time.</details>
+
+
+### 📅 2026/06/20
+
+- **From electricity prices to profits: multidimensional probabilistic forecasting for BESS trading**
+  - Tomasz Weron et al. | [2608.26122v1](http://arxiv.org/abs/2608.26122v1)
+  - <details><summary>Abstract</summary>This article examines various methods of constructingmultidimensional probabilistic forecasts of electricity prices. Building on the Multiple Split (MS) method, it incorporates forecast averaging across estimation windows of different lengths and compares its performance with that of other, well-established methods. The research demonstrates that the ensemble representation of the price distribution is particularly useful in battery energy storage system (BESS) management. It enables the direct construction of probabilistic forecasts of daily profits. These forecasts can be used to determine optimal charging and discharging hours, as well as to support risk management decisions. The methods are evaluated using data from the German and Spanish day-ahead electricity markets from 2021-2024. The results indicate that theMS method with averaging (MS-ave) generally outperforms the other considered approaches in terms of Prediction Interval Coverage Probability (PICP), the Continuous Ranked Probability Score (CRPS) and the Energy Score (ES). Moreover, it is superior in supporting BESS trading strategies, particularly in case of non-zero operational costs.</details>
 
 
 ### 📅 2026/06/15
@@ -678,18 +692,4 @@ layout: default
 - **Trading with the Devil: Risk and Return in Foundation Model Strategies**
   - Jinrui Zhang | [2510.17165v1](http://arxiv.org/abs/2510.17165v1)
   - <details><summary>Abstract</summary>Foundation models - already transformative in domains such as natural language processing - are now starting to emerge for time-series tasks in finance. While these pretrained architectures promise versatile predictive signals, little is known about how they shape the risk profiles of the trading strategies built atop them, leaving practitioners reluctant to commit serious capital. In this paper, we propose an extension to the Capital Asset Pricing Model (CAPM) that disentangles the systematic risk introduced by a shared foundation model - potentially capable of generating alpha if the underlying model is genuinely predictive - from the idiosyncratic risk attributable to custom fine-tuning, which typically accrues no systematic premium. To enable a practical estimation of these separate risks, we align this decomposition with the concepts of uncertainty disentanglement, casting systematic risk as epistemic uncertainty (rooted in the pretrained model) and idiosyncratic risk as aleatory uncertainty (introduced during custom adaptations). Under the Aleatory Collapse Assumption, we illustrate how Monte Carlo dropout - among other methods in the uncertainty-quantization toolkit - can directly measure the epistemic risk, thereby mapping trading strategies to a more transparent risk-return plane. Our experiments show that isolating these distinct risk factors yields deeper insights into the performance limits of foundation-model-based strategies, their model degradation over time, and potential avenues for targeted refinements. Taken together, our results highlight both the promise and the pitfalls of deploying large pretrained models in competitive financial markets.</details>
-
-
-### 📅 2025/10/14
-
-- **(Non-Parametric) Bootstrap Robust Optimization for Portfolios and Trading Strategies**
-  - Daniel Cunha Oliveira et al. | [2510.12725v1](http://arxiv.org/abs/2510.12725v1)
-  - <details><summary>Abstract</summary>Robust optimization provides a principled framework for decision-making under uncertainty, with broad applications in finance, engineering, and operations research. In portfolio optimization, uncertainty in expected returns and covariances demands methods that mitigate estimation error, parameter instability, and model misspecification. Traditional approaches, including parametric, bootstrap-based, and Bayesian methods, enhance stability by relying on confidence intervals or probabilistic priors but often impose restrictive assumptions. This study introduces a non-parametric bootstrap framework for robust optimization in financial decision-making. By resampling empirical data, the framework constructs flexible, data-driven confidence intervals without assuming specific distributional forms, thus capturing uncertainty in statistical estimates, model parameters, and utility functions. Treating utility as a random variable enables percentile-based optimization, naturally suited for risk-sensitive and worst-case decision-making. The approach aligns with recent advances in robust optimization, reinforcement learning, and risk-aware control, offering a unified perspective on robustness and generalization. Empirically, the framework mitigates overfitting and selection bias in trading strategy optimization and improves generalization in portfolio allocation. Results across portfolio and time-series momentum experiments demonstrate that the proposed method delivers smoother, more stable out-of-sample performance, offering a practical, distribution-free alternative to traditional robust optimization methods.</details>
-
-
-### 📅 2025/10/13
-
-- **On Bellman equation in the limit order optimization problem for high-frequency trading**
-  - M. I. Balakaeva et al. | [2510.15988v1](http://arxiv.org/abs/2510.15988v1)
-  - <details><summary>Abstract</summary>An approximation method for construction of optimal strategies in the bid \& ask limit order book in the high-frequency trading (HFT) is studied. The basis is the article by M. Avellaneda \& S. Stoikov 2008, in which certain seemingly serious gaps have been found; in the present paper they are carefully corrected. However, a bit surprisingly, our corrections do not change the main answer in the cited paper, so that, in fact, the gaps turn out to be unimportant. An explanation of this effect is offered.</details>
 
