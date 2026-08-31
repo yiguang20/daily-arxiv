@@ -2,7 +2,7 @@
 layout: default
 ---
 
-> Updated on 2026/08/30 11:57:47
+> Updated on 2026/08/31 12:01:31
 
 <summary>Table of Contents</summary>
 
@@ -14,7 +14,19 @@ layout: default
 
 ## Trading
 
+### 📅 2026/08/28
+
+- **RetailAgent: Structured Adverse Timing in Self-Conditioned Multimodal LLM Trading Agents**
+  - Yupeng Zhang et al. | [2608.28399v1](http://arxiv.org/abs/2608.28399v1)
+  - <details><summary>Abstract</summary>In financial markets, a sequential policy that reacts systematically to price movements may become predictable to other market participants. This paper studies whether large language model (LLM) agents exhibit such directional structure through RetailAgent, an experimental framework in which an LLM observes anonymized intraday equity price histories and permitted state, then repeatedly chooses long (hold the stock) or flat (stay out) before the subsequent interval return is revealed. We compare returns during long and flat intervals along the same stock's intraday path after removing the overall fraction of long decisions. This exposure-matched measure reveals persistent negative timing across modality, horizon, state, and model family. Shuffling saved action sequences substantially attenuates the effect, showing that alignment between actions and subsequent returns drives the negative score. Feeding self-authored memories into decisions further increases policy persistence, while timing becomes more negative among stock-days on which the agent uses both actions. These results reveal stable, recoverable directional structure in sequential LLM financial decisions and a behavioral signal for studying how another participant could respond to a predictable policy.</details>
+
+
 ### 📅 2026/08/27
+
+- **What survives honest evaluation? Leakage-safe, search-aware assessment of LLM-driven trading strategy discovery**
+  - Eray Gençay | [2608.27734v1](http://arxiv.org/abs/2608.27734v1)
+  - <details><summary>Abstract</summary>Large language models (LLMs) are increasingly used to discover trading strategies, and much of the resulting literature shares a methodological weakness: many candidate strategies are generated, the best is reported, and neither look-ahead bias nor the intensity of the search behind the reported result is corrected for. We present a strategy-discovery system that makes both corrections structural rather than procedural. First, the agent can only act through registry-validated tools whose feature space excludes look-ahead by construction; we show that this guardrail is not redundant with statistical correction: a deliberately leaky oracle posting a Sharpe ratio of 35 survives Deflated Sharpe and probability-of-backtest-overfitting testing completely. Second, the system records every strategy evaluation its search performs and deflates all reported performance by that trial count, tracing how the best in-sample Sharpe ratio climbs with each trial while the deflation threshold, driven by the agent's own search, climbs faster. Across a 453-stock point-in-time US equity universe and a 39-ETF multi-asset universe with realistic transaction, impact, and borrow costs, honest evaluation certifies passive benchmarks (out-of-sample confidence intervals excluding zero), rejects every LLM-discovered strategy (across two frontier models, search budgets up to one hundred candidates, and five repeated runs), catching selection luck, predicted rank degradation, and out-of-sample collapse through complementary instruments, and evaluates a human trader's production rule system under identical instruments. The framework formalizes why pre-registered hypotheses earn lower evidential bars than brute search, and quantifies the sample sizes that credible certification of moderate edges actually requires.</details>
+
 
 - **Tabular Deep Learning for Algorithmic Trading: Cross-Regime Bayesian Optimisation for Equity Signal Generation**
   - Joshua Le Grice | [2608.27076v1](http://arxiv.org/abs/2608.27076v1)
@@ -678,18 +690,4 @@ layout: default
 - **Understanding Carbon Trade Dynamics: A European Union Emissions Trading System Perspective**
   - Avirup Chakraborty | [2510.22341v2](http://arxiv.org/abs/2510.22341v2)
   - <details><summary>Abstract</summary>The European Union Emissions Trading System (EU ETS), the world's first and largest cap-and-trade carbon market, is a cornerstone of EU climate policy. This study provides a comprehensive empirical analysis of the EU carbon market's efficiency, price dynamics, and structural network from 2010 to 2020. First, we identify significant price clustering and short-term return predictability using an AR-GARCH model, achieving around 60 percent directional accuracy and a 80 percent hit rate within forecasted confidence intervals. These observed patterns motivate a deeper exploration of market structure. Second, leveraging this insight, a weighted network analysis of inter-country transactions uncovers a concentrated market where a few registries dominate high-value flows and exert disproportionate influence. Finally, building upon the network findings, country-specific log-log regressions of price on traded quantity reveal heterogeneous and sometimes counter-intuitive elasticities; in several cases, positive elasticities exceed unity, indicating that trading volumes rise with prices, a deviation from conventional demand behavior that highlights potential inefficiencies driven by speculation, strategic behavior, or policy distortions. Collectively, these results point to persistent inefficiencies within the EU ETS, including partial predictability, asymmetric market power, and anomalous price-volume relationships, implying that while the system has driven decarbonization, its trading and pricing mechanisms remain imperfect.</details>
-
-
-### 📅 2025/10/22
-
-- **News-Aware Direct Reinforcement Trading for Financial Markets**
-  - Qing-Yu Lan et al. | [2510.19173v1](http://arxiv.org/abs/2510.19173v1)
-  - <details><summary>Abstract</summary>The financial market is known to be highly sensitive to news. Therefore, effectively incorporating news data into quantitative trading remains an important challenge. Existing approaches typically rely on manually designed rules and/or handcrafted features. In this work, we directly use the news sentiment scores derived from large language models, together with raw price and volume data, as observable inputs for reinforcement learning. These inputs are processed by sequence models such as recurrent neural networks or Transformers to make end-to-end trading decisions. We conduct experiments using the cryptocurrency market as an example and evaluate two representative reinforcement learning algorithms, namely Double Deep Q-Network (DDQN) and Group Relative Policy Optimization (GRPO). The results demonstrate that our news-aware approach, which does not depend on handcrafted features or manually designed rules, can achieve performance superior to market benchmarks. We further highlight the critical role of time-series information in this process.</details>
-
-
-### 📅 2025/10/20
-
-- **Trading with the Devil: Risk and Return in Foundation Model Strategies**
-  - Jinrui Zhang | [2510.17165v1](http://arxiv.org/abs/2510.17165v1)
-  - <details><summary>Abstract</summary>Foundation models - already transformative in domains such as natural language processing - are now starting to emerge for time-series tasks in finance. While these pretrained architectures promise versatile predictive signals, little is known about how they shape the risk profiles of the trading strategies built atop them, leaving practitioners reluctant to commit serious capital. In this paper, we propose an extension to the Capital Asset Pricing Model (CAPM) that disentangles the systematic risk introduced by a shared foundation model - potentially capable of generating alpha if the underlying model is genuinely predictive - from the idiosyncratic risk attributable to custom fine-tuning, which typically accrues no systematic premium. To enable a practical estimation of these separate risks, we align this decomposition with the concepts of uncertainty disentanglement, casting systematic risk as epistemic uncertainty (rooted in the pretrained model) and idiosyncratic risk as aleatory uncertainty (introduced during custom adaptations). Under the Aleatory Collapse Assumption, we illustrate how Monte Carlo dropout - among other methods in the uncertainty-quantization toolkit - can directly measure the epistemic risk, thereby mapping trading strategies to a more transparent risk-return plane. Our experiments show that isolating these distinct risk factors yields deeper insights into the performance limits of foundation-model-based strategies, their model degradation over time, and potential avenues for targeted refinements. Taken together, our results highlight both the promise and the pitfalls of deploying large pretrained models in competitive financial markets.</details>
 
