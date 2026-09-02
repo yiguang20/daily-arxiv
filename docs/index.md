@@ -2,7 +2,7 @@
 layout: default
 ---
 
-> Updated on 2026/08/31 12:01:31
+> Updated on 2026/09/02 11:11:14
 
 <summary>Table of Contents</summary>
 
@@ -13,6 +13,18 @@ layout: default
 </ol>
 
 ## Trading
+
+### 📅 2026/08/31
+
+- **Agentic Quantitative Trading: A Survey of Workflows, Systems, and Evaluation**
+  - Fengrui Hua et al. | [2608.31041v1](http://arxiv.org/abs/2608.31041v1)
+  - <details><summary>Abstract</summary>Quantitative trading is moving from isolated predictive models toward agentic workflows that combine reasoning, tool use, memory, and feedback. This survey reviews agentic quantitative trading across five stages: factor mining, signal discovery, portfolio construction, order execution, and risk management. We further examine agentic quant trading systems through architecture, coordination, and adaptation, while comparing benchmarks across strategy construction, offline trading, live market evaluation, and reliability assessment. Our review finds that current systems remain concentrated on signal discovery, while complete integration with portfolio construction, execution, and risk control is still uncommon. Multi-agent systems also rely heavily on aggregation despite increasingly diverse workflow structures. Benchmark evidence further shows that strong model or forecasting capability does not reliably translate into trading performance under live market conditions and reliability controls. We conclude with future directions for more complete trading workflows, stronger coordination, and evaluation matched to the capability being assessed.</details>
+
+
+- **A note on markets with semi-static trading strategies**
+  - Miklós Rásonyi | [2608.30558v1](http://arxiv.org/abs/2608.30558v1)
+  - <details><summary>Abstract</summary>We investigate arbitrage in a discrete-time financial market model where, in addition to finitely many dynamically traded assets, there are also static options to choose from. We introduce the concept of small cones of random variables and present a sufficient condition for the attainable positions in the market to be closed in probability.   A fundamental theorem of asset pricing is shown in the present context. Utility maximization will also be considered. We will provide economically meaningful examples of infinite dimensional small cones to demonstrate the pertinence of our approach.</details>
+
 
 ### 📅 2026/08/28
 
@@ -337,7 +349,7 @@ layout: default
 ### 📅 2026/04/30
 
 - **Data-Driven Stochastic Optimal Control for Intraday Electricity Trading by Renewable Producers**
-  - Chiheb Ben Hammouda et al. | [2604.27700v1](http://arxiv.org/abs/2604.27700v1)
+  - Chiheb Ben Hammouda et al. | [2604.27700v2](http://arxiv.org/abs/2604.27700v2)
   - <details><summary>Abstract</summary>The rapid growth of weather-dependent renewable generation increases price volatility and imbalance penalty risk in power markets, creating the need for advanced quantitative trading strategies. We develop a data-driven continuous-time stochastic optimal control framework for intraday electricity trading using stochastic differential equations with drift terms ensuring mean reversion to deterministic forecast trajectories. Production follows a Jacobi diffusion, while prices follow an asymmetric jump-diffusion to reflect the heavy-tailed behavior observed in intraday markets. The framework accounts for realistic market features by incorporating gate closure and energy-based imbalance settlement over the delivery window, where the path-dependent imbalance cost is handled by state augmentation to preserve the Markovian structure. The value function is characterized via the dynamic programming principle by a three-stage sequence of two linear Kolmogorov backward equations and a nonlinear Hamilton-Jacobi-Bellman partial integro-differential equation. To solve this problem efficiently, we propose a monotone IMEX finite-difference scheme with operator splitting, semi-implicit linearization, and a differential formulation for the jump operator. Numerical experiments based on German market data indicate that, under the provided forecasts, the computed strategy outperforms the TWAP benchmark and approaches the perfect-foresight benchmark. Sensitivity experiments further show how jump intensity, delivery-window length, and trading horizon affect the trading policy and the resulting profit-and-loss distribution.</details>
 
 
@@ -678,16 +690,4 @@ layout: default
 - **Deep reinforcement learning for optimal trading with partial information**
   - Andrea Macrì et al. | [2511.00190v1](http://arxiv.org/abs/2511.00190v1)
   - <details><summary>Abstract</summary>Reinforcement Learning (RL) applied to financial problems has been the subject of a lively area of research. The use of RL for optimal trading strategies that exploit latent information in the market is, to the best of our knowledge, not widely tackled. In this paper we study an optimal trading problem, where a trading signal follows an Ornstein-Uhlenbeck process with regime-switching dynamics. We employ a blend of RL and Recurrent Neural Networks (RNN) in order to make the most at extracting underlying information from the trading signal with latent parameters.   The latent parameters driving mean reversion, speed, and volatility are filtered from observations of the signal, and trading strategies are derived via RL. To address this problem, we propose three Deep Deterministic Policy Gradient (DDPG)-based algorithms that integrate Gated Recurrent Unit (GRU) networks to capture temporal dependencies in the signal. The first, a one -step approach (hid-DDPG), directly encodes hidden states from the GRU into the RL trader. The second and third are two-step methods: one (prob-DDPG) makes use of posterior regime probability estimates, while the other (reg-DDPG) relies on forecasts of the next signal value. Through extensive simulations with increasingly complex Markovian regime dynamics for the trading signal's parameters, as well as an empirical application to equity pair trading, we find that prob-DDPG achieves superior cumulative rewards and exhibits more interpretable strategies. By contrast, reg-DDPG provides limited benefits, while hid-DDPG offers intermediate performance with less interpretable strategies. Our results show that the quality and structure of the information supplied to the agent are crucial: embedding probabilistic insights into latent regimes substantially improves both profitability and robustness of reinforcement learning-based trading strategies.</details>
-
-
-- **When AI Trading Agents Compete: Adverse Selection of Meta-Orders by Reinforcement Learning-Based Market Making**
-  - Ali Raza Jafree et al. | [2510.27334v1](http://arxiv.org/abs/2510.27334v1)
-  - <details><summary>Abstract</summary>We investigate the mechanisms by which medium-frequency trading agents are adversely selected by opportunistic high-frequency traders. We use reinforcement learning (RL) within a Hawkes Limit Order Book (LOB) model in order to replicate the behaviours of high-frequency market makers. In contrast to the classical models with exogenous price impact assumptions, the Hawkes model accounts for endogenous price impact and other key properties of the market (Jain et al. 2024a). Given the real-world impracticalities of the market maker updating strategies for every event in the LOB, we formulate the high-frequency market making agent via an impulse control reinforcement learning framework (Jain et al. 2025). The RL used in the simulation utilises Proximal Policy Optimisation (PPO) and self-imitation learning. To replicate the adverse selection phenomenon, we test the RL agent trading against a medium frequency trader (MFT) executing a meta-order and demonstrate that, with training against the MFT meta-order execution agent, the RL market making agent learns to capitalise on the price drift induced by the meta-order. Recent empirical studies have shown that medium-frequency traders are increasingly subject to adverse selection by high-frequency trading agents. As high-frequency trading continues to proliferate across financial markets, the slippage costs incurred by medium-frequency traders are likely to increase over time. However, we do not observe that increased profits for the market making RL agent necessarily cause significantly increased slippages for the MFT agent.</details>
-
-
-### 📅 2025/10/25
-
-- **Understanding Carbon Trade Dynamics: A European Union Emissions Trading System Perspective**
-  - Avirup Chakraborty | [2510.22341v2](http://arxiv.org/abs/2510.22341v2)
-  - <details><summary>Abstract</summary>The European Union Emissions Trading System (EU ETS), the world's first and largest cap-and-trade carbon market, is a cornerstone of EU climate policy. This study provides a comprehensive empirical analysis of the EU carbon market's efficiency, price dynamics, and structural network from 2010 to 2020. First, we identify significant price clustering and short-term return predictability using an AR-GARCH model, achieving around 60 percent directional accuracy and a 80 percent hit rate within forecasted confidence intervals. These observed patterns motivate a deeper exploration of market structure. Second, leveraging this insight, a weighted network analysis of inter-country transactions uncovers a concentrated market where a few registries dominate high-value flows and exert disproportionate influence. Finally, building upon the network findings, country-specific log-log regressions of price on traded quantity reveal heterogeneous and sometimes counter-intuitive elasticities; in several cases, positive elasticities exceed unity, indicating that trading volumes rise with prices, a deviation from conventional demand behavior that highlights potential inefficiencies driven by speculation, strategic behavior, or policy distortions. Collectively, these results point to persistent inefficiencies within the EU ETS, including partial predictability, asymmetric market power, and anomalous price-volume relationships, implying that while the system has driven decarbonization, its trading and pricing mechanisms remain imperfect.</details>
 
