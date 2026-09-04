@@ -2,7 +2,7 @@
 layout: default
 ---
 
-> Updated on 2026/09/02 11:11:14
+> Updated on 2026/09/04 11:12:03
 
 <summary>Table of Contents</summary>
 
@@ -13,6 +13,18 @@ layout: default
 </ol>
 
 ## Trading
+
+### 📅 2026/09/02
+
+- **Modeling Trade Durations under Temporal Granularity Effects in Forex Markets**
+  - Vladimír Holý | [2609.02660v1](http://arxiv.org/abs/2609.02660v1)
+  - <details><summary>Abstract</summary>Trade durations in high-frequency foreign exchange data exhibit increased occurrence near integer values. To address this empirical phenomenon, we propose the granularity-adjusted autoregressive conditional duration (GA-ACD) model. It is based on a novel two-component mixture distribution consisting of a standard generalized gamma component for regular durations and a second component that locally redistributes probability mass around integer values to capture heaping. Conditional dynamics are modeled within a score-driven framework, allowing the scale parameter to vary over time in response to past durations, and enabling maximum likelihood estimation of all model parameters. A simulation study shows that ignoring heaping leads to biased parameter estimates and distorted inference regarding both the distribution and the dynamics of durations. An empirical analysis demonstrates that integer-duration clustering is pervasive across major currency pairs and that the GA-ACD model outperforms the standard generalized gamma ACD model.</details>
+
+
+- **Switching Frictions, Heterogeneous Trading Horizons, and Long-Memory Order Flow**
+  - Alejandro Rodriguez Dominguez | [2609.02525v1](http://arxiv.org/abs/2609.02525v1)
+  - <details><summary>Abstract</summary>This paper develops a mechanism through which costly changes in the representations used for portfolio choice can contribute to persistent signed order flow. Heterogeneous switching thresholds and opportunity volatility generate heterogeneous residence times, and renewal aggregation maps their execution-weighted tail into the decay of aggregate flow covariance. Under common execution weights, the same tail determines the exponent of representation-spell durations, the order-flow memory exponent, and the horizon at which finite-market scaling must end. First-passage renewal analysis establishes these joint restrictions. Structural simulations recover them from realized paths, quantify the distortion created by mismatched weights, and show how finite cross sections shorten the usable inference horizon. The resulting empirical protocol converts an aggregate persistence fit into cross-dataset restrictions that can determine whether a duration-based kernel is suitable for a separate execution-cost model.</details>
+
 
 ### 📅 2026/08/31
 
@@ -107,8 +119,8 @@ layout: default
 
 
 - **Data-Driven Measures of High-Frequency Trading**
-  - Gbenga Ibikunle et al. | [2608.00858v1](http://arxiv.org/abs/2608.00858v1)
-  - <details><summary>Abstract</summary>We introduce data-driven measures of high-frequency trading (HFT) that distinguish between liquidity-supplying and liquidity-demanding strategies. We train machine learning models on a proprietary dataset with observed HFT activity, then apply these models to public intraday data to generate HFT measures across all U.S. stocks during 2010-2023. Our measures outperform conventional proxies, which struggle to capture the temporal dynamics of HFT. Consistent with theory, our measures respond to a quasi-exogenous speed bump introduction and a data feed upgrade. The measures help uncover the differential impact of HFT on information acquisition. Liquidity-supplying HFT improves price informativeness around earnings announcements, while liquidity-demanding HFT impedes it.</details>
+  - Gbenga Ibikunle et al. | [2608.00858v2](http://arxiv.org/abs/2608.00858v2)
+  - <details><summary>Abstract</summary>Public data do not identify high-frequency trading (HFT), and standard proxies do not separate liquidity-supplying from liquidity-demanding strategies. We overcome this measurement challenge by training machine learning models on proprietary Nasdaq data to map observed HFT activity to public intraday variables. Applying this mapping, we generate daily measures of liquidity-supplying and liquidity-demanding HFT for all U.S. stocks from 2010 to 2023. The measures largely subsume standard proxies and capture time-series variation that those proxies miss. Using proprietary Euronext Paris data, we provide evidence that the approach generalizes across markets and remains predictive years after training. The 14-year panel lets us study HFT and market quality over time. Supply-side HFT is consistently associated with greater pre-announcement information acquisition, more informed trading, and lower bid-ask spreads, while demand-side HFT is associated with the opposite patterns. During COVID-19, HFT-supplied liquidity remained resilient and its association with lower spreads strengthened.</details>
 
 
 ### 📅 2026/07/30
@@ -678,16 +690,4 @@ layout: default
 - **JaxMARL-HFT: GPU-Accelerated Large-Scale Multi-Agent Reinforcement Learning for High-Frequency Trading**
   - Valentin Mohl et al. | [2511.02136v1](http://arxiv.org/abs/2511.02136v1)
   - <details><summary>Abstract</summary>Agent-based modelling (ABM) approaches for high-frequency financial markets are difficult to calibrate and validate, partly due to the large parameter space created by defining fixed agent policies. Multi-agent reinforcement learning (MARL) enables more realistic agent behaviour and reduces the number of free parameters, but the heavy computational cost has so far limited research efforts. To address this, we introduce JaxMARL-HFT (JAX-based Multi-Agent Reinforcement Learning for High-Frequency Trading), the first GPU-accelerated open-source multi-agent reinforcement learning environment for high-frequency trading (HFT) on market-by-order (MBO) data. Extending the JaxMARL framework and building on the JAX-LOB implementation, JaxMARL-HFT is designed to handle a heterogeneous set of agents, enabling diverse observation/action spaces and reward functions. It is designed flexibly, so it can also be used for single-agent RL, or extended to act as an ABM with fixed-policy agents. Leveraging JAX enables up to a 240x reduction in end-to-end training time, compared with state-of-the-art reference implementations on the same hardware. This significant speed-up makes it feasible to exploit the large, granular datasets available in high-frequency trading, and to perform the extensive hyperparameter sweeps required for robust and efficient MARL research in trading. We demonstrate the use of JaxMARL-HFT with independent Proximal Policy Optimization (IPPO) for a two-player environment, with an order execution and a market making agent, using one year of LOB data (400 million orders), and show that these agents learn to outperform standard benchmarks. The code for the JaxMARL-HFT framework is available on GitHub.</details>
-
-
-- **Trade Execution Flow as the Underlying Source of Market Dynamics**
-  - Mikhail Gennadievich Belov et al. | [2511.01471v2](http://arxiv.org/abs/2511.01471v2)
-  - <details><summary>Abstract</summary>In this work, we demonstrate experimentally that the execution flow, $I = dV/dt$, is the fundamental driving force of market dynamics. We develop a numerical framework to calculate execution flow from the data using the Radon-Nikodym derivative. A notable feature of this approach is its ability to automatically determine thresholds that can serve as actionable triggers. The technique also determines the characteristic time scale directly from the corresponding eigenproblem. The methodology has been validated on actual market data to support these findings. Additionally, we introduce a framework based on the Christoffel function spectrum, which is invariant under arbitrary non-degenerate linear transformations of input attributes and offers an alternative to traditional principal component analysis (PCA), which is limited to unitary invariance.</details>
-
-
-### 📅 2025/10/31
-
-- **Deep reinforcement learning for optimal trading with partial information**
-  - Andrea Macrì et al. | [2511.00190v1](http://arxiv.org/abs/2511.00190v1)
-  - <details><summary>Abstract</summary>Reinforcement Learning (RL) applied to financial problems has been the subject of a lively area of research. The use of RL for optimal trading strategies that exploit latent information in the market is, to the best of our knowledge, not widely tackled. In this paper we study an optimal trading problem, where a trading signal follows an Ornstein-Uhlenbeck process with regime-switching dynamics. We employ a blend of RL and Recurrent Neural Networks (RNN) in order to make the most at extracting underlying information from the trading signal with latent parameters.   The latent parameters driving mean reversion, speed, and volatility are filtered from observations of the signal, and trading strategies are derived via RL. To address this problem, we propose three Deep Deterministic Policy Gradient (DDPG)-based algorithms that integrate Gated Recurrent Unit (GRU) networks to capture temporal dependencies in the signal. The first, a one -step approach (hid-DDPG), directly encodes hidden states from the GRU into the RL trader. The second and third are two-step methods: one (prob-DDPG) makes use of posterior regime probability estimates, while the other (reg-DDPG) relies on forecasts of the next signal value. Through extensive simulations with increasingly complex Markovian regime dynamics for the trading signal's parameters, as well as an empirical application to equity pair trading, we find that prob-DDPG achieves superior cumulative rewards and exhibits more interpretable strategies. By contrast, reg-DDPG provides limited benefits, while hid-DDPG offers intermediate performance with less interpretable strategies. Our results show that the quality and structure of the information supplied to the agent are crucial: embedding probabilistic insights into latent regimes substantially improves both profitability and robustness of reinforcement learning-based trading strategies.</details>
 
