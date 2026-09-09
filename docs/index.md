@@ -2,7 +2,7 @@
 layout: default
 ---
 
-> Updated on 2026/09/04 11:12:03
+> Updated on 2026/09/09 11:23:58
 
 <summary>Table of Contents</summary>
 
@@ -13,6 +13,13 @@ layout: default
 </ol>
 
 ## Trading
+
+### 📅 2026/09/05
+
+- **Explainable Deep Learning for Price-Trade Dynamics: From Black-Box Forecasts to Effective Parametric Models**
+  - Manuel Naviglio et al. | [2609.06085v1](http://arxiv.org/abs/2609.06085v1)
+  - <details><summary>Abstract</summary>Understanding the joint dynamics of prices and trades is central to market microstructure, where returns and order flow interact through nonlinear and state-dependent mechanisms. Linear models are interpretable but may miss these effects, while deep neural networks improve forecasting at the cost of transparency. We use neural networks as tools for structural discovery rather than only for prediction. A deep feed-forward network is trained on high-frequency returns and signed volumes for large- and small-tick stocks and compared with a linear VAR benchmark. The neural network improves predictive performance, especially for returns, revealing nonlinear dependencies beyond the linear specification. Using Shapley-based explainability, we show that the dominant contributions are concentrated at the most recent lags. Model-implied responses are consistent with conditional averages reconstructed from the data. Unlike empirical averages, however, the neural-network decomposition isolates individual regressor contributions to the aggregate dependence. Lagged signed volume generates sign-preserving and saturating effects, consistent with nonlinear price impact and order-flow persistence. Lagged returns act as state variables: when the previous trade does not move the price, the model predicts continuation in the direction of past order flow, whereas non-zero returns generate attenuation or reversal. Building on these findings, we introduce a parsimonious SHAP-inspired nonlinear parametric model. It reproduces the main return-volume dependencies, outperforms the linear VAR benchmark, and achieves performance comparable to the neural network. A multi-lag extension captures residual longer-memory effects while preserving interpretability. Overall, explainability offers a route from black-box prediction to economically meaningful parametric models of price and trade dynamics.</details>
+
 
 ### 📅 2026/09/02
 
@@ -683,11 +690,4 @@ layout: default
 - **An extreme Gradient Boosting (XGBoost) Trees approach to Detect and Identify Unlawful Insider Trading (UIT) Transactions**
   - Krishna Neupane et al. | [2511.08306v1](http://arxiv.org/abs/2511.08306v1)
   - <details><summary>Abstract</summary>Corporate insiders have control of material non-public preferential information (MNPI). Occasionally, the insiders strategically bypass legal and regulatory safeguards to exploit MNPI in their execution of securities trading. Due to a large volume of transactions a detection of unlawful insider trading becomes an arduous task for humans to examine and identify underlying patterns from the insider's behavior. On the other hand, innovative machine learning architectures have shown promising results for analyzing large-scale and complex data with hidden patterns. One such popular technique is eXtreme Gradient Boosting (XGBoost), the state-of-the-arts supervised classifier. We, hence, resort to and apply XGBoost to alleviate challenges of identification and detection of unlawful activities. The results demonstrate that XGBoost can identify unlawful transactions with a high accuracy of 97 percent and can provide ranking of the features that play the most important role in detecting fraudulent activities.</details>
-
-
-### 📅 2025/11/03
-
-- **JaxMARL-HFT: GPU-Accelerated Large-Scale Multi-Agent Reinforcement Learning for High-Frequency Trading**
-  - Valentin Mohl et al. | [2511.02136v1](http://arxiv.org/abs/2511.02136v1)
-  - <details><summary>Abstract</summary>Agent-based modelling (ABM) approaches for high-frequency financial markets are difficult to calibrate and validate, partly due to the large parameter space created by defining fixed agent policies. Multi-agent reinforcement learning (MARL) enables more realistic agent behaviour and reduces the number of free parameters, but the heavy computational cost has so far limited research efforts. To address this, we introduce JaxMARL-HFT (JAX-based Multi-Agent Reinforcement Learning for High-Frequency Trading), the first GPU-accelerated open-source multi-agent reinforcement learning environment for high-frequency trading (HFT) on market-by-order (MBO) data. Extending the JaxMARL framework and building on the JAX-LOB implementation, JaxMARL-HFT is designed to handle a heterogeneous set of agents, enabling diverse observation/action spaces and reward functions. It is designed flexibly, so it can also be used for single-agent RL, or extended to act as an ABM with fixed-policy agents. Leveraging JAX enables up to a 240x reduction in end-to-end training time, compared with state-of-the-art reference implementations on the same hardware. This significant speed-up makes it feasible to exploit the large, granular datasets available in high-frequency trading, and to perform the extensive hyperparameter sweeps required for robust and efficient MARL research in trading. We demonstrate the use of JaxMARL-HFT with independent Proximal Policy Optimization (IPPO) for a two-player environment, with an order execution and a market making agent, using one year of LOB data (400 million orders), and show that these agents learn to outperform standard benchmarks. The code for the JaxMARL-HFT framework is available on GitHub.</details>
 
