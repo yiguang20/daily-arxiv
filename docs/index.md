@@ -2,7 +2,7 @@
 layout: default
 ---
 
-> Updated on 2026/09/27 11:59:49
+> Updated on 2026/09/29 12:36:02
 
 <summary>Table of Contents</summary>
 
@@ -13,6 +13,34 @@ layout: default
 </ol>
 
 ## Trading
+
+### 📅 2026/09/28
+
+- **From Cointegration to Out-of-Sample Failure: A Pairs-Trading Case Study on PEP-KO**
+  - Davide Graziano | [2609.35359v1](http://arxiv.org/abs/2609.35359v1)
+  - <details><summary>Abstract</summary>This paper examines whether a cointegration-based pairs trading strategy between PepsiCo and The Coca-Cola Company is statistically robust and economically exploitable. We first test for cointegration and estimate the spread's mean-reversion dynamics over 2013-2018, then hold these statistical parameters fixed and optimise a threshold-based trading strategy in-sample over 2018-2023. Robustness is assessed through transaction-cost and parameter sensitivity tests, walk-forward validation, and Adjusted and Deflated Sharpe Ratios. The strategy is then evaluated out-of-sample from 2023 to the present, including an analysis of time-varying hedge ratios using rolling OLS and a Kalman filter. The results show that weakening mean-reversion dynamics in the spread undermine the effectiveness of the strategy out-of-sample.</details>
+
+
+### 📅 2026/09/27
+
+- **LiveOption: Evaluating LLM Agents in Structured Option Trading with Nonlinear Payoffs**
+  - Haochen Luo et al. | [2609.33470v1](http://arxiv.org/abs/2609.33470v1)
+  - <details><summary>Abstract</summary>Large language models (LLMs) and multi-agent systems (MAS) have shown promise in financial decision-making, yet existing evaluations focus on equity trading and primarily assess directional prediction, overlooking the structural complexity of derivative markets. Option trading introduces fundamentally different challenges, including nonlinear payoffs and multi-leg strategy construction, requiring structured decisions rather than simple directional bets. We introduce LiveOption, an evaluation framework for LLM-based agents in option trading. LiveOption formulates the problem as structured sequential decision-making under realistic execution and capital constraints, and provides a reproducible environment with standardized interaction protocols. The framework includes three task suites covering portfolio overlays, event-driven earnings trading, and 0DTE intraday trading. We further propose a hierarchical metric suite that evaluates action validity, decision quality, risk characteristics, and outcome-level performance. Experiments show that current agents often fail to achieve competitive returns in most scenarios. LiveOption offers a principled testbed for evaluating structured decision-making beyond outcome-based metrics.</details>
+
+
+### 📅 2026/09/26
+
+- **Exact Trade-Level Attribution of FRTB-IMA Capital**
+  - Yuhe Sui | [2609.32238v1](http://arxiv.org/abs/2609.32238v1)
+  - <details><summary>Abstract</summary>The internal-models approach of the Fundamental Review of the Trading Book (FRTB-IMA) determines market-risk capital at the aggregate level of a bank's approved trading desks, but it does not say how that charge should be attributed to individual trades. Risk managers, capital planners and validators often need one, and it is hard to obtain: capital passes through expected-shortfall, stress-scaling, non-modellable, default-risk, history and standardised-approach layers that are nonsmooth and depend on past positions. We present a formula-complete attribution of FRTB-IMA capital to (observation date, trade) positions that reconciles to computed capital. The calculation is written as a computational graph; after one forward evaluation, a single reverse pass propagates allocation vectors through every node by local Euler rules (expected-shortfall dual weights, active-branch weights at floors and maxima, the default-quantile scenario), avoiding one capital re-evaluation per trade. Under stated homogeneity assumptions the ledger provably sums to capital and to any desk or product grouping, and equals the Euler (gradient) allocation at smooth points; it is exact relative to the implemented calculation and this rule, not a regulatorily prescribed attribution. Its past-date entries capture capital allocated to earlier observation dates, which today's-book sensitivities miss by an exact identity at smooth points. At regulatory ties, where the marginal is not unique, we report the realisable marginal vertices, identified by exact linear-programming tests, instead of one selection. On 14 smooth 96-trade synthetic benchmark books, the median share of capital allocated to past observation dates is 61% (range 21%-99%), and ledgers reconcile to within 5.6e-16 relative error.</details>
+
+
+### 📅 2026/09/25
+
+- **Algorithmic trading and stochastic integration**
+  - Aleksandar Arandjelovic et al. | [2609.31578v1](http://arxiv.org/abs/2609.31578v1)
+  - <details><summary>Abstract</summary>We study simple predictable processes whose coefficients are represented by neural networks. On finite measure spaces, we establish density results for neural networks in Orlicz spaces. For filtrations generated by a stochastic process, measurable random variables, including at stopping times, can be approximated by neural networks depending on finitely many observations. Every stochastic integral with respect to a semimartingale can then be approximated, in the semimartingale topology, by integrals of such simple predictable processes. We show that restricting trading strategies to this class leaves the minimal mean-variance hedging error under partial information unchanged and obtain a no-free-lunch characterization in terms of equivalent martingale measures. Finally, the Bichteler-Dellacherie characterization of semimartingales remains valid even upon restricting the predictable integrands to those whose coefficients are represented by neural networks.</details>
+
 
 ### 📅 2026/09/24
 
@@ -95,8 +123,8 @@ layout: default
 
 
 - **A note on markets with semi-static trading strategies**
-  - Miklós Rásonyi | [2608.30558v1](http://arxiv.org/abs/2608.30558v1)
-  - <details><summary>Abstract</summary>We investigate arbitrage in a discrete-time financial market model where, in addition to finitely many dynamically traded assets, there are also static options to choose from. We introduce the concept of small cones of random variables and present a sufficient condition for the attainable positions in the market to be closed in probability.   A fundamental theorem of asset pricing is shown in the present context. Utility maximization will also be considered. We will provide economically meaningful examples of infinite dimensional small cones to demonstrate the pertinence of our approach.</details>
+  - Miklós Rásonyi | [2608.30558v2](http://arxiv.org/abs/2608.30558v2)
+  - <details><summary>Abstract</summary>We consider a discrete-time financial market model where, in addition to finitely many dynamically traded assets, there are also (possibly infinitely many) static options to choose from. We introduce the concept of small cones of random variables and present a sufficient condition for the attainable positions in the market to be closed in probability.   A fundamental theorem of asset pricing is shown in the present context. Utility maximization will also be considered. We will provide economically meaningful examples of infinite dimensional small cones to demonstrate the pertinence of our approach.</details>
 
 
 ### 📅 2026/08/28
@@ -660,32 +688,4 @@ layout: default
 - **Trade-R1: Bridging Verifiable Rewards to Stochastic Environments via Process-Level Reasoning Verification**
   - Rui Sun et al. | [2601.03948v2](http://arxiv.org/abs/2601.03948v2)
   - <details><summary>Abstract</summary>Reinforcement Learning (RL) has enabled Large Language Models (LLMs) to achieve remarkable reasoning in domains like mathematics and coding, where verifiable rewards provide clear signals. However, extending this paradigm to financial decision is challenged by the market's stochastic nature: rewards are verifiable but inherently noisy, causing standard RL to degenerate into reward hacking. To address this, we propose Trade-R1, a model training framework that bridges verifiable rewards to stochastic environments via process-level reasoning verification. Our key innovation is a verification method that transforms the problem of evaluating reasoning over lengthy financial documents into a structured Retrieval-Augmented Generation (RAG) task. We construct a triangular consistency metric, assessing pairwise alignment between retrieved evidence, reasoning chains, and decisions to serve as a validity filter for noisy market returns. We explore two reward integration strategies: Fixed-effect Semantic Reward (FSR) for stable alignment signals, and Dynamic-effect Semantic Reward (DSR) for coupled magnitude optimization. Experiments on different country asset selection demonstrate that our paradigm reduces reward hacking, with DSR achieving superior cross-market generalization while maintaining the highest reasoning consistency.</details>
-
-
-### 📅 2026/01/06
-
-- **Trading with market resistance and concave price impact**
-  - Nathan De Carvalho et al. | [2601.03215v2](http://arxiv.org/abs/2601.03215v2)
-  - <details><summary>Abstract</summary>We consider an optimal trading problem under a market impact model with endogenous market resistance generated by a sophisticated trader who (partially) detects metaorders and trades against them to exploit price overreactions induced by the order flow. The model features a concave transient impact driven by a power-law propagator with a resistance term responding to the trader's rate via a fixed-point equation involving a general resistance function. We derive a (non)linear stochastic Fredholm equation as the first-order optimality condition satisfied by optimal trading strategies. Existence and uniqueness of the optimal control are established when the resistance function is linear, and an existence result is obtained when it is strictly convex using coercivity and weak lower semicontinuity of the associated profit-and-loss functional. We also propose an iterative scheme to solve the nonlinear stochastic Fredholm equation and prove an exponential convergence rate. Numerical experiments confirm this behavior and illustrate optimal round-trip strategies under "buy" signals with various decay profiles and different market resistance specifications.</details>
-
-
-### 📅 2025/12/21
-
-- **Needles in a haystack: using forensic network science to uncover insider trading**
-  - Gian Jaeger et al. | [2512.18918v1](http://arxiv.org/abs/2512.18918v1)
-  - <details><summary>Abstract</summary>Although the automation and digitisation of anti-financial crime investigation has made significant progress in recent years, detecting insider trading remains a unique challenge, partly due to the limited availability of labelled data. To address this challenge, we propose using a data-driven networks approach that flags groups of corporate insiders who report coordinated transactions that are indicative of insider trading. Specifically, we leverage data on 2.9 million trades reported to the U.S. Securities and Exchange Commission (SEC) by company insiders (C-suite executives, board members and major shareholders) between 2014 and 2024. Our proposed algorithm constructs weighted edges between insiders based on the temporal similarity of their trades over the 10-year timeframe. Within this network we then uncover trends that indicate insider trading by focusing on central nodes and anomalous subgraphs. To highlight the validity of our approach we evaluate our findings with reference to two null models, generated by running our algorithm on synthetic empirically calibrated and shuffled datasets. The results indicate that our approach can be used to detect pairs or clusters of insiders whose behaviour suggests insider trading and/or market manipulation.</details>
-
-
-### 📅 2025/12/16
-
-- **Sources and Nonlinearity of High Volume Return Premium: An Empirical Study on the Differential Effects of Investor Identity versus Trading Intensity (2020-2024)**
-  - Sungwoo Kang | [2512.14134v2](http://arxiv.org/abs/2512.14134v2)
-  - <details><summary>Abstract</summary>Chae and Kang (2019, \textit{Pacific-Basin Finance Journal}) documented a puzzling Low Volume Return Premium (LVRP) in Korea -- contradicting global High Volume Return Premium (HVRP) evidence. We resolve this puzzle. Using Korean market data (2020-2024), we demonstrate that HVRP exists in Korea but is masked by (1) pooling heterogeneous investor types and (2) using inappropriate intensity normalization. When institutional buying intensity is normalized by market capitalization rather than trading value, a perfect monotonic relationship emerges: highest-conviction institutional buying (Q4) generates +\institutionLedQFourDayPlusFiftyCAR\ cumulative abnormal returns over 50 days, while lowest-intensity trades (Q1) yield modest returns (+\institutionLedQOneDayPlusFiftyCAR). Retail investors exhibit a flat pattern -- their trading generates near-zero returns regardless of conviction level -- confirming the pure noise trader hypothesis. During the Donghak Ant Movement (2020-2021), however, coordinated retail investors temporarily transformed from noise traders to liquidity providers, generating returns comparable to institutional trading. Our findings reconcile conflicting international evidence and demonstrate that detecting informed trading signals requires investor-type decomposition, nonlinear quartile analysis, and conviction-based (market cap) rather than participation-based (trading value) measurement.</details>
-
-
-### 📅 2025/12/12
-
-- **High-Frequency Analysis of a Trading Game with Transient Price Impact**
-  - Marcel Nutz et al. | [2512.11765v1](http://arxiv.org/abs/2512.11765v1)
-  - <details><summary>Abstract</summary>We study the high-frequency limit of an $n$-trader optimal execution game in discrete time. Traders face transient price impact of Obizhaeva--Wang type in addition to quadratic instantaneous trading costs $θ(ΔX_t)^2$ on each transaction $ΔX_t$. There is a unique Nash equilibrium in which traders choose liquidation strategies minimizing expected execution costs. In the high-frequency limit where the grid of trading dates converges to the continuous interval $[0,T]$, the discrete equilibrium inventories converge at rate $1/N$ to the continuous-time equilibrium of an Obizhaeva--Wang model with additional quadratic costs $\vartheta_0(ΔX_0)^2$ and $\vartheta_T(ΔX_T)^2$ on initial and terminal block trades, where $\vartheta_0=(n-1)/2$ and $\vartheta_T=1/2$. The latter model was introduced by Campbell and Nutz as the limit of continuous-time equilibria with vanishing instantaneous costs. Our results extend and refine previous results of Schied, Strehle, and Zhang for the particular case $n=2$ where $\vartheta_0=\vartheta_T=1/2$. In particular, we show how the coefficients $\vartheta_0=(n-1)/2$ and $\vartheta_T=1/2$ arise endogenously in the high-frequency limit: the initial and terminal block costs of the continuous-time model are identified as the limits of the cumulative discrete instantaneous costs incurred over small neighborhoods of $0$ and $T$, respectively, and these limits are independent of $θ>0$. By contrast, when $θ=0$ the discrete-time equilibrium strategies and costs exhibit persistent oscillations and admit no high-frequency limit, mirroring the non-existence of continuous-time equilibria without boundary block costs. Our results show that two different types of trading frictions -- a fine time discretization and small instantaneous costs in continuous time -- have similar regularizing effects and select a canonical model in the limit.</details>
 
