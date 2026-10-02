@@ -2,7 +2,7 @@
 layout: default
 ---
 
-> Updated on 2026/10/01 12:29:13
+> Updated on 2026/10/02 12:22:05
 
 <summary>Table of Contents</summary>
 
@@ -13,6 +13,18 @@ layout: default
 </ol>
 
 ## Trading
+
+### 📅 2026/10/01
+
+- **Shared Models, Selective Trading, and Order Flow**
+  - Victoria Ruojie Li et al. | [2610.01897v1](http://arxiv.org/abs/2610.01897v1)
+  - <details><summary>Abstract</summary>We study whether model diversity survives selection into trading. In synthetic markets with a fixed mixture of three language-model families, news presentation changes their representation among submitted orders. At the announcement round, Qwen's share of submitted orders shifts by 48 percentage points in the financing event, with little change in net order counts. In the workforce-reduction event, Mistral's share shifts by 40 percentage points while net counts reverse sign. Homogeneous populations remove opposing flow when their active decisions share a direction. An analytical decomposition shows why selection can improve or worsen price accuracy even at unchanged aggregate demand sensitivity. The evidence concerns presentation bundles and submitted flow; cleaner replication and a known-value validation are specified prospectively.</details>
+
+
+- **PPO-HRAP: Proximal Policy Optimization with a Hybrid Regime-Aware Policy for Risk-Controlled Trading**
+  - Duong Hien Chi Kien et al. | [2610.01325v1](http://arxiv.org/abs/2610.01325v1)
+  - <details><summary>Abstract</summary>Reinforcement learning for trading often struggles to balance upside participation with drawdown control. Profit-only policies can collapse toward passive long exposure on upward-drifting assets, while aggressively risk-penalized rewards can become too defensive during volatile periods. This paper proposes PPO-HRAP, a hybrid regime-aware policy that combines Proximal Policy Optimization with an interpretable regime prior. The agent observes both market features and portfolio-state variables, receives a reward combining portfolio log return, VIX-conditioned drawdown-increase penalty, target-exposure deviation, and turnover cost, and executes a blended action between the PPO actor output and a regime-derived target exposure. On the held-out 2020-2022 SPY test window, PPO-HRAP achieves 27.62% total return, 8.48% annualized return, 0.6447 Sharpe ratio, 0.8588 Sortino ratio, and 0.4592 Calmar ratio, while reducing maximum drawdown from 34.10% for Buy and Hold to 18.47%. Across five SPY seeds, PPO-HRAP remains stable with mean total return $0.2725 \pm 0.0109$ and mean Sharpe ratio $0.6219 \pm 0.0565$. Single-run cross-asset tests on QQQ and DIA further show that the proposed method ranks first on total return and Sharpe ratio for all three reported assets. These results suggest that blending learned actions with a volatility-aware regime prior is a practical way to improve risk-adjusted trading behavior, although the current policy still incurs high turnover and cross-asset robustness beyond SPY remains limited to single-run evidence.</details>
+
 
 ### 📅 2026/09/30
 
@@ -52,7 +64,7 @@ layout: default
 ### 📅 2026/09/24
 
 - **Functional Architecture of European Electricity Trading Markets: Requirements for AI Supported Trading Systems under Regulatory Constraints**
-  - Walter Kurz et al. | [2609.29108v1](http://arxiv.org/abs/2609.29108v1)
+  - Walter Kurz et al. | [2609.29108v2](http://arxiv.org/abs/2609.29108v2)
   - <details><summary>Abstract</summary>European electricity trading in the EU operates as a constrained multi-layer system in which legal design, exchange microstructure, and network physics are executed jointly across forward, day-ahead, intraday, and balancing horizons. This paper develops a functional architecture for AI-supported trading that is aligned with market-coupling mechanics, cross-zonal transfer constraints, and compliance obligations under REMIT, MiFID II, MiFIR, and EMIR. The contribution is a formal system specification composed of a decision-state vector, residual-exposure accounting, constrained optimization objective, executable-action permission gate, and fail-closed AI control logic with auditable records. The analysis maps major Nominated Electricity Market Operator (NEMO) venues and related exchange operators into an operational venue topology and identifies where cross-border coordination fails in practice: interface-level timing, permission heterogeneity, and balancing-layer coupling. The resulting framework proposes how AI can be deployed as a bounded decision component inside regulated market operation with explicit governance, rather than as an unconstrained prediction layer.</details>
 
 
@@ -73,6 +85,13 @@ layout: default
 - **Adapting the Actor Model of Concurrency for High-Frequency Trading: Synchronous Message Delivery (fast_send) and a Tick-to-Book Latency Study**
   - Vincent Maciejewski | [2609.21173v1](http://arxiv.org/abs/2609.21173v1)
   - <details><summary>Abstract</summary>The actor model - state isolation, data-race freedom, deadlock resistance, and sequential single-message reasoning - has long been dismissed as unsuitable for high-frequency trading (HFT): actors seem to imply many threads, a mailbox per actor, and a heap-allocated message plus a context switch per interaction, overhead incompatible with a microsecond budget. This paper argues the dismissal is wrong for co-located actors, and supports it both analytically and with a deployed, measured implementation: kaspar-hft, an open-source C++20 framework. Four extensions adapt the model for HFT: fast_send, a synchronous delivery mechanism in which the sending thread runs the receiver's handler inline and returns the reply as a value; actor groups, which co-schedule actors on one thread behind a shared mailbox; per-actor selectable mailbox queues; and a memory pool. fast_send has receiver transparency: the handler cannot tell whether delivery was synchronous or asynchronous, or which thread runs it. A grouped synchronous chain runs on one thread, cutting scheduler context switches from O(N) to O(1), and a thread-local call-chain test catches cyclic invocation before any lock is taken. Microbenchmarks put the synchronous round trip at tens of nanoseconds. On a live CME market-data feed (ES, NQ, ZN futures), socket-to-book latency decomposes into a ~7 microsecond decode-and-book floor plus a per-message slope; the framework's own contribution is under 1% of the floor. The tail is set not by the actor machinery but by the market's non-Poisson, clustered arrival process, characterized in a companion paper. The shared-queue group also yields a production/simulation duality: the same actor code runs unchanged in live trading and deterministic backtest.</details>
+
+
+### 📅 2026/09/16
+
+- **Price Discovery at the Boundary of Contractual Decidability: Terminal-Value Gaps, Trading Availability, and Venue Finality on Kalshi**
+  - Maksym Nechepurenko | [2610.00173v1](http://arxiv.org/abs/2610.00173v1)
+  - <details><summary>Abstract</summary>This paper studies price discovery around contractual decidability rather than an arbitrary venue label. Its upstream lifecycle and decidability clocks are specified in Papers 7.1 and 7.3. Historical venue endpoints remain useful background: 152,694 ordinary markets form the retrospective feasibility denominator, 71,657 have an exact public endpoint, and 70,979 have an exact determination-to-endpoint pair. Those fields do not supply a contractual-decidability clock. The completed historical recovery produced no historically admissible contractual-decidability cohort. The prospective infrastructure shakedown has passed and evidence enrollment is active, but production price extraction has not started. The primary binary cohort will be drawn from the prospectively enrolled and blind-adjudicated contractual-decidability frame, with an accepted exact or interval first-decidability clock, exact terminal payoff, trading-availability classification, and admissible bounded non-block trade or real-candle coverage. Markets tradable after decidability enter a reaction cohort; markets closed before decidability enter a stale-terminal cohort. Closure is a competing event for convergence, not ordinary missingness. A 20-market price pilot may validate acquisition, block-trade treatment, synthetic-candle rejection, staleness, and clock alignment only after blind packet lock and only from accepted prospective clock candidates. It does not create price estimates. The paper specifies a prospective primary cohort and a targeted pilot protocol. Price estimation awaits independently reconstructed first/stable-decidability clocks and source-release clusters. No broad exchange-wide trade crawl or post hoc clock substitution is permitted.</details>
 
 
 ### 📅 2026/09/14
@@ -667,25 +686,4 @@ layout: default
 - **Resisting Manipulative Bots in Meme Coin Copy Trading: A Multi-Agent Approach with Chain-of-Thought Reasoning**
   - Yichen Luo et al. | [2601.08641v3](http://arxiv.org/abs/2601.08641v3)
   - <details><summary>Abstract</summary>Copy trading has become the dominant entry strategy in meme coin markets. However, due to the market's extremely illiquid and volatile nature, the strategy exposes an exploitable attack surface: adversaries deploy manipulative bots to front-run trades, conceal positions, and fabricate sentiment, systematically extracting value from naïve copiers at scale. Despite its prevalence, bot-driven manipulation remains largely unexplored, and no robust defensive framework exists. We propose a manipulation-resistant copy-trading system based on a multi-agent architecture powered by a multi-modal large language model (LLM) and chain-of-thought (CoT) reasoning. Our approach outperforms zero-shot and most statistic-driven baselines in prediction accuracy as well as all baselines in economic performance, achieving an average copier return of 3% per meme coin investment under realistic market frictions. Overall, our results demonstrate the effectiveness of agent-based defenses and predictability of trader profitability in adversarial meme coin markets, providing a practical foundation for robust copy trading.</details>
-
-
-### 📅 2026/01/10
-
-- **Cross-Market Alpha: Testing Short-Term Trading Factors in the U.S. Market via Double-Selection LASSO**
-  - Jin Du et al. | [2601.06499v3](http://arxiv.org/abs/2601.06499v3)
-  - <details><summary>Abstract</summary>We test whether 168 short-horizon price-volume signals from the Alpha191 library, originally developed for China's retail-dominated A-share market, contain pricing information for S&P 500 stocks from 2002 to 2022 beyond 153 established U.S. factors. Using the double-selection LASSO of Feng et al. (2020), 17 signals receive significant stochastic discount factor (SDF) loadings in the baseline test-asset design. Their robustness is uneven. Only three signals (a multi-horizon moving-average ratio, a directional-pressure ratio, and a price-gap correlation) remain significant with a finer test-asset grid and under Elastic Net and principal-component control selection; six more pass most checks, and the remaining eight depend on the specification. Robust signals are concentrated in volume-price interaction and short-term mean reversion, whereas volatility-based signals are fragile.</details>
-
-
-### 📅 2026/01/09
-
-- **Utility-Weighted Forecasting and Calibration for Risk-Adjusted Decisions under Trading Frictions**
-  - Craig S Wright | [2601.07852v1](http://arxiv.org/abs/2601.07852v1)
-  - <details><summary>Abstract</summary>Forecasting accuracy is routinely optimised in financial prediction tasks even though investment and risk-management decisions are executed under transaction costs, market impact, capacity limits, and binding risk constraints. This paper treats forecasting as an econometric input to a constrained decision problem. A predictive distribution induces a decision rule through a utility objective combined with an explicit friction operator consisting of both a cost functional and a feasible-set constraint system. The econometric target becomes minimisation of expected decision loss net of costs rather than minimisation of prediction error. The paper develops a utility-weighted calibration criterion aligned to the decision loss and establishes sufficient conditions under which calibrated predictive distributions weakly dominate uncalibrated alternatives. An empirical study using a pre-committed nested walk-forward protocol on liquid equity index futures confirms the theory: the proposed utility-weighted calibration reduces realised decision loss by over 30\% relative to an uncalibrated baseline ($t$-stat -30.31) for loss differential and improves the Sharpe ratio from -3.62 to -2.29 during a drawdown regime. The mechanism is identified as a structural reduction in the frequency of binding constraints (from 16.0\% to 5.1\%), preventing the "corner solution" failures that characterize overconfident forecasts in high-friction environments.</details>
-
-
-### 📅 2026/01/08
-
-- **Trading Electrons: Predicting DART Spread Spikes in ISO Electricity Markets**
-  - Emma Hubert et al. | [2601.05085v3](http://arxiv.org/abs/2601.05085v3)
-  - <details><summary>Abstract</summary>We study the problem of forecasting and optimally trading day-ahead versus real-time (DART) price spreads in U.S. wholesale electricity markets. Building on the framework of Galarneau-Vincent et al., we extend spike prediction from a single zone to a multi-zone setting and treat both positive and negative DART spikes within a unified statistical model. To translate directional signals into economically meaningful positions, we develop a structural and market-consistent price impact model based on day-ahead bid stacks. This yields closed-form expressions for the optimal vector of zonal INC/DEC quantities, capturing asymmetric buy/sell impacts and cross-zone congestion effects. When applied to NYISO, the resulting impact-aware strategy significantly improves the risk-return profile relative to unit-size trading and highlights substantial heterogeneity across markets and seasons.</details>
 
