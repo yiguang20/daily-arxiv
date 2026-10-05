@@ -2,7 +2,7 @@
 layout: default
 ---
 
-> Updated on 2026/10/02 12:22:05
+> Updated on 2026/10/05 12:23:52
 
 <summary>Table of Contents</summary>
 
@@ -13,6 +13,13 @@ layout: default
 </ol>
 
 ## Trading
+
+### 📅 2026/10/02
+
+- **MintEval: Do LLMs Implement the Trading Strategy You Asked For? A Behavioural-Equivalence Benchmark for Natural-Language-to-Strategy Code**
+  - Siyu Wang et al. | [2610.03080v1](http://arxiv.org/abs/2610.03080v1)
+  - <details><summary>Abstract</summary>Large language models are moving from producing trading signals to writing the code that executes them. The failure mode of the second role is silent: generated code runs, a backtest plots, yet the risk logic that the trader described is not the logic being executed. Existing code benchmarks test functional correctness on unit tests and finance benchmarks test forecasting; neither measures whether an implementation behaves like the strategy that was asked for. We introduce MintEval, a benchmark in which reference strategies are generated programmatically from a library of composable building blocks, back-translated into colloquial trader instructions, and re-implemented by the model under test. Generated and reference programs are executed bar by bar on identical market data and frictions, and compared on their actions rather than on code similarity or profit: alpha is differenced away. MintEval v0 contains 800 tasks on BTCUSDT 15-minute data, stratified by an execution-measured state-span complexity tau that is decoupled from description length. Low-cost models reach a mean ActionMatch of at most 0.544 and reproduce at most 0.087 of tasks exactly; on a stratified subset of 200 tasks a frontier model (Claude Opus 5.5) reaches 0.889 and reproduces 0.575 exactly, yet still fails silently on 0.275 of tasks. Given a menu of building blocks, models identify the strategy almost perfectly, yet 79.2% of the implementations whose specification was read correctly diverge on more than 10% of active bars. The LLM judge of a recent strategy-generation benchmark, applied verbatim, accepts every one of these silent failures.</details>
+
 
 ### 📅 2026/10/01
 
@@ -679,11 +686,4 @@ layout: default
 - **Bayesian Robust Financial Trading with Adversarial Synthetic Market Data**
   - Haochong Xia et al. | [2601.17008v1](http://arxiv.org/abs/2601.17008v1)
   - <details><summary>Abstract</summary>Algorithmic trading relies on machine learning models to make trading decisions. Despite strong in-sample performance, these models often degrade when confronted with evolving real-world market regimes, which can shift dramatically due to macroeconomic changes-e.g., monetary policy updates or unanticipated fluctuations in participant behavior. We identify two challenges that perpetuate this mismatch: (1) insufficient robustness in existing policy against uncertainties in high-level market fluctuations, and (2) the absence of a realistic and diverse simulation environment for training, leading to policy overfitting. To address these issues, we propose a Bayesian Robust Framework that systematically integrates a macro-conditioned generative model with robust policy learning. On the data side, to generate realistic and diverse data, we propose a macro-conditioned GAN-based generator that leverages macroeconomic indicators as primary control variables, synthesizing data with faithful temporal, cross-instrument, and macro correlations. On the policy side, to learn robust policy against market fluctuations, we cast the trading process as a two-player zero-sum Bayesian Markov game, wherein an adversarial agent simulates shifting regimes by perturbing macroeconomic indicators in the macro-conditioned generator, while the trading agent-guided by a quantile belief network-maintains and updates its belief over hidden market states. The trading agent seeks a Robust Perfect Bayesian Equilibrium via Bayesian neural fictitious self-play, stabilizing learning under adversarial market perturbations. Extensive experiments on 9 financial instruments demonstrate that our framework outperforms 9 state-of-the-art baselines. In extreme events like the COVID, our method shows improved profitability and risk management, offering a reliable solution for trading under uncertain and shifting market dynamics.</details>
-
-
-### 📅 2026/01/13
-
-- **Resisting Manipulative Bots in Meme Coin Copy Trading: A Multi-Agent Approach with Chain-of-Thought Reasoning**
-  - Yichen Luo et al. | [2601.08641v3](http://arxiv.org/abs/2601.08641v3)
-  - <details><summary>Abstract</summary>Copy trading has become the dominant entry strategy in meme coin markets. However, due to the market's extremely illiquid and volatile nature, the strategy exposes an exploitable attack surface: adversaries deploy manipulative bots to front-run trades, conceal positions, and fabricate sentiment, systematically extracting value from naïve copiers at scale. Despite its prevalence, bot-driven manipulation remains largely unexplored, and no robust defensive framework exists. We propose a manipulation-resistant copy-trading system based on a multi-agent architecture powered by a multi-modal large language model (LLM) and chain-of-thought (CoT) reasoning. Our approach outperforms zero-shot and most statistic-driven baselines in prediction accuracy as well as all baselines in economic performance, achieving an average copier return of 3% per meme coin investment under realistic market frictions. Overall, our results demonstrate the effectiveness of agent-based defenses and predictability of trader profitability in adversarial meme coin markets, providing a practical foundation for robust copy trading.</details>
 
