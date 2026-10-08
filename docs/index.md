@@ -2,7 +2,7 @@
 layout: default
 ---
 
-> Updated on 2026/10/07 12:41:18
+> Updated on 2026/10/08 12:48:47
 
 <summary>Table of Contents</summary>
 
@@ -13,6 +13,13 @@ layout: default
 </ol>
 
 ## Trading
+
+### 📅 2026/10/07
+
+- **SOTA: Stock Options Trading Agents Guided by Option-Implied Return Distributions**
+  - Yizhen Xie et al. | [2610.10407v1](http://arxiv.org/abs/2610.10407v1)
+  - <details><summary>Abstract</summary>As option markets grow and AI advances, agentic systems for option trading are gaining increasing attention. Language-model-based agents can reason over contextual information such as news, but option trading presents a particularly challenging decision problem: a single stock can have thousands of contracts, and the agent must decide both which contracts to trade and how to combine them. Existing approaches often sidestep this complexity by restricting the policy to a fixed strategy structure, such as a straddle, limiting their ability to switch strategies as market conditions change. We present SOTA (Stock Options Trading Agents), an agentic trading framework for structured option-strategy selection. SOTA abstracts the large option universe into strategy-level decisions while deterministic resolvers handle portfolio implementation. We develop SOTA by post-training Qwen3.8-27B with supervised fine-tuning followed by reinforcement learning. SOTA is evaluated on options on nine large-cap U.S. equities and SPY against rule-based and machine-learning strategy selectors in the same trading environment. Over a six-month out-of-sample period, SOTA earns an 18.3% total return with a Sharpe ratio of 1.60 and a maximum drawdown of 8.96%. We also document an asymmetric role of news: news improves frontier-teacher trajectories, but retaining news during reinforcement learning reduces out-of-sample return from 18.3% to -2.7%.</details>
+
 
 ### 📅 2026/10/05
 
@@ -364,9 +371,9 @@ layout: default
 
 ### 📅 2026/06/06
 
-- **Beyond Agent Architecture: Execution Assumptions and Reproducibility in LLM-Based Trading Systems**
-  - Junyi Yao et al. | [2606.08285v2](http://arxiv.org/abs/2606.08285v2)
-  - <details><summary>Abstract</summary>Large language models (LLMs) and agentic systems are increasingly proposed for financial trading, yet their reported performance remains difficult to compare because studies vary in data provenance, temporal split discipline, execution timing, turnover treatment, and transaction-cost modeling. This article presents a targeted topical review and reproducibility audit of execution realism in LLM-based trading research. A coded evidence matrix covering 30 trade-relevant primary studies is used to assess point-in-time controls, split transparency, held-out evaluation, cost and turnover treatment, execution semantics, universe definition, and artifact release. Across the audited sample, architecture reporting is generally clearer than the evaluation assumptions needed to judge whether a trading result is economically interpretable or reproducible. A 10-equity worked example is included only as a methodological scaffold to illustrate how explicit friction and timing choices can materially compress active-strategy results. The main conclusion is that the next useful step for LLM trading research is not only better agent design, but also clearer reporting standards for execution realism, reproducibility, and evaluation comparability.</details>
+- **Execution Realism and Reproducibility in LLM-Based Trading Systems: A Systematic Scoping Review and Evidence Audit**
+  - Junyi Yao et al. | [2606.08285v3](http://arxiv.org/abs/2606.08285v3)
+  - <details><summary>Abstract</summary>Execution realism remains weakly standardized in research on large-language-model-based trading systems, limiting comparison and reproduction across backtests, simulations, and portfolio benchmarks. This article presents a PRISMA-ScR systematic scoping review with a nested execution-reproducibility evidence audit. Eight reproducible query families returned 796 query-level records; DOI/title deduplication left 687 unique records, 101 reports were sought for retrieval, and 59 full texts were recovered through direct and fallback open-access routes. Fifty-three reports are provisionally eligible for expanded evidence charting, subject to reconciliation of two blind author-validation packets. The charting framework separately evaluates point-in-time controls, temporal splits, held-out evaluation, trading costs and turnover, execution semantics, universe construction, architecture reporting, and artifact availability. Direct-trading, portfolio or alpha-construction, and benchmark studies are retained as distinct descriptive subgroups rather than pooled as a common performance estimand. Search responses, retrieval attempts, file hashes, evidence excerpts, screening decisions, and coding worksheets are archived with the review materials. Final field-level counts are intentionally withheld until author validation is complete.</details>
 
 
 - **Hour-Aware Adaptive Risk Management for Autonomous Memecoin Trading on Solana DEXs: Evidence, Theory, and Design Lessons from a 15-Day Deployment**
@@ -677,11 +684,4 @@ layout: default
 - **Generating Alpha: A Hybrid AI-Driven Trading System Integrating Technical Analysis, Machine Learning and Financial Sentiment for Regime-Adaptive Equity Strategies**
   - Varun Narayan Kannan Pillai et al. | [2601.19504v1](http://arxiv.org/abs/2601.19504v1)
   - <details><summary>Abstract</summary>The intricate behavior patterns of financial markets are influenced by fundamental, technical, and psychological factors. During times of high volatility and regime shifts causes many traditional strategies like trend-following or mean-reversion to fail. This paper proposes a hybrid AI-based trading strategy that combines (1) trend-following and directional momentum capture via EMA and MACD, (2) detection of price normalization through mean-reversion using RSI and Bollinger Bands, (3) market psychological interpretation through sentiment analysis using FinBERT, (4) signal generation through machine learning using XGBoost and (5)dynamically adjusting exposure with market regime filtering based on volatility and return environments. The system achieved a final portfolio value of $235,492.83, yielding a return of 135.49% on initial investment over a period of 24 months. The hybrid model outperformed major benchmark indexes like S&P 500 and NASDAQ-100 over the same period showing strong flexibility and lower downside risk with superior profits validating the use of multi-modal AI in algorithmic trading.</details>
-
-
-### 📅 2026/01/22
-
-- **The GT-Score: A Robust Objective Function for Reducing Overfitting in Data-Driven Trading Strategies**
-  - Alexander Sheppert | [2602.00080v1](http://arxiv.org/abs/2602.00080v1)
-  - <details><summary>Abstract</summary>Overfitting remains a critical challenge in data-driven financial modeling, where machine learning (ML) systems learn spurious patterns in historical prices and fail out of sample and in deployment. This paper introduces the GT-Score, a composite objective function that integrates performance, statistical significance, consistency, and downside risk to guide optimization toward more robust trading strategies. This approach directly addresses critical pitfalls in quantitative strategy development, specifically data snooping during optimization and the unreliability of statistical inference under non-normal return distributions. Using historical stock data for 50 S&P 500 companies spanning 2010-2024, we conduct an empirical evaluation that includes walk-forward validation with nine sequential time splits and a Monte Carlo study with 15 random seeds across three trading strategies. In walk-forward validation, GT-Score improves the generalization ratio (validation return divided by training return) by 98% relative to baseline objective functions. Paired statistical tests on Monte Carlo out-of-sample returns indicate statistically detectable differences between objective functions (p < 0.01 for comparisons with Sortino and Simple), with small effect sizes. These results suggest that embedding an anti-overfitting structure into the objective can improve the reliability of backtests in quantitative research. Reproducible code and processed result files are provided as supplementary materials.</details>
 
