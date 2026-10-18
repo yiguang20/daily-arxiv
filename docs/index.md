@@ -2,7 +2,7 @@
 layout: default
 ---
 
-> Updated on 2026/10/12 12:37:54
+> Updated on 2026/10/18 11:18:56
 
 <summary>Table of Contents</summary>
 
@@ -13,6 +13,13 @@ layout: default
 </ol>
 
 ## Trading
+
+### 📅 2026/10/15
+
+- **Where Backtests and Live Trading Part Ways: Six Defects from One Intraday System**
+  - Alex Vidovich et al. | [2610.21846v1](http://arxiv.org/abs/2610.21846v1)
+  - <details><summary>Abstract</summary>Backtests of intraday strategies can drift away from what the live system actually does; in our case, the drift never showed in summary statistics. We report six defects found while running one intraday US equity system live and comparing its live days with their backtest replay. Three came from data: a default feed that carried a small fraction of real opening volume, historical prices adjusted for dividends that live orders never see, and data the live system downloaded but the backtest never did. Two came from code: a sizing step that exceeded a limit the live account enforces, and UTC timestamps read as New York time. One came from configuration: settings that were switched on but never reached the code that places orders. For each we give the symptom, the size of the error, the cause and the test or control that now guards against it. All six sat where two paths that should agree had drifted apart. We close with a ten-point checklist. We make no claim about whether the system is profitable.</details>
+
 
 ### 📅 2026/10/07
 
@@ -177,7 +184,7 @@ layout: default
 ### 📅 2026/08/28
 
 - **RetailAgent: Structured Adverse Timing in Self-Conditioned Multimodal LLM Trading Agents**
-  - Yupeng Zhang et al. | [2608.28399v1](http://arxiv.org/abs/2608.28399v1)
+  - Yupeng Zhang et al. | [2608.28399v2](http://arxiv.org/abs/2608.28399v2)
   - <details><summary>Abstract</summary>In financial markets, a sequential policy that reacts systematically to price movements may become predictable to other market participants. This paper studies whether large language model (LLM) agents exhibit such directional structure through RetailAgent, an experimental framework in which an LLM observes anonymized intraday equity price histories and permitted state, then repeatedly chooses long (hold the stock) or flat (stay out) before the subsequent interval return is revealed. We compare returns during long and flat intervals along the same stock's intraday path after removing the overall fraction of long decisions. This exposure-matched measure reveals persistent negative timing across modality, horizon, state, and model family. Shuffling saved action sequences substantially attenuates the effect, showing that alignment between actions and subsequent returns drives the negative score. Feeding self-authored memories into decisions further increases policy persistence, while timing becomes more negative among stock-days on which the agent uses both actions. These results reveal stable, recoverable directional structure in sequential LLM financial decisions and a behavioral signal for studying how another participant could respond to a predictable policy.</details>
 
 
@@ -382,8 +389,8 @@ layout: default
 
 
 - **Post-Rejection Follow-up Sampling: Measuring Outcomes of Rejected Decisions in Algorithmic DEX Trading**
-  - Arati Uday Kamat | [2606.08228v2](http://arxiv.org/abs/2606.08228v2)
-  - <details><summary>Abstract</summary>Filter-gated algorithmic trading systems on decentralised exchanges reject most candidate tokens they evaluate, yet the observed forward market trajectory of those rejected candidates is rarely measured on the same live venue that produced the rejection. This paper introduces Post-Rejection Follow-up Sampling (PRFS), an observational measurement methodology in which a separate tracking subsystem samples each rejected token's price and liquidity from the same live oracle path used by the rejecting scanner, at a scheduled cadence, from the moment of rejection out to a fixed analytic horizon. The methodology is defined through a formal specification of the observation window and the reason-attribution rule, a reference implementation (prfs v2.0.0) with executable coverage and reason-ledger tests, and a secondary cross-check implementation that re-derives every headline number through a distinct code path. The companion dataset contains 67,000 forward-observation rows across 2,997 rejection events collected on a single Solana automated-market-maker sub-venue during a launch-dynamics window of 8.63 calendar days across 457 unique mints. Under the primary reason-aware three-field event key, 1,455 events (48.55 percent) receive a matched forward observation; under the reason-agnostic two-field diagnostic key, 1,641 events (54.75 percent) match. Mint-level coverage is 100 percent. The 253-row reason-conflict ledger and 8,593 unaligned outcome rows are disclosed, and coverage is shown to be filter-associated (chi-square(6) = 401.29) and source-associated (z = 14.78). No causal or counterfactual claim of a hypothetical acceptance outcome is made; the reported estimand is the observed post-rejection forward return.</details>
+  - Arati Uday Kamat | [2606.08228v3](http://arxiv.org/abs/2606.08228v3)
+  - <details><summary>Abstract</summary>Note (Oct 2026): data were collected by a tracker with a 10-minute sweep, 24-hour cap and one record per token, not the PRFS schedule of v1-v2; headline counts unchanged. Filter-gated algorithmic trading systems on decentralised exchanges reject most candidate tokens they evaluate, yet the observed forward market trajectory of those rejected candidates is rarely measured on the same live venue that produced the rejection. This paper introduces Post-Rejection Follow-up Sampling (PRFS), an observational measurement methodology in which a separate tracking subsystem samples each rejected token's price and liquidity from the same live oracle path used by the rejecting scanner, at a scheduled cadence, from the moment of rejection out to a fixed analytic horizon. The methodology is defined through a formal specification of the observation window and the reason-attribution rule, a reference implementation (prfs v2.0.0) with executable coverage and reason-ledger tests, and a secondary cross-check implementation that re-derives every headline number through a distinct code path. The companion dataset contains 67,000 forward-observation rows across 2,997 rejection events collected on a single Solana automated-market-maker sub-venue during a launch-dynamics window of 8.63 calendar days across 457 unique mints. Under the primary reason-aware three-field event key, 1,455 events (48.55 percent) receive a matched forward observation; under the reason-agnostic two-field diagnostic key, 1,641 events (54.75 percent) match. Mint-level coverage is 100 percent. The 253-row reason-conflict ledger and 8,593 unaligned outcome rows are disclosed, and coverage is shown to be filter-associated (chi-square(6) = 401.29) and source-associated (z = 14.78). No causal or counterfactual claim of a hypothetical acceptance outcome is made; the reported estimand is the observed post-rejection forward return.</details>
 
 
 ### 📅 2026/06/05
@@ -530,8 +537,8 @@ layout: default
 ### 📅 2026/04/14
 
 - **Computable Countermarkets and the Limits of Universal Trading**
-  - Karl Svozil | [2604.13334v3](http://arxiv.org/abs/2604.13334v3)
-  - <details><summary>Abstract</summary>We explain why no trading algorithm can guarantee profit in every market. For each deterministic program that always returns a finite-precision position, we construct a fixed, algorithmically generated price path on which every active position loses and inactivity earns nothing. This holds with positive, continually changing prices, costless trading, and unlimited computation time. Separate arguments limit learning market rules, certifying future events, and establishing randomness from finite data. Useful strategies may exploit market structure, information, or compensation for risk, while benchmark performance need not imply profit. Reversing and rearranging price histories within the assumed market class provide practical stress tests, distinguishing conditional success from universal guarantees.</details>
+  - Karl Svozil | [2604.13334v4](http://arxiv.org/abs/2604.13334v4)
+  - <details><summary>Abstract</summary>We explain why no trading algorithm can guarantee profit in every market. For each deterministic program that always returns an exact rational position, we construct a fixed, algorithmically generated price path on which every active position loses and inactivity earns nothing. This holds with positive, continually changing prices, costless trading, and unlimited computation time. Conversely, a supplied total computable price program with nonzero moves admits a computable trader that profits at every step. Mutual countering depends on information, timing, and termination. Approximation-based real outputs preserve the cumulative obstruction but not the loss on every active position. Separate arguments limit learning market rules, certifying future events, and establishing randomness from finite data. Betting-martingale characterizations connect trading with computable and Martin-Löf randomness. Useful strategies may exploit market structure, information, or compensation for risk, while benchmark performance need not imply profit. Reversing and rearranging price histories within the assumed market class provide practical stress tests, distinguishing conditional success from universal guarantees.</details>
 
 
 ### 📅 2026/04/04
@@ -677,11 +684,4 @@ layout: default
 - **PredictionMarketBench: A SWE-bench-Style Framework for Backtesting Trading Agents on Prediction Markets**
   - Avi Arora et al. | [2602.00133v1](http://arxiv.org/abs/2602.00133v1)
   - <details><summary>Abstract</summary>Prediction markets offer a natural testbed for trading agents: contracts have binary payoffs, prices can be interpreted as probabilities, and realized performance depends critically on market microstructure, fees, and settlement risk. We introduce PredictionMarketBench, a SWE-bench-style benchmark for evaluating algorithmic and LLM-based trading agents on prediction markets via deterministic, event-driven replay of historical limit-order-book and trade data. PredictionMarketBench standardizes (i) episode construction from raw exchange streams (orderbooks, trades, lifecycle, settlement), (ii) an execution-realistic simulator with maker/taker semantics and fee modeling, and (iii) a tool-based agent interface that supports both classical strategies and tool-calling LLM agents with reproducible trajectories. We release four Kalshi-based episodes spanning cryptocurrency, weather, and sports. Baseline results show that naive trading agents can underperform due to transaction costs and settlement losses, while fee-aware algorithmic strategies remain competitive in volatile episodes.</details>
-
-
-### 📅 2026/01/27
-
-- **Generating Alpha: A Hybrid AI-Driven Trading System Integrating Technical Analysis, Machine Learning and Financial Sentiment for Regime-Adaptive Equity Strategies**
-  - Varun Narayan Kannan Pillai et al. | [2601.19504v1](http://arxiv.org/abs/2601.19504v1)
-  - <details><summary>Abstract</summary>The intricate behavior patterns of financial markets are influenced by fundamental, technical, and psychological factors. During times of high volatility and regime shifts causes many traditional strategies like trend-following or mean-reversion to fail. This paper proposes a hybrid AI-based trading strategy that combines (1) trend-following and directional momentum capture via EMA and MACD, (2) detection of price normalization through mean-reversion using RSI and Bollinger Bands, (3) market psychological interpretation through sentiment analysis using FinBERT, (4) signal generation through machine learning using XGBoost and (5)dynamically adjusting exposure with market regime filtering based on volatility and return environments. The system achieved a final portfolio value of $235,492.83, yielding a return of 135.49% on initial investment over a period of 24 months. The hybrid model outperformed major benchmark indexes like S&P 500 and NASDAQ-100 over the same period showing strong flexibility and lower downside risk with superior profits validating the use of multi-modal AI in algorithmic trading.</details>
 
