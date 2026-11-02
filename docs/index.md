@@ -2,7 +2,7 @@
 layout: default
 ---
 
-> Updated on 2026/10/30 12:39:27
+> Updated on 2026/11/02 12:43:47
 
 <summary>Table of Contents</summary>
 
@@ -31,7 +31,7 @@ layout: default
 ### 📅 2026/10/24
 
 - **Tracking High-Frequency Trading Activity in China and Its Effects on Market Quality**
-  - Li Guo et al. | [2610.33400v1](http://arxiv.org/abs/2610.33400v1)
+  - Li Guo et al. | [2610.33400v2](http://arxiv.org/abs/2610.33400v2)
   - <details><summary>Abstract</summary>We develop a new order-level proxy for high-frequency trading (HFT) activity based on precise order placement and study its effects on market quality. With quotes updating multiple times per second, millisecond-level order-book access makes high-frequency traders more likely to submit active exact-match orders, defined as limit orders priced exactly at the prevailing best opposite-side quote. Using Shenzhen Stock Exchange data, we validate the proxy: active exact-match orders respond faster to quote updates, cancel more rapidly, concentrate when depth imbalance is favorable and spreads are narrow, and predict mid-quote returns from 100 milliseconds through ten minutes. A difference-in-differences design exploiting cross-channel variation in order dissemination latency at the market open shows that lower latency increases active exact-match shares. This variation yields plausibly causal evidence that latency-induced HFT raises short-horizon price variation, wide-spread incidence, and adverse-selection exposure, while realized spreads decline and pricing error falls modestly. Unlike developed markets, China's T+1 constraint, absence of maker-taker rebates, and limits on rapid quote revision tilt speed advantages toward directional liquidity taking, highlighting how market design shapes the channel through which speed affects market quality.</details>
 
 
