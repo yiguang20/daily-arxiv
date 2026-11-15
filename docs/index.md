@@ -2,7 +2,7 @@
 layout: default
 ---
 
-> Updated on 2026/11/09 12:55:31
+> Updated on 2026/11/15 13:05:15
 
 <summary>Table of Contents</summary>
 
@@ -13,6 +13,39 @@ layout: default
 </ol>
 
 ## Trading
+
+### 📅 2026/11/12
+
+- **Improving Algorithmic Trading for BESS on Intraday Electricity Markets through Distributional Price Forecasts**
+  - Simon Hirsch et al. | [2611.17170v1](http://arxiv.org/abs/2611.17170v1)
+  - <details><summary>Abstract</summary>Grid-scale battery energy storage systems (BESS) are becoming increasingly important in short-term energy markets, where they help balance fluctuations in variable renewable generation. In many countries, the continuous intraday market is the most important wholesale market for BESS to monetize their flexibility. In this paper, we propose an extension to the myopic rolling intrinsic policy that incorporates intraday price forecasts tailored specifically to the BESS trading problem. While a large literature addresses intraday price forecasting, most existing work focuses on volume-weighted prices during the last hours of trading and consequently fails to capture the features most relevant to BESS trading. Our approach addresses this gap by introducing a novel target variable derived from the limit order book and its dynamics. The resulting forecasts are designed to inform the optimization about future profit opportunities while preserving computational efficiency and avoiding the burden of full stochastic optimization. In a realistic high-frequency simulation setting covering 2023 and 2024, our method improves profits by up to 42% over the naive rolling intrinsic formulation. We further analyze the relationship between forecast accuracy, stability, and financial performance, establishing a clear inverse relationship between accuracy and stability. Finally, we find evidence that BESS size and duration jointly influence both overall profitability and the marginal benefit of incorporating forecasts.</details>
+
+
+- **Media Trading with Censored Auction Prices: A Stochastic Control and Reinforcement Learning Approach**
+  - Yun-Ithry Gamrani et al. | [2611.16992v1](http://arxiv.org/abs/2611.16992v1)
+  - <details><summary>Abstract</summary>In real-time bidding, marketing agencies must balance campaign performance, transaction margins and the use of a finite advertising budget. A key difficulty is that market-clearing prices are typically observed only when bids are successful, so the information available for subsequent decisions depends on the bidding policy. We formulate this problem using a continuous-time stochastic control model with a latent price process. To construct a price signal, we consider parallel exploratory subcampaigns in which bids are randomized subject to an upper bound. Under a stylized cross-sectional sampling model, the resulting price estimator is consistent and satisfies a mean-square error bound of order $N^{-1}$, where $N$ is the number of exploratory observations. We then describe a model-based approach combining forward-equation calibration with Hamilton-Jacobi-Bellman policy iteration and a physics-informed neural network, alongside an entropy-regularized actor-critic approach based on observable information in a model-free setting. Synthetic experiments illustrate the estimator and the computational procedures. The framework clarifies the decision and information trade-offs faced by the agency, while distinguishing full-information benchmarks and estimated-price policies from the genuinely partially observed control problem.</details>
+
+
+### 📅 2026/11/10
+
+- **Optimal Trading Speed on Blockchain**
+  - Ruizhe Jia et al. | [2611.13616v2](http://arxiv.org/abs/2611.13616v2)
+  - <details><summary>Abstract</summary>On blockchain-based exchanges, faster blocks weaken the priority-fee competition among arbitrageurs and shift rents from the block producer to them. Equilibrium liquidity peaks at an interior block speed; beyond a threshold, an active liquidity provider cream-skims and passive capital shrinks. Evidence from the Base Flashblocks upgrade, a tenfold block-speed increase, confirms the predictions. Priority-fee bids decrease sharply and arbitrageurs' net profit rises. The active liquidity provider rebalances faster, avoids toxic flow, and earns a higher profit. Pool depth falls and effective spreads widen despite closer tracking of external prices.</details>
+
+
+### 📅 2026/11/08
+
+- **Retrospective Analysis of Team-Following Trading Profitability in Pumpfun Meme Coins Using Funding Networks**
+  - Fail Gafarov | [2611.11436v1](http://arxiv.org/abs/2611.11436v1)
+  - <details><summary>Abstract</summary>If the right token-creation teams had been known, how much could following them have returned, and what is left when only information available before each launch is used? We study ten separately recorded Pumpfun windows (April 2024 to September 2026), each reconstructed independently from real-SOL reserve states and finite-capital accounts that start with one SOL. Teams are directed funding groups ranked in hindsight. When every team exits at its own best reserve threshold, chosen in hindsight, the main account ends above one SOL in all 8 windows that have a qualifying team (1.10 to 11.32 SOL), but free cash exceeds one SOL in only 5, and marks of positions that never reached their threshold make up 17--94% of equity. If teams are recognised online, from tokens whose first hour has completed, 9 of 19 teams become identifiable only after their last launch; the remaining 10 end above one SOL in 10 cases, with free cash above one SOL in 7; funding links in this step still come from the full window, so even these results are not a fully realisable signal. A large model balance, a result above random cohorts that repeat the threshold search, and a statistical rejection in the selection-matched nulls (3 of 40 tests after Holm adjustment) are three different statements, and these nulls condition on the discovered funding graph, so they do not calibrate the whole selection procedure. Midpoint tests describe a further source of apparent opportunity. A detailed analysis of the best and the worst window, with every analysis parameter varied, shows that the worst result, which is close to break-even, rises several-fold with a stop rule or another funding-graph construction. The results are conditional retrospective model accounts, not executable profits, and not evidence of a causal effect of the SOL price.</details>
+
+
+### 📅 2026/11/07
+
+- **Track or Follow? A Jev-Compatible Multi-Agent Trading System When Web News Lags the Market**
+  - Yebo Feng et al. | [2611.10414v1](http://arxiv.org/abs/2611.10414v1)
+  - <details><summary>Abstract</summary>LLM agents increasingly trade on the Web news they read, yet much Web news about listed firms is published after, and about, the price move it reports, so a reader can agree with the market by following it instead of reading the event. We ask whether LLM judgments of Web news track the market's reaction to the reported event or follow it. To answer, we built a multi-agent trading system whose agents share only point-in-time stores and answer typed questions through the interface of Jev, a hosted typed decision model; code sets every position under a proved bound on how far text can move it. In a hash-committed test of a Jev-compatible reader built from a pinned LLM's option probabilities, item judgments track announcement-window abnormal returns (weekly Spearman 0.119), also after the LLM's release, and event types agree with the issuers' 8-K filings (AUC 0.833); Jev's judgments of news published after its own release track the reaction as well (descriptive). Exploratory analyses show where the association comes from: 72% of earnings news items appear after the issuer's filing, contributor-written items often report the price move, and from the first trade after publication the association falls to 0.023. At a weekly horizon, the confirmatory test detects no rank information over code-only features. Under attack, decision cards traced 88% of successful attacks to the planted item. We propose that market-graded tests of Web-text readers report the criterion from publication, not only from the event.</details>
+
 
 ### 📅 2026/11/06
 
@@ -582,7 +615,7 @@ layout: default
 ### 📅 2026/05/03
 
 - **TradeMech: A Method to Multilaterally Net Trades Without Altering Counterparty Exposure**
-  - Daniel Aronoff et al. | [2605.15210v1](http://arxiv.org/abs/2605.15210v1)
+  - Daniel Aronoff et al. | [2605.15210v2](http://arxiv.org/abs/2605.15210v2)
   - <details><summary>Abstract</summary>Financial markets such as bond, derivatives, and repo markets form networks of interdependent obligations. Existing multilateral netting methods typically trade off the extent of netting against preservation of counterparty exposure: central clearing reallocates exposure to a central counterparty, while trade compression may alter bilateral counterparty relationships. TradeMech is a mechanism for markets in which one or two homogeneous fungible objects are traded. The mechanism transforms a network of initial bilateral contracts into chains and cycles, nets the designated object multilaterally on those chains and cycles, and replaces initial contracts with multiparty contracts whose assigned trades remain fractions of the original bilateral trades. The construction achieves maximal multilateral netting of the designated object while preserving each agent's contractual profit and preserving the location of counterparty risk. When a party fails to pre-commit a required object, the affected assigned trade is recovered as a bilateral contract between the same original counterparties and the remaining assigned trades are re-netted on residual chains, so no new counterparty exposure is created.</details>
 
 
@@ -647,39 +680,4 @@ layout: default
 - **Reinforcement Learning for Speculative Trading under Exploratory Framework**
   - Yun Zhao et al. | [2604.02035v1](http://arxiv.org/abs/2604.02035v1)
   - <details><summary>Abstract</summary>We study a speculative trading problem within the exploratory reinforcement learning (RL) framework of Wang et al. [2020]. The problem is formulated as a sequential optimal stopping problem over entry and exit times under general utility function and price process. We first consider a relaxed version of the problem in which the stopping times are modeled by the jump times of Cox processes driven by bounded, non-randomized intensity controls. Under the exploratory formulation, the agent's randomized control is characterized via the probability measure over the jump intensities, and their objective function is regularized by Shannon's differential entropy. This yields a system of the exploratory HJB equations and Gibbs distributions in closed-form as the optimal policy. Error estimates and convergence of the RL objective to the value function of the original problem are established. Finally, an RL algorithm is designed, and its implementation is showcased in a pairs-trading application.</details>
-
-
-### 📅 2026/03/30
-
-- **Model Predictive Control For Trade Execution**
-  - Thomas P. McAuliffe et al. | [2603.28898v1](http://arxiv.org/abs/2603.28898v1)
-  - <details><summary>Abstract</summary>We address the problem of executing large client orders in continuous double-auction markets under time and liquidity constraints. We propose a model predictive control (MPC) framework that balances three competing objectives: order completion, market impact, and opportunity cost. Our algorithm is guided by a trading schedule (such as time-weighted average price or volume-weighted average price) but allows for deviations to reduce the expected execution cost, with due regard to risk.   Our MPC algorithm executes the order progressively, and at each decision step it solves a fast quadratic program that trades off expected transaction cost against schedule deviation, while incorporating a residual cost term derived from a simple base policy. Approximate schedule adherence is maintained through explicit bounds, while variance constraints on deviation provide direct risk control. The resulting system is modular, data-driven, and suitable for deployment in production trading infrastructure.   Using six months of NASDAQ 'level 3' data and simulated orders, we show that our MPC approach reduces schedule shortfall by approximately 40-50% relative to spread-crossing benchmarks and achieves significant reductions in slippage. Moreover, augmenting the base policy with predictive price information further enhances performance, highlighting the framework's flexibility for integration with forecasting components.</details>
-
-
-### 📅 2026/03/26
-
-- **Shifting Correlations: How Trade Policy Uncertainty Alters stock-T bill Relationships**
-  - Demetrio Lacava | [2603.25285v1](http://arxiv.org/abs/2603.25285v1)
-  - <details><summary>Abstract</summary>This paper examines how trade policy uncertainty influences the correlation between U.S. stock indices and short-term government bonds. The objective is to assess whether policy-related shocks, especially those linked to trade tensions, alter the traditional stock-T bill relationship and its implications for investors. We extend the Dynamic Conditional Correlation (DCC) framework by incorporating exogenous variables to account for external shocks. Three specifications are analyzed: one using the Trade Policy Uncertainty (TPU) index, one including a dummy variable reflecting presidential-cycle effects, and one combining both through an interaction term. The analysis is based on daily data for major U.S. stock indices and the 3-month Treasury bill. Results indicate that trade policy uncertainty exerts a significant effect on stock-T bill correlations. Moreover, its influence becomes stronger under specific political conditions, suggesting that political agendas can amplify the impact of trade-related shocks on financial markets. Crucially, augmenting the DCC framework with trade-policy-related variables improves also the economic relevance of correlation forecasts. Therefore, this study contributes to the literature by explicitly integrating policy-related uncertainty into correlation modeling through an augmented DCC framework. The findings provide new insights for portfolio allocation and risk management in environments characterized by heightened trade tensions.</details>
-
-
-### 📅 2026/03/22
-
-- **FinRL-X: An AI-Native Modular Infrastructure for Quantitative Trading**
-  - Hongyang Yang et al. | [2603.21330v1](http://arxiv.org/abs/2603.21330v1)
-  - <details><summary>Abstract</summary>We present FinRL-X, a modular and deployment-consistent trading architecture that unifies data processing, strategy construction, backtesting, and broker execution under a weight-centric interface. While existing open-source platforms are often backtesting- or model-centric, they rarely provide system-level consistency between research evaluation and live deployment. FinRL-X addresses this gap through a composable strategy pipeline that integrates stock selection, portfolio allocation, timing, and portfolio-level risk overlays within a unified protocol. The framework supports both rule-based and AI-driven components, including reinforcement learning allocators and LLM-based sentiment signals, without altering downstream execution semantics. FinRL-X provides an extensible foundation for reproducible, end-to-end quantitative trading research and deployment. The official FinRL-X implementation is available at https://github.com/AI4Finance-Foundation/FinRL-Trading.</details>
-
-
-### 📅 2026/03/20
-
-- **Decomposable Reward Modeling and Realistic Environment Design for Reinforcement Learning-Based Forex Trading**
-  - Nabeel Ahmad Saidd | [2604.00031v2](http://arxiv.org/abs/2604.00031v2)
-  - <details><summary>Abstract</summary>Reinforcement learning (RL) for foreign exchange (Forex) trading requires realistic execution modeling, interpretable reward design, and action spaces that respect market constraints. Existing approaches often simplify these aspects, limiting policy transparency and practical relevance. This paper presents a modular RL framework integrating three components: (1) a friction-aware execution engine enforcing anti-lookahead semantics---observations at close_t, execution at open_t+1, and mark-to-market at close_t+1---while modeling spread, commission, slippage, rollover financing, and margin-triggered liquidation; (2) a decomposable 11-component reward architecture with fixed, pre-specified weights and per-step logging, enabling attribution, ablation, and auditability; and (3) a 10-action discrete interface supporting scaling, reduction, closure, and reversal, with legal-action masking enforcing margin-aware feasibility during training and evaluation. Empirical evaluation on EURUSD training-split data reveals non-monotonic interactions among reward components, demonstrating that additional penalties do not consistently improve performance. The full reward configuration achieves a terminal training Sharpe ratio of 0.765 and cumulative return of 57.09%. Comparing action spaces, the extended 10-action interface increases cumulative return but reduces Sharpe relative to a conservative 3-action variant, revealing a return-activity trade-off under a fixed training budget. Scaling-enabled strategies consistently reduce drawdowns, with the combined configuration delivering the strongest endpoint performance. Supplementary diagnostics on GBPUSD, USDJPY, and AUDUSD exhibit qualitatively similar trends. These findings demonstrate the framework's diagnostic value and underscore the importance of controlled, interpretable design in RL-based financial systems.</details>
-
-
-### 📅 2026/03/18
-
-- **Can Blindfolded LLMs Still Trade? An Anonymization-First Framework for Portfolio Optimization**
-  - Joohyoung Jeon et al. | [2603.17692v1](http://arxiv.org/abs/2603.17692v1)
-  - <details><summary>Abstract</summary>For LLM trading agents to be genuinely trustworthy, they must demonstrate understanding of market dynamics rather than exploitation of memorized ticker associations. Building responsible multi-agent systems demands rigorous signal validation: proving that predictions reflect legitimate patterns, not pre-trained recall. We address two sources of spurious performance: memorization bias from ticker-specific pre-training, and survivorship bias from flawed backtesting. Our approach is to blindfold the agents--anonymizing all identifiers--and verify whether meaningful signals persist. BlindTrade anonymizes tickers and company names, and four LLM agents output scores along with reasoning. We construct a GNN graph from reasoning embeddings and trade using PPO-DSR policy. On 2025 YTD (through 2025-08-01), we achieved Sharpe 1.40 +/- 0.22 across 20 seeds and validated signal legitimacy through negative control experiments. To assess robustness beyond a single OOS window, we additionally evaluate an extended period (2024--2025), revealing market-regime dependency: the policy excels in volatile conditions but shows reduced alpha in trending bull markets.</details>
 
