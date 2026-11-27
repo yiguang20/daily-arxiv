@@ -2,7 +2,7 @@
 layout: default
 ---
 
-> Updated on 2026/11/25 15:15:50
+> Updated on 2026/11/27 15:00:26
 
 <summary>Table of Contents</summary>
 
@@ -13,6 +13,13 @@ layout: default
 </ol>
 
 ## Trading
+
+### 📅 2026/11/25
+
+- **Modelling and Calibration of Climate-Related Credit Risk Under the Emissions Trading System**
+  - Ying Liao et al. | [2611.34771v1](http://arxiv.org/abs/2611.34771v1)
+  - <details><summary>Abstract</summary>Emission trading systems (ETSs) price a growing share of global emissions, and some of their caps are set to reach zero within the maturity of corporate debt. We develop a structural model in which firms choose their emissions from several energy sources under an anticipated carbon price, while the realized carbon price clears the carbon market of each sector-region cell, with a scenario-dependent demand shock and physical losses mitigated by adaptation. We show that the equilibrium carbon price exists, characterize when the cap binds, and derive the optimal emission of each firm in feedback form. In a linearized case of the model, the carbon price is deterministic, and the default probability is explicit. Unlike a reward-penalty scheme, the ETS imposes no cost while the cap is slack and makes firms meet it exactly once it binds. Calibrated to 35 European power producers under the EU ETS, the model reproduces the average level of the European Union Allowance price over 2018 to 2024.</details>
+
 
 ### 📅 2026/11/20
 
@@ -669,11 +676,4 @@ layout: default
 - **TradeMech: A Method to Multilaterally Net Trades Without Altering Counterparty Exposure**
   - Daniel Aronoff et al. | [2605.15210v2](http://arxiv.org/abs/2605.15210v2)
   - <details><summary>Abstract</summary>Financial markets such as bond, derivatives, and repo markets form networks of interdependent obligations. Existing multilateral netting methods typically trade off the extent of netting against preservation of counterparty exposure: central clearing reallocates exposure to a central counterparty, while trade compression may alter bilateral counterparty relationships. TradeMech is a mechanism for markets in which one or two homogeneous fungible objects are traded. The mechanism transforms a network of initial bilateral contracts into chains and cycles, nets the designated object multilaterally on those chains and cycles, and replaces initial contracts with multiparty contracts whose assigned trades remain fractions of the original bilateral trades. The construction achieves maximal multilateral netting of the designated object while preserving each agent's contractual profit and preserving the location of counterparty risk. When a party fails to pre-commit a required object, the affected assigned trade is recovered as a bilateral contract between the same original counterparties and the remaining assigned trades are re-netted on residual chains, so no new counterparty exposure is created.</details>
-
-
-### 📅 2026/05/01
-
-- **AgenticAITA: A Proof-Of-Concept About Deliberative Multi-Agent Reasoning for Autonomous Trading Systems**
-  - Ivan Letteri | [2605.12532v1](http://arxiv.org/abs/2605.12532v1)
-  - <details><summary>Abstract</summary>Conventional algorithmic trading systems are grounded in deterministic heuristics or offline-trained statistical models that cannot adapt to the semantic complexity of rapidly shifting market regimes. This paper introduces AGENTICAITA, an agentic AI framework that replaces the traditional signal then execute paradigm with a fully autonomous deliberative loop in which multiple specialized Large Language Model agents reason, negotiate, and act in concert - without any offline training or human intervention. The framework proposes four architectural contributions: (i) an Adaptive Z-Score Trigger Engine that acts as a cognitive resource allocator, gating LLM inference exclusively on statistically anomalous market conditions; (ii) a Sequential Deliberative Pipeline - the core agentic contribution - in which an Analyst agent, a Risk Manager agent, and an Executor agent form a structured reasoning chain governed by typed JSON contracts and a deterministic hard-gate safety layer; (iii) an Inference Gating Protocol, a mutex-based cognitive resource scheduler that serializes concurrent agent activations and ensures fully reproducible audit trails; and (iv) a Correlation-Break Diversification composite score that operationalizes portfolio-level idiosyncratic signal prioritization within individual agent reasoning. Validated over a five-day autonomous dry-run session under live market conditions, the framework demonstrates operational correctness of the deliberative pipeline, achieving 157 zero-intervention invocations across 76 assets with an 11.5% agentic friction rate that confirms non-trivial inter-agent negotiation. This preliminary proof-of-concept establishes the feasibility of training-free, deterministic safety-constrained multi-agent orchestration in financial decision loops, with statistically robust performance evaluation and execution cost modeling deferred to extended live deployment.</details>
 
